@@ -1,24 +1,12 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import ToolCard from '../components/ToolCard.astro';
+import ToolDirectory from '../components/ToolDirectory.astro';
 import { featuredTools, tools } from '../lib/tools';
 import { featuredArticle } from '../data/articles';
 
 const standardCount = new Set(tools.flatMap((tool) => tool.standards)).size;
 const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
-const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
-const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
-const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
-const capabilityOptions = [
-  ['xmiImport', 'XMI import'],
-  ['xmiExport', 'XMI export'],
-  ['collaboration', 'Team collaboration'],
-  ['codeGeneration', 'Code generation'],
-  ['reverseEngineering', 'Reverse engineering'],
-  ['simulation', 'Model simulation'],
-  ['requirementsManagement', 'Requirements management'],
-  ['sysmlV2Api', 'SysML v2 API'],
-].filter(([key]) => tools.some((tool) => tool.features[key as keyof typeof tool.features] === 'Yes'));
 ---
 
 <MainLayout>
@@ -43,55 +31,8 @@ const capabilityOptions = [
         </div>
       </div>
     </div>
-    <form class="container hero-filter panel" action="/tools/" method="get">
-      <label class="hero-search" for="home-tool-search">Search tools and capabilities
-        <input id="home-tool-search" name="q" type="search" placeholder="Tool, vendor, or capability…" />
-      </label>
-      <label>Platform
-        <select name="platform">
-          <option value="">All platforms</option>
-          {platforms.map((item) => <option value={item}>{item}</option>)}
-        </select>
-      </label>
-      <label>Standard
-        <select name="standard">
-          <option value="">All standards</option>
-          {standards.map((item) => <option value={item}>{item}</option>)}
-        </select>
-      </label>
-      <label>License
-        <select name="license">
-          <option value="">All licenses</option>
-          {licenses.map((item) => <option value={item}>{item}</option>)}
-        </select>
-      </label>
-      <label>Capability
-        <select name="capability">
-          <option value="">All capabilities</option>
-          {capabilityOptions.map(([value, label]) => <option value={value}>{label}</option>)}
-        </select>
-      </label>
-      <button class="button button--accent" type="submit">Filter tools</button>
-    </form>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-heading">
-        <div><p class="eyebrow">Start with the decision</p><h2>Find the right modeling environment.</h2></div>
-        <p class="lead">A directory designed around actual selection criteria, not popularity rankings.</p>
-      </div>
-      <div class="path-grid">
-        <a href="/tools/?standard=sysml-v2">
-          <span>01 / Standard</span><strong>SysML v2 tools</strong><p>Track a fast-changing ecosystem with explicit evidence states.</p>
-        </a>
-        <a href="/tools/?license=open-source">
-          <span>02 / License</span><strong>Open-source tools</strong><p>Separate open-source software from paid hosted services.</p>
-        </a>
-        <a href="/tools/?platform=linux">
-          <span>03 / Platform</span><strong>Linux support</strong><p>Filter genuine platform support from runtime or access method.</p>
-        </a>
-      </div>
+    <div class="container home-directory">
+      <ToolDirectory tools={tools} deferResults />
     </div>
   </section>
 
@@ -154,19 +95,7 @@ const capabilityOptions = [
   .map-stats strong, .map-stats span { display: block; }
   .map-stats strong { font-size: 1.45rem; }
   .map-stats span { color: var(--ink-soft); font-size: .65rem; }
-  .hero-filter { display: grid; grid-template-columns: 1.45fr repeat(4, minmax(0, 1fr)) auto; align-items: end; gap: .75rem; margin-top: 3rem; padding: 1.2rem; }
-  .hero-filter label { display: grid; gap: .42rem; color: var(--ink-soft); font-size: .72rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
-  .hero-filter input, .hero-filter select { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 11px; background: var(--white); color: var(--ink); }
-  .hero-filter input { padding: .75rem 1rem; font-size: 1rem; }
-  .hero-filter select { padding: .65rem .75rem; }
-  .hero-filter .button { min-width: 112px; cursor: pointer; }
-  .path-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
-  .path-grid a { display: flex; min-height: 230px; flex-direction: column; padding: 1.25rem; text-decoration: none; transition: background 160ms ease; }
-  .path-grid a + a { border-left: 1px solid var(--ink); }
-  .path-grid a:hover { background: var(--orange-soft); }
-  .path-grid span { color: var(--teal); font-family: var(--font-mono); font-size: .7rem; }
-  .path-grid strong { margin-top: auto; font-size: 1.45rem; }
-  .path-grid p { margin: .55rem 0 0; color: var(--ink-soft); }
+  .home-directory { margin-top: 3rem; }
   .featured-section { background: rgba(255,253,248,.52); }
   .heading-action { color: var(--ink-soft); }
   .heading-action a { color: var(--teal-dark); font-weight: 800; }
@@ -184,17 +113,8 @@ const capabilityOptions = [
   .method-strip .button { margin-top: 1rem; }
   @media (max-width: 860px) {
     .hero-grid, .method-grid { grid-template-columns: 1fr; }
-    .hero-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .hero-search { grid-column: 1 / -1; }
     .article-feature-grid { grid-template-columns: 1fr; }
     .article-feature-image { max-width: 560px; }
     .hero-map { max-width: 560px; transform: none; }
-    .path-grid { grid-template-columns: 1fr; }
-    .path-grid a { min-height: 175px; }
-    .path-grid a + a { border-top: 1px solid var(--ink); border-left: 0; }
-  }
-  @media (max-width: 560px) {
-    .hero-filter { grid-template-columns: 1fr; }
-    .hero-search { grid-column: auto; }
   }
 </style>

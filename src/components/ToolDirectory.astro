@@ -2,8 +2,8 @@
 import type { Tool } from '../types';
 import ToolCard from './ToolCard.astro';
 
-interface Props { tools: Tool[]; }
-const { tools } = Astro.props;
+interface Props { tools: Tool[]; deferResults?: boolean; }
+const { tools, deferResults = false } = Astro.props;
 const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
 const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
 const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
@@ -23,7 +23,7 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
 );
 ---
 
-<section class="directory" data-tool-directory>
+<section class="directory" data-tool-directory data-defer-results={deferResults ? 'true' : undefined}>
   <div class="filter-panel panel">
     <div class="search-row">
       <label for="tool-search">Search the directory</label>
@@ -62,12 +62,12 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
       </label>
     </div>
     <div class="filter-footer">
-      <p aria-live="polite"><strong data-result-count>{tools.length}</strong> tools shown</p>
+      <p aria-live="polite"><strong data-result-count>{tools.length}</strong><span data-result-label>{deferResults ? ' tools available' : ' tools shown'}</span></p>
       <button type="button" data-clear-filters>Clear filters</button>
     </div>
   </div>
 
-  <div class="tool-grid" data-results>
+  <div class="tool-grid" data-results hidden={deferResults}>
     {tools.map((tool) => (
       <div
         data-tool
@@ -98,11 +98,15 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
     const selects = [...directory.querySelectorAll('[data-filter]')];
     const tools = [...directory.querySelectorAll('[data-tool]')];
     const count = directory.querySelector('[data-result-count]');
+    const countLabel = directory.querySelector('[data-result-label]');
+    const results = directory.querySelector('[data-results]');
     const empty = directory.querySelector('[data-empty-state]');
+    const deferResults = directory.dataset.deferResults === 'true';
 
     const applyFilters = () => {
       const query = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : '';
       const values = Object.fromEntries(selects.map((select) => [select.getAttribute('data-filter'), select instanceof HTMLSelectElement ? select.value : '']));
+      const hasActiveFilters = Boolean(query) || Object.values(values).some(Boolean);
       let visible = 0;
 
       tools.forEach((tool) => {
@@ -117,8 +121,11 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
         if (matches) visible += 1;
       });
 
-      if (count) count.textContent = String(visible);
-      if (empty instanceof HTMLElement) empty.hidden = visible !== 0;
+      const resultsDeferred = deferResults && !hasActiveFilters;
+      if (results instanceof HTMLElement) results.hidden = resultsDeferred;
+      if (count) count.textContent = String(resultsDeferred ? tools.length : visible);
+      if (countLabel) countLabel.textContent = resultsDeferred ? ' tools available' : ' tools shown';
+      if (empty instanceof HTMLElement) empty.hidden = resultsDeferred || visible !== 0;
     };
 
     const clearFilters = () => {
@@ -162,6 +169,7 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
   .filter-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); }
   .filter-footer p { margin: 0; color: var(--ink-soft); font-size: .84rem; }
   button { border: 0; background: transparent; color: var(--teal-dark); cursor: pointer; font-weight: 800; }
+  [data-results][hidden] { display: none; }
   [data-tool][hidden] { display: none; }
   .empty-state { padding: 4rem 1rem; border: 1px dashed var(--line); border-radius: var(--radius); text-align: center; }
   .empty-state span { font-family: var(--font-mono); font-size: 3rem; }
