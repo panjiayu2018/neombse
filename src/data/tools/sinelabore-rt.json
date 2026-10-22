@@ -1,0 +1,54 @@
+{
+  "id": "sinelabore-rt",
+  "name": "SinelaboreRT",
+  "vendor": "Sinelabore",
+  "website": "http://www.sinelabore.com/doku.php",
+  "description": "A code generator that imports state-machine or activity models from XMI and produces source code for languages including C, C++, Java, C#, Python, Rust, Go, and JavaScript.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Java"
+  ],
+  "standards": [
+    "UML",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Code generator"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "7.3",
+  "releaseDate": "2026-09-13",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/sinelaborert.png",
+  "sourceDescriptionZh": "状态机图和活动图代码生成工具，现已支持SysML v2状态机。先在EA、Visual Paradigm 、Cadifra、UModel、MagicDraw、Papyrus、ArgoUML、StarUML、DrawIO等UML建模工具中建立状态机模型，然后导出为XMI文件。sinelaboreRT将XMI文件导入，生成源代码。支持的编程语言包括：C、C++、Java、C#、Lua、Swift、Python、Rust、GO、JavaScript。",
+  "sourceUpdatedText": "2026年9月13日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://www.sinelabore.com/doku.php"
+    }
+  ],
+  "featured": false
+}

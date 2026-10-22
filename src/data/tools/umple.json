@@ -1,0 +1,54 @@
+{
+  "id": "umple",
+  "name": "Umple",
+  "vendor": "Umple project",
+  "website": "https://github.com/umple/umple/releases",
+  "description": "An open-source model-oriented programming environment that combines textual and graphical modeling and generates Java, PHP, and Ruby code.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "1.37.1",
+  "releaseDate": "2026-08-05",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/umple.png",
+  "sourceDescriptionZh": "最新版引入AI能力。自称“Model-Oriented Programming”，把图形和文本结合起来，支持Java、PHP和Ruby代码生成，可以在线使用，也可以作为Eclipse插件。开源。",
+  "sourceUpdatedText": "2026年8月5日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/umple/umple/releases"
+    }
+  ],
+  "featured": false
+}

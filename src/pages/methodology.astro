@@ -1,0 +1,32 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Verification Methodology — NeoMBSE" description="How NeoMBSE classifies UML and SysML tools and records verified capabilities using Yes, No, and Unknown evidence states.">
+  <article class="section container narrow prose">
+    <p class="eyebrow">Editorial methodology</p>
+    <h1>Evidence before claims.</h1>
+    <p class="lead">The directory is designed to distinguish what a product says, what an official source demonstrates, and what has not yet been checked.</p>
+    <h2>Three evidence states</h2>
+    <h3>Yes</h3><p>A current official source or reproducible product test supports the capability.</p>
+    <h3>No</h3><p>A reliable source or test establishes that the capability is not supported. An absent marketing claim is not sufficient evidence for No.</p>
+    <h3>Unknown</h3><p>The capability has not yet been verified. Unknown is not a negative finding.</p>
+    <h2>Classification rules</h2>
+    <ul>
+      <li><strong>Platform</strong> is where the product runs, such as Windows, Linux, macOS, or a browser.</li>
+      <li><strong>Access mode</strong> describes how people use it, such as desktop, web application, command line, or editor integration.</li>
+      <li><strong>Runtime or host</strong> records dependencies such as Java, Eclipse, or VS Code.</li>
+      <li><strong>Modeling interface</strong> separates graphical, textual, and hybrid experiences.</li>
+      <li><strong>Tool type</strong> distinguishes semantic model editors from diagram generators and drawing tools.</li>
+    </ul>
+    <h2>Source priority</h2>
+    <ol>
+      <li>Current official product documentation and release notes.</li>
+      <li>Official standards conformance or interoperability material.</li>
+      <li>Reproducible testing against a named version.</li>
+      <li>Vendor statements, clearly labeled when independent verification is unavailable.</li>
+    </ol>
+    <h2>Corrections</h2>
+    <p>Every record includes a last-checked date and source links. Vendors and users can <a href="/submit/">submit a correction</a>; all changes are reviewed before publication.</p>
+  </article>
+</MainLayout>

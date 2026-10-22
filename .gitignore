@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Local project reference; keep it outside the deployable source repository.
+GPT给出的攻略.docx
+
+# Original image archive stays local. Referenced copies are published from public/images/tools/.
+tools/pics/
+tools/sysmlpics/

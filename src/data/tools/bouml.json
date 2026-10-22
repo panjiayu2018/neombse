@@ -1,0 +1,55 @@
+{
+  "id": "bouml",
+  "name": "BOUML",
+  "vendor": "BOUML project",
+  "website": "http://bouml.free.fr/download.html",
+  "description": "A cross-platform UML modeling tool with C++ and Java plugin support whose published update history ended in 2021.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "7.9",
+  "releaseDate": null,
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/bouml.png",
+  "sourceDescriptionZh": "支持C++和Java编写的插件。版本更新频率很快。",
+  "sourceUpdatedText": "2021年8月已终结",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://bouml.free.fr/download.html"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "decisym-sysmlv2-gui",
+  "name": "DeciSym sysmlv2-gui",
+  "vendor": "DeciSym project",
+  "website": "https://github.com/DeciSym/sysmlv2-gui",
+  "description": "A lightweight open-source SysML v2 graphical viewer and editor implemented with Rust and egui.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Linux"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": null,
+  "releaseDate": "2026-06-28",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/sysmlv2gui.png",
+  "sourceDescriptionZh": "用Rust + egui开发的轻量级SysML v2图形查看和编辑器。",
+  "sourceUpdatedText": "2026年6月28日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/DeciSym/sysmlv2-gui"
+    }
+  ],
+  "featured": false
+}

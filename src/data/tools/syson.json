@@ -1,0 +1,53 @@
+{
+  "id": "syson",
+  "name": "SysON",
+  "vendor": "Eclipse SysON project",
+  "website": "https://mbse-syson.org/",
+  "description": "An open-source, browser-based graphical modeling environment designed natively for SysML v2, with growing textual import and export support.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2026.9.3",
+  "releaseDate": "2026-10-02",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/syson.png",
+  "sourceDescriptionZh": "Obeo主导开发、Eclipse 基金会旗下的开源SysML v2图形化建模工具。完全基于Web，目标就是建立原生SysML v2图形建模环境，而不是在UML/SysML v1工具上增加兼容层。\n\n目前支持General View、结构、需求、行为等SysML v2元素的图形编辑，也在不断增强SysML v2文本导入/导出能力。",
+  "sourceUpdatedText": "2026年10月2日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://mbse-syson.org/"
+    }
+  ],
+  "featured": true
+}

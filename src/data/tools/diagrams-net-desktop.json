@@ -1,0 +1,56 @@
+{
+  "id": "diagrams-net-desktop",
+  "name": "diagrams.net Desktop",
+  "vendor": "JGraph",
+  "website": "https://github.com/jgraph/drawio-desktop/releases",
+  "description": "The open-source Electron desktop edition of diagrams.net, a cross-platform drawing application with UML shape libraries and a matching browser edition.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS",
+    "Chrome OS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "31.4.5",
+  "releaseDate": "2026-09-08",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/drawio.png",
+  "sourceDescriptionZh": "开源绘图工具，用Electron编写，跨平台，支持UML。桌面版和在线版现在版本号已统一。在线版：https://app.diagrams.net/",
+  "sourceUpdatedText": "2026年9月8日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/jgraph/drawio-desktop/releases"
+    }
+  ],
+  "featured": false
+}

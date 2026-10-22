@@ -1,0 +1,56 @@
+{
+  "id": "gaphor",
+  "name": "Gaphor",
+  "vendor": "Gaphor project",
+  "website": "https://gaphor.org",
+  "description": "An open-source graphical modeling environment implemented in Python with support for UML and part of SysML v1.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "3.3.2",
+  "releaseDate": "2026-05-02",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/gaphor.png",
+  "sourceDescriptionZh": "开源建模工具，支持UML、SysML，用Python实现。",
+  "sourceUpdatedText": "2026年5月2日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://gaphor.org"
+    }
+  ],
+  "featured": true
+}

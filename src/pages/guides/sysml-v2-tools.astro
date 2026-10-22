@@ -1,0 +1,20 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { tools } from '../../lib/tools';
+const matching = tools.filter((tool) => tool.standards.includes('SysML v2'));
+---
+
+<MainLayout title="SysML v2 Modeling Tools — NeoMBSE" description="Browse SysML v2 modeling tools and understand how graphical notation, textual notation, API, and execution support are verified.">
+  <article class="section container">
+    <div class="section-heading"><div><p class="eyebrow">Standards guide</p><h1>SysML v2 tools.</h1></div><p class="lead">A focused index for a rapidly changing tool ecosystem—built to separate broad compatibility claims from specific verified capabilities.</p></div>
+    <div class="callout"><strong>Catalog note:</strong> this page combines the dedicated SysML v2 source list with UML-list tools whose source descriptions explicitly mention SysML v2 support.</div>
+    <div class="tool-grid">{matching.map((tool) => <ToolCard tool={tool} />)}</div>
+    <div class="guide-copy prose narrow">
+      <h2>What NeoMBSE will verify</h2>
+      <p>SysML v2 support is not a single checkbox. The directory will separately assess graphical notation, textual notation, model execution, the standard API, interchange, and model compatibility. Each finding will identify its evidence source and product version.</p>
+    </div>
+  </article>
+</MainLayout>
+
+<style>.guide-copy { margin: 5rem 0 0; }</style>

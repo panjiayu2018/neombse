@@ -1,0 +1,53 @@
+{
+  "id": "yed-graph-editor",
+  "name": "yEd Graph Editor",
+  "vendor": "yWorks",
+  "website": "https://www.conceptdraw.com/products/drawing-tool",
+  "description": "A general-purpose graph and diagram editor that includes UML shapes.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "3.20.1",
+  "releaseDate": "2020-12-01",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/yed.png",
+  "sourceDescriptionZh": "画图工具，支持UML。",
+  "sourceUpdatedText": "2020年12月1日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.conceptdraw.com/products/drawing-tool"
+    }
+  ],
+  "featured": false
+}

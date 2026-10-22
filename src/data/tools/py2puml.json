@@ -1,0 +1,53 @@
+{
+  "id": "py2puml",
+  "name": "py2puml",
+  "vendor": "py2puml project",
+  "website": "https://github.com/lucsorel/py2puml",
+  "description": "An open-source reverse-engineering utility that creates PlantUML class diagrams from Python applications.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Code generator"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Yes",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "0.11.0",
+  "releaseDate": "2026-02-18",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/py2uml.png",
+  "sourceDescriptionZh": "Python应用逆向生成PlantUML类图。",
+  "sourceUpdatedText": "2026年2月18日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/lucsorel/py2puml"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,59 @@
+{
+  "id": "kuml",
+  "name": "kUML",
+  "vendor": "kUML project",
+  "website": "https://kuml.dev/",
+  "description": "A model-oriented textual DSL built with Kotlin, covering UML, SysML v2, C4, and BPMN with desktop, web, command-line, and IDE integrations.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser",
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Web application",
+    "Desktop"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "0.54.1",
+  "releaseDate": "2026-09-12",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/kuml.png",
+  "sourceDescriptionZh": "使用Kotlin类型安全DSL的文本建模，支持 UML 2.x、SysML 2、C4、BPMN，并提供桌面、Web、命令行及IDE集成。强调自己不是PlantUML/Mermaid那种“文本画图工具”，而是“真正的模型+文本DSL”。",
+  "sourceUpdatedText": "2026年9月12日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://kuml.dev/"
+    }
+  ],
+  "featured": false
+}

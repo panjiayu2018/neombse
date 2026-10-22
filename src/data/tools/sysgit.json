@@ -1,0 +1,53 @@
+{
+  "id": "sysgit",
+  "name": "SysGit",
+  "vendor": "SysGit",
+  "website": "https://www.sysgit.io/",
+  "description": "A commercial collaborative systems-engineering platform centered on Git and the SysML v2 textual notation.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "1.3.10",
+  "releaseDate": "2026-07-22",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/sysgit.png",
+  "sourceDescriptionZh": "以Git + SysML v2 textual notation为核心构建的协作式系统工程平台。",
+  "sourceUpdatedText": "2026年7月22日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.sysgit.io/"
+    }
+  ],
+  "featured": false
+}

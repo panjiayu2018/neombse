@@ -1,0 +1,53 @@
+{
+  "id": "jetuml",
+  "name": "JetUML",
+  "vendor": "JetUML project",
+  "website": "https://www.jetuml.org",
+  "description": "A lightweight open-source UML diagram editor derived from Violet UML and using JSON as its model storage format.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Java"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "3.10",
+  "releaseDate": "2026-09-08",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/jetuml.png",
+  "sourceDescriptionZh": "从基于Java Swing的Violet UML发展而来，用JSON存储模型。",
+  "sourceUpdatedText": "2026年9月8日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.jetuml.org"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,119 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  canonicalPath?: string;
+}
+
+const {
+  title = 'NeoMBSE — UML & SysML Tools Directory',
+  description = 'Find and compare UML, SysML v1, and SysML v2 modeling tools by platform, license, interface, and verified capabilities.',
+  canonicalPath = Astro.url.pathname,
+} = Astro.props;
+
+const canonical = new URL(canonicalPath, Astro.site);
+const nav = [
+  { href: '/tools/', label: 'Explore tools' },
+  { href: '/methodology/', label: 'Methodology' },
+  { href: '/about/', label: 'About' },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#10252b" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="/" aria-label="NeoMBSE home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span>
+            <strong>NeoMBSE</strong>
+            <small>Modeling tool atlas</small>
+          </span>
+        </a>
+        <nav aria-label="Main navigation">
+          {nav.map((item) => <a href={item.href}>{item.label}</a>)}
+          <a class="nav-submit" href="/submit/">Submit an update</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content"><slot /></main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand--footer" href="/">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span><strong>NeoMBSE</strong><small>Evidence before claims.</small></span>
+          </a>
+          <p>An independent English-language directory for UML and SysML tooling.</p>
+        </div>
+        <div>
+          <strong>Directory</strong>
+          <a href="/tools/">All tools</a>
+          <a href="/guides/sysml-v2-tools/">SysML v2 tools</a>
+          <a href="/guides/open-source-uml-tools/">Open-source tools</a>
+        </div>
+        <div>
+          <strong>Project</strong>
+          <a href="/methodology/">Methodology</a>
+          <a href="/submit/">Submit an update</a>
+          <a href="/privacy/">Privacy</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© {new Date().getFullYear()} NeoMBSE</span>
+        <span>UML and SysML are trademarks of the Object Management Group.</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header { position: relative; z-index: 10; border-bottom: 1px solid rgba(16,37,43,.12); }
+  .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 78px; }
+  .brand { display: inline-flex; align-items: center; gap: .75rem; text-decoration: none; }
+  .brand-mark { display: grid; width: 38px; height: 38px; place-items: center; border-radius: 11px; background: var(--ink); color: var(--white); font-weight: 900; }
+  .brand strong, .brand small { display: block; line-height: 1.1; }
+  .brand small { margin-top: .2rem; color: var(--ink-soft); font-family: var(--font-mono); font-size: .62rem; letter-spacing: .05em; text-transform: uppercase; }
+  nav { display: flex; align-items: center; gap: 1.35rem; }
+  nav a { color: var(--ink-soft); font-size: .9rem; font-weight: 700; text-decoration: none; }
+  nav a:hover { color: var(--teal); }
+  .nav-submit { padding: .5rem .85rem; border: 1px solid var(--ink); border-radius: 999px; color: var(--ink); }
+  .site-footer { padding: 4rem 0 1.5rem; background: var(--ink); color: var(--paper); }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 3rem; }
+  .brand--footer .brand-mark { background: var(--orange); color: var(--ink); }
+  .brand--footer small, .site-footer p { color: #aebec1; }
+  .site-footer p { max-width: 34rem; margin-top: 1.2rem; }
+  .footer-grid > div:not(:first-child) { display: flex; flex-direction: column; gap: .55rem; }
+  .footer-grid a { text-decoration: none; }
+  .footer-grid a:hover { color: var(--orange); }
+  .footer-bottom { display: flex; justify-content: space-between; gap: 1rem; margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.16); color: #aebec1; font-size: .76rem; }
+  @media (max-width: 760px) {
+    .nav-wrap { min-height: 68px; }
+    nav a:not(.nav-submit) { display: none; }
+    .brand small { display: none; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid > div:first-child { grid-column: 1 / -1; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>

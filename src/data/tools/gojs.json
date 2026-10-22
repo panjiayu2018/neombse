@@ -1,0 +1,53 @@
+{
+  "id": "gojs",
+  "name": "GoJS",
+  "vendor": "Northwoods Software",
+  "website": "https://gojs.net/latest/index.html",
+  "description": "A commercial JavaScript diagramming framework that can be used to build UML class-diagram experiences in web applications.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2.2.12",
+  "releaseDate": "2022-06-29",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/gojs.png",
+  "sourceDescriptionZh": "绘图JS框架，仅支持UML类图。",
+  "sourceUpdatedText": "2022年6月29日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://gojs.net/latest/index.html"
+    }
+  ],
+  "featured": false
+}

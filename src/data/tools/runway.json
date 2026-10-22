@@ -1,0 +1,53 @@
+{
+  "id": "runway",
+  "name": "Runway",
+  "vendor": "Celestial Teapot Software",
+  "website": "http://celestialteapot.com/runway/",
+  "description": "A small native UML application for macOS.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2.0",
+  "releaseDate": "2021-10-28",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/runway.png",
+  "sourceDescriptionZh": "Mac原生UML工具，只有5M大小。",
+  "sourceUpdatedText": "2021年10月28日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://celestialteapot.com/runway/"
+    }
+  ],
+  "featured": false
+}

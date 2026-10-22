@@ -1,0 +1,53 @@
+{
+  "id": "umbrello",
+  "name": "Umbrello",
+  "vendor": "KDE",
+  "website": "https://apps.kde.org/umbrello/",
+  "description": "An open-source UML modeling application from the KDE ecosystem, primarily distributed for Linux.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Linux"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "26.08.1",
+  "releaseDate": "2026-09-10",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/umbrello.png",
+  "sourceDescriptionZh": "基于KDE的Linux平台UML建模工具。开源。暂停更新2年后，2025年底开始重新更新。",
+  "sourceUpdatedText": "2026年9月10日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://apps.kde.org/umbrello/"
+    }
+  ],
+  "featured": false
+}

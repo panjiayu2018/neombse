@@ -1,0 +1,53 @@
+{
+  "id": "apollon",
+  "name": "Apollon",
+  "vendor": "Technical University of Munich",
+  "website": "https://github.com/ls1intum/Apollon",
+  "description": "An open-source web UML editor maintained at TUM, offering thirteen diagram types and real-time collaboration.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "5.3.0",
+  "releaseDate": "2026-08-21",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/apollon.png",
+  "sourceDescriptionZh": "开源Web UML Modeling Editor，由TUM（慕尼黑工业大学）维护，支持类图、对象图、活动图、用例图、通信图、组件图、部署图等共13类图形，并支持实时协作。",
+  "sourceUpdatedText": "2026年8月21日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/ls1intum/Apollon"
+    }
+  ],
+  "featured": false
+}

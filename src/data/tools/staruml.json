@@ -1,0 +1,55 @@
+{
+  "id": "staruml",
+  "name": "StarUML",
+  "vendor": "MKLabs",
+  "website": "http://staruml.io",
+  "description": "A commercial cross-platform UML modeling application with an extension API, model validation, JavaScript code generation, and team-oriented capabilities.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "7.1.1",
+  "releaseDate": "2026-09-16",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/staruml.png",
+  "sourceDescriptionZh": "曾经是最流行的开源UML工具，多年沉寂后重新开发，现已收费。开放API，支持HTML5, CSS3, JavaScript和Node.js编写扩展。模型验证，JavaScript代码生成。支持团队开发。",
+  "sourceUpdatedText": "2026年9月16日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://staruml.io"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,55 @@
+{
+  "id": "umlet",
+  "name": "UMLet",
+  "vendor": "UMLet team",
+  "website": "https://www.umlet.com",
+  "description": "A lightweight UML diagram tool available as a standalone application and through Eclipse and VS Code integrations.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "15.1",
+  "releaseDate": "2023-03-20",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/umlet.png",
+  "sourceDescriptionZh": "轻量建模工具。和Eclipse、VSCode集成。",
+  "sourceUpdatedText": "2023年3月20日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.umlet.com"
+    }
+  ],
+  "featured": false
+}

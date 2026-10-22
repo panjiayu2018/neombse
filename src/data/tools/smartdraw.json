@@ -1,0 +1,53 @@
+{
+  "id": "smartdraw",
+  "name": "SmartDraw",
+  "vendor": "SmartDraw Software",
+  "website": "https://www.smartdraw.com/uml-diagram/uml-diagram-tool.htm",
+  "description": "A long-running general-purpose diagramming product that now provides browser-based collaborative UML drawing alongside flowcharts, network diagrams, floor plans, and other visual formats.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "Online UML edition",
+  "releaseDate": "2026-09-22",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/smartdraw.png",
+  "sourceDescriptionZh": "1994年推出的老牌通用绘图软件，早期是Microsoft Visio的主要竞争产品之一，支持流程图、组织结构图、网络图、UML、平面图等多种图形。现已转向以浏览器为主的在线协作绘图平台。",
+  "sourceUpdatedText": "2026年9月22日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.smartdraw.com/uml-diagram/uml-diagram-tool.htm"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "umodel",
+  "name": "UModel",
+  "vendor": "Altova",
+  "website": "http://www.altova.com/umodel.html",
+  "description": "A Windows UML tool focused on round-trip engineering, database modeling, IDE integration, and reverse engineering including sequence diagrams.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Yes",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2026 Release 2",
+  "releaseDate": "2026-05-27",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/umodel.png",
+  "sourceDescriptionZh": "强大双向工程能力。特别是序列图逆向工程。2026版本支持Firebird 5.0, PostgreSQL 18, SQL Server 2022、MySQL、MariaDB 11.8。和VS2026、Eclipse 4.39集成。",
+  "sourceUpdatedText": "2026年5月27日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://www.altova.com/umodel.html"
+    }
+  ],
+  "featured": false
+}

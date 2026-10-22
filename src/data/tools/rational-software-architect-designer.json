@@ -1,0 +1,55 @@
+{
+  "id": "rational-software-architect-designer",
+  "name": "Rational Software Architect Designer",
+  "vendor": "IBM",
+  "website": "https://www.ibm.com/support/pages/rational-software-architect-designer-110-0",
+  "description": "IBM’s enterprise software architecture modeling product, positioned separately from the real-time and systems-engineering focus of Rhapsody.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Java"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "11.0",
+  "releaseDate": "2026-04-28",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/rsa.png",
+  "sourceDescriptionZh": "IBM用于替代Rational Rose的产品。和Rhapsody的分工是：一个聚焦于企业系统，一个聚焦于实时系统和系统工程。",
+  "sourceUpdatedText": "2026年4月28日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.ibm.com/support/pages/rational-software-architect-designer-110-0"
+    }
+  ],
+  "featured": false
+}

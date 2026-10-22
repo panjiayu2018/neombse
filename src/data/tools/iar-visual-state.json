@@ -1,0 +1,53 @@
+{
+  "id": "iar-visual-state",
+  "name": "IAR Visual State",
+  "vendor": "IAR",
+  "website": "https://www.iar.com/products/iar-visual-state/",
+  "description": "A commercial UML-based embedded-systems design and testing tool that generates C or C++ code and documentation.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Code generator"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "11.3.1",
+  "releaseDate": "2025-11-27",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/visualstate.png",
+  "sourceDescriptionZh": "使用UML进行嵌入式系统开发。包括设计、测试。自动生成C/C++代码和全套文档。",
+  "sourceUpdatedText": "2025年11月27日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.iar.com/products/iar-visual-state/"
+    }
+  ],
+  "featured": false
+}

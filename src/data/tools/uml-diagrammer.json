@@ -1,0 +1,53 @@
+{
+  "id": "uml-diagrammer",
+  "name": "UML Diagrammer",
+  "vendor": "Pacestar Software",
+  "website": "http://www.pacestar.com/uml/",
+  "description": "A Windows diagramming application supporting UML together with traditional flowcharts and network diagrams.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "7.46",
+  "releaseDate": "2025-10-03",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/umldiagrammer.png",
+  "sourceDescriptionZh": "除支持UML外，还支持传统流程图、网络图等。",
+  "sourceUpdatedText": "2025年10月3日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://www.pacestar.com/uml/"
+    }
+  ],
+  "featured": false
+}

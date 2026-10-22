@@ -1,0 +1,54 @@
+{
+  "id": "mermaid",
+  "name": "Mermaid",
+  "vendor": "Mermaid Chart",
+  "website": "https://mermaid.ai/app/dashboard",
+  "description": "A JavaScript-based diagram generator that renders Markdown-like text into flowcharts, sequence diagrams, class diagrams, state diagrams, ER diagrams, and use-case diagrams.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Node.js",
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "12.0.0",
+  "releaseDate": "2026-09-10",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/mermaid.png",
+  "sourceDescriptionZh": "使用类似Markdown的语法描述图形，并由JavaScript渲染。支持流程图、序列图、类图、状态图、ER图。12.0开始支持用例图。",
+  "sourceUpdatedText": "2026年9月10日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://mermaid.ai/app/dashboard"
+    }
+  ],
+  "featured": false
+}

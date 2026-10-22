@@ -1,0 +1,55 @@
+{
+  "id": "catia-magic-cameo-sysml-v2",
+  "name": "CATIA Magic / Cameo SysML v2 Solution",
+  "vendor": "Dassault Systèmes",
+  "website": "https://www.3ds.com/products/catia/catia-magic",
+  "description": "A commercial SysML v2 solution in the CATIA Magic and Cameo product family, building on a long-established enterprise MBSE tool line.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2026x Refresh 1",
+  "releaseDate": "2026-06-26",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/catia.png",
+  "sourceDescriptionZh": "SysML v1时代的标杆品牌，目前大型MBSE厂商中SysML v2投入较深的产品。",
+  "sourceUpdatedText": "2026年6月26日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.3ds.com/products/catia/catia-magic"
+    }
+  ],
+  "featured": true
+}

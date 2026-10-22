@@ -1,0 +1,54 @@
+{
+  "id": "sysml-v2-studio",
+  "name": "SysML v2 Studio",
+  "vendor": "SysML v2 Studio project",
+  "website": "https://marketplace.visualstudio.com/items?itemName=engineer-fumi.sysml-v2-studio",
+  "description": "An open-source VS Code extension for SysML and KerML text with validation, navigation, editable graphical views, bidirectional text updates, and Claude/MCP integration.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Not specified"
+  ],
+  "accessModes": [
+    "Editor integration"
+  ],
+  "runtimes": [
+    "VS Code"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "0.9.5",
+  "releaseDate": "2026-07-10",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/sysmlv2studio.png",
+  "sourceDescriptionZh": "VS Code插件，支持.sysml和.kerml文件的语法高亮、语义检查、自动完成、跨文件导航，同时提供8种可编辑图形视图。图形中的移动、连接、改名、删除等操作可以反向写入SysML v2文本，并支持Claude/MCP接口。",
+  "sourceUpdatedText": "2026年7月10日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://marketplace.visualstudio.com/items?itemName=engineer-fumi.sysml-v2-studio"
+    }
+  ],
+  "featured": false
+}

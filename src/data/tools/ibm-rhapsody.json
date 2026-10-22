@@ -1,0 +1,55 @@
+{
+  "id": "ibm-rhapsody",
+  "name": "IBM Engineering Systems Design Rhapsody",
+  "vendor": "IBM",
+  "website": "https://www.ibm.com/developerworks/downloads/r/rhapsodydeveloper/",
+  "description": "A commercial model-driven development environment for real-time and embedded systems with UML, SysML, code generation, and architecture-framework support.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "10.0.3",
+  "releaseDate": "2026-03-20",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/rhapsody.png",
+  "sourceDescriptionZh": "聚焦于实时嵌入系统开发的模型驱动开发(Model-Driven Development，MDD)工具，能从状态图、活动图生成代码。支持SysML。支持DoDAF框架。支持最新版本的IDE。1996由以色列公司I-Logix Inc.开发，后来被Telelogic收购，最终归入IBM Rational旗下。从9.0开始，不再使用Rational名称。",
+  "sourceUpdatedText": "2026年3月20日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.ibm.com/developerworks/downloads/r/rhapsodydeveloper/"
+    }
+  ],
+  "featured": false
+}

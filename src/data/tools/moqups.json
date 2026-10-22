@@ -1,0 +1,53 @@
+{
+  "id": "moqups",
+  "name": "Moqups",
+  "vendor": "Moqups",
+  "website": "https://moqups.com",
+  "description": "A browser-based collaborative drawing and prototyping tool that includes a UML stencil library.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application"
+  ],
+  "runtimes": [
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": null,
+  "releaseDate": "2025-07-01",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/moqups.png",
+  "sourceDescriptionZh": "在线绘图工具，支持UML。2025年7月更换了新的UML stencil。",
+  "sourceUpdatedText": "2025年7月1日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://moqups.com"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,55 @@
+{
+  "id": "clang-uml",
+  "name": "clang-uml",
+  "vendor": "clang-uml project",
+  "website": "https://clang-uml.github.io/",
+  "description": "An open-source reverse-engineering tool that generates class, sequence, package, and other diagrams from C and C++ code in PlantUML, Mermaid, or JSON form.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Code generator"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Yes",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "0.6.3",
+  "releaseDate": "2026-07-06",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/clang.png",
+  "sourceDescriptionZh": "C/C++逆向生成UML类图、序列图、包图等，以PlantUML、Mermaid和JSON格式呈现。",
+  "sourceUpdatedText": "2026年7月6日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://clang-uml.github.io/"
+    }
+  ],
+  "featured": false
+}

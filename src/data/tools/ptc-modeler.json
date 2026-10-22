@@ -1,0 +1,55 @@
+{
+  "id": "ptc-modeler",
+  "name": "PTC Modeler",
+  "vendor": "PTC",
+  "website": "https://www.ptc.com/en/products/ptc-modeler",
+  "description": "An enterprise modeling product, formerly Windchill Modeler, with support for UML, SysML v1, and SysML v2.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "10.3",
+  "releaseDate": "2026-06-30",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/ptcmodeler.png",
+  "sourceDescriptionZh": "之前的Windchill Modeler，老牌企业级 建模工具，支持UML、SysML、SysML v2。",
+  "sourceUpdatedText": "2026年6月30日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.ptc.com/en/products/ptc-modeler"
+    }
+  ],
+  "featured": false
+}

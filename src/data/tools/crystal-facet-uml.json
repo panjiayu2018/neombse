@@ -1,0 +1,53 @@
+{
+  "id": "crystal-facet-uml",
+  "name": "crystal-facet-uml",
+  "vendor": "crystal-facet-uml project",
+  "website": "https://sourceforge.net/projects/crystal-facet-uml/",
+  "description": "An open-source Windows UML tool that keeps model elements, names, hierarchy, and relationships consistent across multiple diagrams.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "1.69.0",
+  "releaseDate": "2026-03-08",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/crystal.png",
+  "sourceDescriptionZh": "2016年开始开发，强调多个图共享同一套模型元素，使元素名称、层次结构以及关系在不同视图之间保持一致。",
+  "sourceUpdatedText": "2026年3月8日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://sourceforge.net/projects/crystal-facet-uml/"
+    }
+  ],
+  "featured": false
+}

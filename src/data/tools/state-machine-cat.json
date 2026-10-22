@@ -1,0 +1,55 @@
+{
+  "id": "state-machine-cat",
+  "name": "State Machine cat",
+  "vendor": "State Machine cat project",
+  "website": "https://www.npmjs.com/package/state-machine-cat",
+  "description": "A text-based state-machine diagram generator with a compact DSL and support for compound states, entry and exit actions, transitions, and SCXML import and export.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Browser"
+  ],
+  "accessModes": [
+    "Web application",
+    "Command line"
+  ],
+  "runtimes": [
+    "Node.js",
+    "Browser"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "15.0.9",
+  "releaseDate": "2026-09-16",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/statecat.png",
+  "sourceDescriptionZh": "使用简洁的DSL描述状态、迁移、事件、条件和动作，并自动生成状态机图。复合状态、entry/exit 动作以及内部和外部迁移，同时支持SCXML的导入和导出。",
+  "sourceUpdatedText": "2026年9月16日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.npmjs.com/package/state-machine-cat"
+    }
+  ],
+  "featured": false
+}

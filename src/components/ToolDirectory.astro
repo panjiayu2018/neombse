@@ -1,0 +1,149 @@
+---
+import type { Tool } from '../types';
+import ToolCard from './ToolCard.astro';
+
+interface Props { tools: Tool[]; }
+const { tools } = Astro.props;
+const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
+const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
+const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
+const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
+---
+
+<section class="directory" data-tool-directory>
+  <div class="filter-panel panel">
+    <div class="search-row">
+      <label for="tool-search">Search the directory</label>
+      <input id="tool-search" type="search" placeholder="Tool, vendor, or capability…" data-filter-search />
+    </div>
+    <div class="filter-grid">
+      <label>Platform
+        <select data-filter="platform">
+          <option value="">All platforms</option>
+          {platforms.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+        </select>
+      </label>
+      <label>Standard
+        <select data-filter="standard">
+          <option value="">All standards</option>
+          {standards.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+        </select>
+      </label>
+      <label>License
+        <select data-filter="license">
+          <option value="">All licenses</option>
+          {licenses.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+        </select>
+      </label>
+      <label>Interface
+        <select data-filter="mode">
+          <option value="">All interfaces</option>
+          {modes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+        </select>
+      </label>
+    </div>
+    <div class="filter-footer">
+      <p aria-live="polite"><strong data-result-count>{tools.length}</strong> tools shown</p>
+      <button type="button" data-clear-filters>Clear filters</button>
+    </div>
+  </div>
+
+  <div class="tool-grid" data-results>
+    {tools.map((tool) => (
+      <div
+        data-tool
+        data-search={`${tool.name} ${tool.vendor} ${tool.description} ${tool.toolTypes.join(' ')}`.toLowerCase()}
+        data-platform={tool.platforms.join('|').toLowerCase()}
+        data-standard={tool.standards.join('|').toLowerCase()}
+        data-license={tool.licenseTypes.join('|').toLowerCase()}
+        data-mode={tool.modelingModes.join('|').toLowerCase()}
+      >
+        <ToolCard tool={tool} />
+      </div>
+    ))}
+  </div>
+
+  <div class="empty-state" data-empty-state hidden>
+    <span aria-hidden="true">∅</span>
+    <h2>No tools match those filters.</h2>
+    <p>Try broadening the platform, standard, license, or interface selection.</p>
+    <button type="button" data-clear-filters>Reset the directory</button>
+  </div>
+</section>
+
+<script>
+  const directory = document.querySelector('[data-tool-directory]');
+  if (directory instanceof HTMLElement) {
+    const search = directory.querySelector('[data-filter-search]');
+    const selects = [...directory.querySelectorAll('[data-filter]')];
+    const tools = [...directory.querySelectorAll('[data-tool]')];
+    const count = directory.querySelector('[data-result-count]');
+    const empty = directory.querySelector('[data-empty-state]');
+
+    const applyFilters = () => {
+      const query = search instanceof HTMLInputElement ? search.value.trim().toLowerCase() : '';
+      const values = Object.fromEntries(selects.map((select) => [select.getAttribute('data-filter'), select instanceof HTMLSelectElement ? select.value : '']));
+      let visible = 0;
+
+      tools.forEach((tool) => {
+        if (!(tool instanceof HTMLElement)) return;
+        const matches = (!query || tool.dataset.search?.includes(query))
+          && (!values.platform || tool.dataset.platform?.split('|').includes(values.platform))
+          && (!values.standard || tool.dataset.standard?.split('|').includes(values.standard))
+          && (!values.license || tool.dataset.license?.split('|').includes(values.license))
+          && (!values.mode || tool.dataset.mode?.split('|').includes(values.mode));
+        tool.hidden = !matches;
+        if (matches) visible += 1;
+      });
+
+      if (count) count.textContent = String(visible);
+      if (empty instanceof HTMLElement) empty.hidden = visible !== 0;
+    };
+
+    const clearFilters = () => {
+      if (search instanceof HTMLInputElement) search.value = '';
+      selects.forEach((select) => { if (select instanceof HTMLSelectElement) select.value = ''; });
+      applyFilters();
+      if (search instanceof HTMLInputElement) search.focus();
+    };
+
+    search?.addEventListener('input', applyFilters);
+    selects.forEach((select) => select.addEventListener('change', applyFilters));
+    directory.querySelectorAll('[data-clear-filters]').forEach((button) => button.addEventListener('click', clearFilters));
+
+    const params = new URLSearchParams(window.location.search);
+    const presetFilters = {
+      platform: params.get('platform'),
+      standard: params.get('standard'),
+      license: params.get('license'),
+      mode: params.get('mode'),
+    };
+    Object.entries(presetFilters).forEach(([filter, value]) => {
+      const select = directory.querySelector(`[data-filter="${filter}"]`);
+      if (value && select instanceof HTMLSelectElement) {
+        select.value = value.toLowerCase().replaceAll('-', ' ');
+      }
+    });
+    applyFilters();
+  }
+</script>
+
+<style>
+  .directory { display: grid; gap: 1.5rem; }
+  .filter-panel { padding: 1.2rem; }
+  .search-row label, .filter-grid label { display: grid; gap: .42rem; color: var(--ink-soft); font-size: .74rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+  input, select { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 11px; background: var(--white); color: var(--ink); }
+  input { padding: .75rem 1rem; font-size: 1rem; }
+  select { padding: .65rem .75rem; }
+  .filter-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: .8rem; }
+  .filter-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); }
+  .filter-footer p { margin: 0; color: var(--ink-soft); font-size: .84rem; }
+  button { border: 0; background: transparent; color: var(--teal-dark); cursor: pointer; font-weight: 800; }
+  [data-tool][hidden] { display: none; }
+  .empty-state { padding: 4rem 1rem; border: 1px dashed var(--line); border-radius: var(--radius); text-align: center; }
+  .empty-state span { font-family: var(--font-mono); font-size: 3rem; }
+  .empty-state p { color: var(--ink-soft); }
+  .empty-state button { margin-top: .5rem; padding: .7rem 1rem; border: 1px solid var(--teal); border-radius: 999px; }
+  @media (max-width: 800px) { .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .filter-grid { grid-template-columns: 1fr; } }
+</style>

@@ -1,0 +1,60 @@
+{
+  "id": "sysml-v2-pilot",
+  "name": "SysML v2 Pilot Implementation",
+  "vendor": "Systems Modeling community",
+  "website": "https://github.com/Systems-Modeling/SysML-v2-Release",
+  "description": "The official SysML v2 reference and pilot implementation, including textual editing, parsing and validation, a Jupyter kernel, visualization, standard libraries, and API support.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux",
+    "macOS"
+  ],
+  "accessModes": [
+    "Editor integration",
+    "Notebook",
+    "Command line",
+    "Desktop"
+  ],
+  "runtimes": [
+    "Eclipse",
+    "Jupyter"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Yes"
+  },
+  "latestVersion": "2026-08",
+  "releaseDate": "2026-09-12",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/pilot.png",
+  "sourceDescriptionZh": "OMG维护的SysML v2官方参考实现/试验实现。它长期伴随SysML v2规范开发，是很多商业和开源工具实现SysML v2时的重要参考。包括Eclipse文本编辑器、SysML/KerML解析与验证、Jupyter Kernel、模型可视化、标准模型库以及Systems Modeling API支持。",
+  "sourceUpdatedText": "2026年9月12日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://github.com/Systems-Modeling/SysML-v2-Release"
+    }
+  ],
+  "featured": false
+}

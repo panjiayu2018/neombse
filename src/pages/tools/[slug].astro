@@ -1,0 +1,140 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { formatDate, tools } from '../../lib/tools';
+import type { Tool } from '../../types';
+
+export function getStaticPaths() {
+  return tools.map((tool) => ({ params: { slug: tool.id }, props: { tool } }));
+}
+
+interface Props { tool: Tool; }
+const { tool } = Astro.props;
+const featureLabels: Record<keyof Tool['features'], string> = {
+  xmiImport: 'XMI import',
+  xmiExport: 'XMI export',
+  collaboration: 'Team collaboration',
+  codeGeneration: 'Code generation',
+  reverseEngineering: 'Reverse engineering',
+  simulation: 'Model simulation',
+  requirementsManagement: 'Requirements management',
+  sysmlV2Api: 'SysML v2 API',
+};
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: tool.name,
+  applicationCategory: 'DeveloperApplication',
+  operatingSystem: tool.platforms.join(', '),
+  description: tool.description,
+  url: tool.website,
+};
+---
+
+<MainLayout title={`${tool.name}: platforms, standards, and capabilities — NeoMBSE`} description={tool.description} canonicalPath={`/tools/${tool.id}/`}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <article>
+    <header class="tool-hero">
+      <div class="container">
+        <a class="back-link" href="/tools/">← Back to all tools</a>
+        <div class="tool-heading">
+          <div class="tool-title-block">
+            {tool.image && <img class="tool-logo" src={tool.image} alt={`${tool.name} interface or logo`} />}
+            <div><p class="eyebrow">{tool.vendor}</p><h1>{tool.name}</h1><p class="lead">{tool.description}</p></div>
+          </div>
+          <a class="button button--accent" href={tool.website} target="_blank" rel="noopener noreferrer">Visit official site ↗</a>
+        </div>
+        <div class="tag-row">
+          {tool.platforms.map((item) => <span class="tag">{item}</span>)}
+          {tool.standards.map((item) => <span class="tag">{item}</span>)}
+          {tool.licenseTypes.map((item) => <span class="tag">{item}</span>)}
+        </div>
+      </div>
+    </header>
+
+    <div class="container detail-grid">
+      <main>
+        <section>
+          <p class="eyebrow">Editorial assessment</p>
+          <h2>What to know</h2>
+          <p class="lead">{tool.editorialNote}</p>
+        </section>
+        <section>
+          <p class="eyebrow">Evidence matrix</p>
+          <h2>Verified capabilities</h2>
+          <p>Unknown means the capability has not yet been verified; it does not mean the product lacks it.</p>
+          <div class="capability-list">
+            {Object.entries(tool.features).map(([key, value]) => (
+              <div><span>{featureLabels[key as keyof Tool['features']]}</span><strong class:list={[`state--${value.toLowerCase()}`]}>{value}</strong></div>
+            ))}
+          </div>
+        </section>
+        <section>
+          <p class="eyebrow">Evidence sources</p>
+          <h2>Sources reviewed</h2>
+          <ol class="source-list">
+            {tool.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>)}
+          </ol>
+        </section>
+        {tool.sourceDescriptionZh && (
+          <section>
+            <p class="eyebrow">Imported source note</p>
+            <h2>Original Chinese description</h2>
+            <p class="source-context">Preserved from {tool.sourceCollection}. Source update label: {tool.sourceUpdatedText || 'not recorded'}.</p>
+            <div class="source-zh" lang="zh-CN">{tool.sourceDescriptionZh.split('\n\n').map((paragraph) => <p>{paragraph}</p>)}</div>
+          </section>
+        )}
+      </main>
+
+      <aside class="facts panel">
+        <h2>Tool profile</h2>
+        <dl>
+          <div><dt>Vendor</dt><dd>{tool.vendor}</dd></div>
+          <div><dt>Platforms</dt><dd>{tool.platforms.join(', ')}</dd></div>
+          <div><dt>Access</dt><dd>{tool.accessModes.join(', ')}</dd></div>
+          <div><dt>Runtime / host</dt><dd>{tool.runtimes.join(', ')}</dd></div>
+          <div><dt>Standards</dt><dd>{tool.standards.join(', ')}</dd></div>
+          <div><dt>Tool type</dt><dd>{tool.toolTypes.join(', ')}</dd></div>
+          <div><dt>Interface</dt><dd>{tool.modelingModes.join(', ')}</dd></div>
+          <div><dt>License</dt><dd>{tool.licenseTypes.join(', ')}</dd></div>
+          <div><dt>Latest version</dt><dd>{tool.latestVersion ?? 'Not yet verified'}</dd></div>
+          <div><dt>Release date</dt><dd>{formatDate(tool.releaseDate)}</dd></div>
+          <div><dt>Last checked</dt><dd>{formatDate(tool.lastChecked)}</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </article>
+</MainLayout>
+
+<style>
+  .tool-hero { padding: 3rem 0 4rem; border-bottom: 1px solid var(--line); }
+  .back-link { display: inline-block; margin-bottom: 3rem; color: var(--teal-dark); font-weight: 800; text-decoration: none; }
+  .tool-heading { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2rem; }
+  .tool-title-block { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 1.2rem; }
+  .tool-logo { width: 120px; height: 90px; padding: .5rem; border: 1px solid var(--line); border-radius: 16px; background: white; object-fit: contain; }
+  .tool-heading h1 { font-size: clamp(2.7rem, 7vw, 5rem); }
+  .tool-heading .lead { max-width: 760px; margin-top: 1rem; }
+  .tool-hero .tag-row { margin-top: 1.5rem; }
+  .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; align-items: start; gap: clamp(2rem, 6vw, 5rem); padding-block: 5rem 7rem; }
+  main section + section { margin-top: 5rem; }
+  main h2, .facts h2 { margin-bottom: 1rem; font-size: 2rem; }
+  main > section > p:not(.eyebrow) { color: var(--ink-soft); }
+  .capability-list { margin-top: 1.4rem; border-top: 1px solid var(--line); }
+  .capability-list div { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .capability-list strong { min-width: 86px; padding: .25rem .5rem; border-radius: 999px; font-family: var(--font-mono); font-size: .72rem; text-align: center; }
+  .state--yes { background: #d6eadf; color: var(--green); }
+  .state--no { background: #f2d8d2; color: var(--red); }
+  .state--unknown { background: var(--paper-deep); color: var(--ink-soft); }
+  .source-list { padding-left: 1.2rem; }
+  .source-list li + li { margin-top: .5rem; }
+  .source-list a { color: var(--teal-dark); font-weight: 750; }
+  .source-context { font-size: .9rem; }
+  .source-zh { padding: 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,253,248,.76); }
+  .source-zh p:last-child { margin-bottom: 0; }
+  .facts { position: sticky; top: 1.5rem; padding: 1.25rem; }
+  dl { margin: 0; }
+  dl div { padding: .8rem 0; border-top: 1px solid var(--line); }
+  dt { color: var(--ink-soft); font-family: var(--font-mono); font-size: .68rem; font-weight: 700; text-transform: uppercase; }
+  dd { margin: .18rem 0 0; font-weight: 700; }
+  @media (max-width: 880px) { .tool-heading, .detail-grid { grid-template-columns: 1fr; } .tool-heading .button { justify-self: start; } .facts { position: static; } }
+  @media (max-width: 560px) { .tool-title-block { grid-template-columns: 1fr; } .tool-logo { width: 100px; height: 76px; } }
+</style>

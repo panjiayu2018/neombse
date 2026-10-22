@@ -1,0 +1,54 @@
+{
+  "id": "trufun-modeling-platform",
+  "name": "Trufun Modeling Platform",
+  "vendor": "Trufun",
+  "website": "http://www.trufun.net/index.html",
+  "description": "A China-developed modeling platform with stated support for UML 2.5 and SysML 1.6.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2024",
+  "releaseDate": "2024-03-01",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/trufun.png",
+  "sourceDescriptionZh": "国产UML/SysML建模工具，全面支持SysML1.6和UML2.5。",
+  "sourceUpdatedText": "2024年3月1日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "http://www.trufun.net/index.html"
+    }
+  ],
+  "featured": false
+}

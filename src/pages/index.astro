@@ -1,0 +1,129 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ToolCard from '../components/ToolCard.astro';
+import { featuredTools, tools } from '../lib/tools';
+
+const standardCount = new Set(tools.flatMap((tool) => tool.standards)).size;
+const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
+---
+
+<MainLayout>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent modeling tool directory</p>
+        <h1>Choose tools by <em>evidence,</em> not noise.</h1>
+        <p class="lead">Explore UML, SysML v1, and SysML v2 tools by platform, license, modeling interface, and capabilities—with a clear line between verified facts and unknowns.</p>
+        <div class="hero-actions">
+          <a class="button button--accent" href="/tools/">Explore the directory</a>
+          <a class="button button--light" href="/methodology/">How verification works</a>
+        </div>
+      </div>
+      <div class="hero-map panel" aria-label="Directory summary">
+        <div class="map-header"><span>Directory / 001</span><span>Imported catalog</span></div>
+        <div class="map-orbit" aria-hidden="true">
+          <span class="node node--a">UML</span>
+          <span class="node node--b">SysML v1</span>
+          <span class="node node--c">SysML v2</span>
+          <span class="map-core">N</span>
+        </div>
+        <div class="map-stats">
+          <div><strong>{tools.length}</strong><span>tools structured</span></div>
+          <div><strong>{platformCount}</strong><span>platforms</span></div>
+          <div><strong>{standardCount}</strong><span>standards</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="container hero-note">
+      <span>01</span>
+      <p><strong>Catalog status:</strong> {tools.length} source records have been structured and translated; detailed capability verification remains an ongoing editorial process.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">Start with the decision</p><h2>Find the right modeling environment.</h2></div>
+        <p class="lead">A directory designed around actual selection criteria, not popularity rankings.</p>
+      </div>
+      <div class="path-grid">
+        <a href="/tools/?standard=sysml-v2">
+          <span>01 / Standard</span><strong>SysML v2 tools</strong><p>Track a fast-changing ecosystem with explicit evidence states.</p>
+        </a>
+        <a href="/tools/?license=open-source">
+          <span>02 / License</span><strong>Open-source tools</strong><p>Separate open-source software from paid hosted services.</p>
+        </a>
+        <a href="/tools/?platform=linux">
+          <span>03 / Platform</span><strong>Linux support</strong><p>Filter genuine platform support from runtime or access method.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured-section">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">From the catalog</p><h2>Representative tools.</h2></div>
+        <div class="heading-action"><p>Browse the imported UML and SysML collection, with source notes preserved for editorial review.</p><a href="/tools/">View all {tools.length} tools →</a></div>
+      </div>
+      <div class="tool-grid">{featuredTools.map((tool) => <ToolCard tool={tool} />)}</div>
+    </div>
+  </section>
+
+  <section class="section method-strip">
+    <div class="container method-grid">
+      <div><p class="eyebrow">Verified capabilities</p><h2>“Unknown” is a useful answer.</h2></div>
+      <div>
+        <p class="lead">A missing claim is not proof that a feature is absent. NeoMBSE records Yes, No, or Unknown—and attaches evidence when a capability is confirmed.</p>
+        <a class="button button--accent" href="/methodology/">Read the methodology</a>
+      </div>
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .hero { padding: clamp(4rem, 9vw, 8rem) 0 2rem; overflow: hidden; }
+  .hero-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(320px, .75fr); align-items: center; gap: clamp(2rem, 6vw, 6rem); }
+  .hero h1 { max-width: 820px; }
+  .hero h1 em { color: var(--teal); font-style: normal; }
+  .hero-copy .lead { max-width: 720px; margin: 1.7rem 0 0; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+  .hero-map { padding: 1.1rem; transform: rotate(1.5deg); }
+  .map-header { display: flex; justify-content: space-between; padding-bottom: .8rem; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-family: var(--font-mono); font-size: .65rem; text-transform: uppercase; }
+  .map-orbit { position: relative; display: grid; height: 280px; place-items: center; margin: 1rem 0; border: 1px dashed var(--line); border-radius: 50%; }
+  .map-orbit::before { position: absolute; width: 65%; height: 65%; border: 1px dashed var(--line); border-radius: 50%; content: ""; }
+  .map-core { z-index: 1; display: grid; width: 70px; height: 70px; place-items: center; border-radius: 20px; background: var(--ink); color: var(--orange); font-size: 2rem; font-weight: 900; }
+  .node { position: absolute; z-index: 2; padding: .35rem .55rem; border: 1px solid var(--ink); border-radius: 7px; background: var(--paper); font-family: var(--font-mono); font-size: .7rem; font-weight: 700; }
+  .node--a { top: 12%; left: 8%; }
+  .node--b { right: 4%; bottom: 28%; }
+  .node--c { bottom: 7%; left: 24%; background: var(--orange-soft); }
+  .map-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; }
+  .map-stats div { padding: .7rem; border-radius: 10px; background: var(--paper); }
+  .map-stats strong, .map-stats span { display: block; }
+  .map-stats strong { font-size: 1.45rem; }
+  .map-stats span { color: var(--ink-soft); font-size: .65rem; }
+  .hero-note { display: grid; grid-template-columns: auto 1fr; gap: 1rem; margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .hero-note span { color: var(--orange); font-family: var(--font-mono); font-weight: 800; }
+  .hero-note p { margin: 0; color: var(--ink-soft); }
+  .path-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+  .path-grid a { display: flex; min-height: 230px; flex-direction: column; padding: 1.25rem; text-decoration: none; transition: background 160ms ease; }
+  .path-grid a + a { border-left: 1px solid var(--ink); }
+  .path-grid a:hover { background: var(--orange-soft); }
+  .path-grid span { color: var(--teal); font-family: var(--font-mono); font-size: .7rem; }
+  .path-grid strong { margin-top: auto; font-size: 1.45rem; }
+  .path-grid p { margin: .55rem 0 0; color: var(--ink-soft); }
+  .featured-section { background: rgba(255,253,248,.52); }
+  .heading-action { color: var(--ink-soft); }
+  .heading-action a { color: var(--teal-dark); font-weight: 800; }
+  .method-strip { background: var(--teal-dark); color: var(--paper); }
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .method-strip .eyebrow, .method-strip .lead { color: var(--paper); }
+  .method-strip .button { margin-top: 1rem; }
+  @media (max-width: 860px) {
+    .hero-grid, .method-grid { grid-template-columns: 1fr; }
+    .hero-map { max-width: 560px; transform: none; }
+    .path-grid { grid-template-columns: 1fr; }
+    .path-grid a { min-height: 175px; }
+    .path-grid a + a { border-top: 1px solid var(--ink); border-left: 0; }
+  }
+</style>

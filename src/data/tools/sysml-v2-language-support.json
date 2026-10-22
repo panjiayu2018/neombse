@@ -1,0 +1,54 @@
+{
+  "id": "sysml-v2-language-support",
+  "name": "SysML v2.0 Language Support",
+  "vendor": "Jamie Duncan",
+  "website": "https://marketplace.visualstudio.com/items?itemName=JamieD.sysml-v2-support",
+  "description": "An open-source VS Code extension with language-server support, model and feature explorers, requirements tooling, traceability, and multiple SysML v2 views.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Not specified"
+  ],
+  "accessModes": [
+    "Editor integration"
+  ],
+  "runtimes": [
+    "VS Code"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "0.53.0",
+  "releaseDate": "2026-10-05",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/sysmlv2support.png",
+  "sourceDescriptionZh": "具有完整LSP、标准库、Model Explorer、Feature Explorer、Feature Inspector、Requirements Workbench、模型元素/关系编辑和 Traceability Matrix。支持General、Interconnection、Action Flow、State Transition、Sequence、Case等视图。",
+  "sourceUpdatedText": "2026年10月5日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://marketplace.visualstudio.com/items?itemName=JamieD.sysml-v2-support"
+    }
+  ],
+  "featured": false
+}

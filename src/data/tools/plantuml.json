@@ -1,0 +1,53 @@
+{
+  "id": "plantuml",
+  "name": "PlantUML",
+  "vendor": "PlantUML project",
+  "website": "https://plantuml.com/",
+  "description": "An open-source text-to-diagram generator that produces UML-style diagrams and integrates with many editors, documentation systems, and build workflows.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Open Source"
+  ],
+  "modelingModes": [
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "1.2026.8",
+  "releaseDate": "2026-09-05",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/plantuml.png",
+  "sourceDescriptionZh": "将文本转换为UML图形，可以在许多其他工具中使用。开源。",
+  "sourceUpdatedText": "2026年9月5日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://plantuml.com/"
+    }
+  ],
+  "featured": true
+}

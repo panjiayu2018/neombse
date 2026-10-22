@@ -1,0 +1,55 @@
+{
+  "id": "asyst-rendering-modeler",
+  "name": "ASysT Rendering — Modeler",
+  "vendor": "ASysT project",
+  "website": "https://marketplace.visualstudio.com/items?itemName=juce.asyst-vscode",
+  "description": "An early-stage SysML v2 modeling tool available as a VS Code extension with standalone Windows and Linux editions.",
+  "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "accessModes": [
+    "Editor integration",
+    "Desktop"
+  ],
+  "runtimes": [
+    "VS Code"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Freeware"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "Pre-alpha 0.1.49",
+  "releaseDate": "2026-08-20",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/asys.png",
+  "sourceDescriptionZh": "新出现的工具，目前仍为Pre-alpha。",
+  "sourceUpdatedText": "2026年8月20日",
+  "sourceCollection": "UMLChina SysML v2 tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://marketplace.visualstudio.com/items?itemName=juce.asyst-vscode"
+    }
+  ],
+  "featured": false
+}

@@ -1,0 +1,53 @@
+{
+  "id": "itemis-create",
+  "name": "itemis CREATE",
+  "vendor": "itemis",
+  "website": "https://www.itemis.com/en/products/itemis-create/",
+  "description": "A commercial state-machine modeling and multi-language code-generation tool formerly known as YAKINDU Statechart Tools.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Java"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Code generator"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "5.6.3",
+  "releaseDate": "2026-07-29",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/itemis.png",
+  "sourceDescriptionZh": "原名YAKINDU Statechart Tools。状态机建模工具，支持各种语言的代码生成，提供EA插件。",
+  "sourceUpdatedText": "2026年7月29日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.itemis.com/en/products/itemis-create/"
+    }
+  ],
+  "featured": false
+}

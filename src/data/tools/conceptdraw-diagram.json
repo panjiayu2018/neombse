@@ -1,0 +1,54 @@
+{
+  "id": "conceptdraw-diagram",
+  "name": "ConceptDraw DIAGRAM",
+  "vendor": "CS Odessa",
+  "website": "https://www.conceptdraw.com/products/drawing-tool",
+  "description": "A long-running general-purpose diagramming application for macOS and Windows with UML libraries and Visio compatibility.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows",
+    "macOS"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "18",
+  "releaseDate": "2024-10-08",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/conceptdraw.png",
+  "sourceDescriptionZh": "以前的ConceptDraw Pro，1999年创建的老牌绘图工具，支持UML，兼容Visio。",
+  "sourceUpdatedText": "2024年10月8日，之前的更新漏报，现在补上",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.conceptdraw.com/products/drawing-tool"
+    }
+  ],
+  "featured": false
+}

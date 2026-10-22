@@ -1,0 +1,20 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { tools } from '../../lib/tools';
+const matching = tools.filter((tool) => tool.licenseTypes.includes('Open Source') && tool.standards.includes('UML'));
+---
+
+<MainLayout title="Open-Source UML Tools — NeoMBSE" description="Explore open-source UML tools while distinguishing the software license, hosted service, tool type, and modeling interface.">
+  <article class="section container">
+    <div class="section-heading"><div><p class="eyebrow">License guide</p><h1>Open-source UML tools.</h1></div><p class="lead">Compare editors and diagram generators without treating every “free” offer as the same licensing model.</p></div>
+    <div class="callout"><strong>Catalog note:</strong> license classifications reflect the imported source list and should be rechecked when a product changes its licensing model.</div>
+    <div class="tool-grid">{matching.map((tool) => <ToolCard tool={tool} />)}</div>
+    <div class="guide-copy prose narrow">
+      <h2>Open source is only one selection dimension</h2>
+      <p>The application license, hosted service, plugin ecosystem, and enterprise extensions may use different commercial models. NeoMBSE records these separately wherever the evidence allows.</p>
+    </div>
+  </article>
+</MainLayout>
+
+<style>.guide-copy { margin: 5rem 0 0; }</style>

@@ -1,0 +1,22 @@
+{
+  "name": "neombse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "import:legacy": "node scripts/import-legacy-tools.mjs"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.2",
+    "typescript": "^5.9.3"
+  }
+}

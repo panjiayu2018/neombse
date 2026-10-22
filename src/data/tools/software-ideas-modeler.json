@@ -1,0 +1,54 @@
+{
+  "id": "software-ideas-modeler",
+  "name": "Software Ideas Modeler",
+  "vendor": "Dusan Rodina",
+  "website": "https://www.softwareideas.net/en/download",
+  "description": "A lightweight commercial modeling application for Windows with support for UML, BPMN, and SysML.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Windows"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Native application"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Commercial"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "15.55",
+  "releaseDate": "2026-08-13",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/softwareideas.png",
+  "sourceDescriptionZh": "轻量级建模工具，支持UML、BPMN、SysML。",
+  "sourceUpdatedText": "2026年8月13日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.softwareideas.net/en/download"
+    }
+  ],
+  "featured": false
+}

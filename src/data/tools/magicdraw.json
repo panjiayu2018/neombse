@@ -1,0 +1,54 @@
+{
+  "id": "magicdraw",
+  "name": "MagicDraw",
+  "vendor": "Dassault Systèmes",
+  "website": "https://www.3ds.com/products-services/catia/products/no-magic/magicdraw/",
+  "description": "A commercial team modeling environment for UML, SysML, BPMN, and UPDM that is now part of Dassault Systèmes.",
+  "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
+  "platforms": [
+    "Cross-platform"
+  ],
+  "accessModes": [
+    "Desktop"
+  ],
+  "runtimes": [
+    "Java"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "licenseTypes": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "latestVersion": "2022",
+  "releaseDate": "2022-07-01",
+  "lastChecked": "2026-10-22",
+  "image": "/images/tools/magicdraw.png",
+  "sourceDescriptionZh": "UML、SysML、BPMN和UPDM团队协作建模工具，已被Dassault Systèmes收购。",
+  "sourceUpdatedText": "2022年7月1日",
+  "sourceCollection": "UMLChina UML tools",
+  "sources": [
+    {
+      "label": "Product or project page",
+      "url": "https://www.3ds.com/products-services/catia/products/no-magic/magicdraw/"
+    }
+  ],
+  "featured": false
+}
