@@ -8,6 +8,19 @@ const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
 const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
 const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
 const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
+const capabilityLabels: Record<keyof Tool['features'], string> = {
+  xmiImport: 'XMI import',
+  xmiExport: 'XMI export',
+  collaboration: 'Team collaboration',
+  codeGeneration: 'Code generation',
+  reverseEngineering: 'Reverse engineering',
+  simulation: 'Model simulation',
+  requirementsManagement: 'Requirements management',
+  sysmlV2Api: 'SysML v2 API',
+};
+const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
+  tools.some((tool) => tool.features[key as keyof Tool['features']] === 'Yes')
+);
 ---
 
 <section class="directory" data-tool-directory>
@@ -41,6 +54,12 @@ const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
           {modes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
         </select>
       </label>
+      <label>Capability
+        <select data-filter="capability">
+          <option value="">All capabilities</option>
+          {capabilities.map(([value, label]) => <option value={value.toLowerCase()}>{label}</option>)}
+        </select>
+      </label>
     </div>
     <div class="filter-footer">
       <p aria-live="polite"><strong data-result-count>{tools.length}</strong> tools shown</p>
@@ -57,6 +76,7 @@ const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
         data-standard={tool.standards.join('|').toLowerCase()}
         data-license={tool.licenseTypes.join('|').toLowerCase()}
         data-mode={tool.modelingModes.join('|').toLowerCase()}
+        data-capability={Object.entries(tool.features).filter(([, value]) => value === 'Yes').map(([key]) => key.toLowerCase()).join('|')}
       >
         <ToolCard tool={tool} />
       </div>
@@ -91,7 +111,8 @@ const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
           && (!values.platform || tool.dataset.platform?.split('|').includes(values.platform))
           && (!values.standard || tool.dataset.standard?.split('|').includes(values.standard))
           && (!values.license || tool.dataset.license?.split('|').includes(values.license))
-          && (!values.mode || tool.dataset.mode?.split('|').includes(values.mode));
+          && (!values.mode || tool.dataset.mode?.split('|').includes(values.mode))
+          && (!values.capability || tool.dataset.capability?.split('|').includes(values.capability));
         tool.hidden = !matches;
         if (matches) visible += 1;
       });
@@ -112,11 +133,13 @@ const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
     directory.querySelectorAll('[data-clear-filters]').forEach((button) => button.addEventListener('click', clearFilters));
 
     const params = new URLSearchParams(window.location.search);
+    if (search instanceof HTMLInputElement) search.value = params.get('q') ?? '';
     const presetFilters = {
       platform: params.get('platform'),
       standard: params.get('standard'),
       license: params.get('license'),
       mode: params.get('mode'),
+      capability: params.get('capability'),
     };
     Object.entries(presetFilters).forEach(([filter, value]) => {
       const select = directory.querySelector(`[data-filter="${filter}"]`);
@@ -135,7 +158,7 @@ const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
   input, select { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 11px; background: var(--white); color: var(--ink); }
   input { padding: .75rem 1rem; font-size: 1rem; }
   select { padding: .65rem .75rem; }
-  .filter-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .75rem; margin-top: .8rem; }
+  .filter-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin-top: .8rem; }
   .filter-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); }
   .filter-footer p { margin: 0; color: var(--ink-soft); font-size: .84rem; }
   button { border: 0; background: transparent; color: var(--teal-dark); cursor: pointer; font-weight: 800; }

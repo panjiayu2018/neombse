@@ -6,6 +6,19 @@ import { featuredArticle } from '../data/articles';
 
 const standardCount = new Set(tools.flatMap((tool) => tool.standards)).size;
 const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
+const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
+const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
+const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
+const capabilityOptions = [
+  ['xmiImport', 'XMI import'],
+  ['xmiExport', 'XMI export'],
+  ['collaboration', 'Team collaboration'],
+  ['codeGeneration', 'Code generation'],
+  ['reverseEngineering', 'Reverse engineering'],
+  ['simulation', 'Model simulation'],
+  ['requirementsManagement', 'Requirements management'],
+  ['sysmlV2Api', 'SysML v2 API'],
+].filter(([key]) => tools.some((tool) => tool.features[key as keyof typeof tool.features] === 'Yes'));
 ---
 
 <MainLayout>
@@ -14,11 +27,7 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
       <div class="hero-copy">
         <p class="eyebrow">Independent modeling tool directory</p>
         <h1>Choose tools by <em>evidence,</em> not noise.</h1>
-        <p class="lead">Explore UML, SysML v1, and SysML v2 tools by platform, license, modeling interface, and capabilities—with a clear line between verified facts and unknowns.</p>
-        <div class="hero-actions">
-          <a class="button button--accent" href="/tools/">Explore the directory</a>
-          <a class="button button--light" href="/methodology/">How verification works</a>
-        </div>
+        <p class="lead">Explore UML, SysML v1, and SysML v2 tools by platform, license, and capabilities.</p>
       </div>
       <div class="hero-map panel" aria-label="Directory summary">
         <div class="map-orbit" aria-hidden="true">
@@ -28,16 +37,42 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
           <span class="map-core map-core--logo"></span>
         </div>
         <div class="map-stats">
-          <div><strong>{tools.length}</strong><span>tools structured</span></div>
+          <div><strong>{tools.length}</strong><span>tools</span></div>
           <div><strong>{platformCount}</strong><span>platforms</span></div>
           <div><strong>{standardCount}</strong><span>standards</span></div>
         </div>
       </div>
     </div>
-    <div class="container hero-note">
-      <span>01</span>
-      <p><strong>Catalog status:</strong> {tools.length} source records have been structured and translated; detailed capability verification remains an ongoing editorial process.</p>
-    </div>
+    <form class="container hero-filter panel" action="/tools/" method="get">
+      <label class="hero-search" for="home-tool-search">Search tools and capabilities
+        <input id="home-tool-search" name="q" type="search" placeholder="Tool, vendor, or capability…" />
+      </label>
+      <label>Platform
+        <select name="platform">
+          <option value="">All platforms</option>
+          {platforms.map((item) => <option value={item}>{item}</option>)}
+        </select>
+      </label>
+      <label>Standard
+        <select name="standard">
+          <option value="">All standards</option>
+          {standards.map((item) => <option value={item}>{item}</option>)}
+        </select>
+      </label>
+      <label>License
+        <select name="license">
+          <option value="">All licenses</option>
+          {licenses.map((item) => <option value={item}>{item}</option>)}
+        </select>
+      </label>
+      <label>Capability
+        <select name="capability">
+          <option value="">All capabilities</option>
+          {capabilityOptions.map(([value, label]) => <option value={value}>{label}</option>)}
+        </select>
+      </label>
+      <button class="button button--accent" type="submit">Filter tools</button>
+    </form>
   </section>
 
   <section class="section">
@@ -64,7 +99,7 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
     <div class="container">
       <div class="section-heading">
         <div><p class="eyebrow">From the catalog</p><h2>Representative tools.</h2></div>
-        <div class="heading-action"><p>Browse the imported UML and SysML collection, with source notes preserved for editorial review.</p><a href="/tools/">View all {tools.length} tools →</a></div>
+        <div class="heading-action"><p>Browse UML and SysML tools across platforms, standards, and licensing models.</p><a href="/tools/">View all {tools.length} tools →</a></div>
       </div>
       <div class="tool-grid">{featuredTools.map((tool) => <ToolCard tool={tool} />)}</div>
     </div>
@@ -105,7 +140,6 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
   .hero h1 { max-width: 820px; }
   .hero h1 em { color: var(--teal); font-style: normal; }
   .hero-copy .lead { max-width: 720px; margin: 1.7rem 0 0; }
-  .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
   .hero-map { padding: 1.1rem; transform: rotate(1.5deg); }
   .map-orbit { position: relative; display: grid; height: 280px; place-items: center; margin: 0 0 1rem; border: 1px dashed var(--line); border-radius: 50%; }
   .map-orbit::before { position: absolute; width: 65%; height: 65%; border: 1px dashed var(--line); border-radius: 50%; content: ""; }
@@ -120,9 +154,12 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
   .map-stats strong, .map-stats span { display: block; }
   .map-stats strong { font-size: 1.45rem; }
   .map-stats span { color: var(--ink-soft); font-size: .65rem; }
-  .hero-note { display: grid; grid-template-columns: auto 1fr; gap: 1rem; margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--line); }
-  .hero-note span { color: var(--orange); font-family: var(--font-mono); font-weight: 800; }
-  .hero-note p { margin: 0; color: var(--ink-soft); }
+  .hero-filter { display: grid; grid-template-columns: 1.45fr repeat(4, minmax(0, 1fr)) auto; align-items: end; gap: .75rem; margin-top: 3rem; padding: 1.2rem; }
+  .hero-filter label { display: grid; gap: .42rem; color: var(--ink-soft); font-size: .72rem; font-weight: 800; letter-spacing: .045em; text-transform: uppercase; }
+  .hero-filter input, .hero-filter select { width: 100%; min-height: 48px; border: 1px solid var(--line); border-radius: 11px; background: var(--white); color: var(--ink); }
+  .hero-filter input { padding: .75rem 1rem; font-size: 1rem; }
+  .hero-filter select { padding: .65rem .75rem; }
+  .hero-filter .button { min-width: 112px; cursor: pointer; }
   .path-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
   .path-grid a { display: flex; min-height: 230px; flex-direction: column; padding: 1.25rem; text-decoration: none; transition: background 160ms ease; }
   .path-grid a + a { border-left: 1px solid var(--ink); }
@@ -147,11 +184,17 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
   .method-strip .button { margin-top: 1rem; }
   @media (max-width: 860px) {
     .hero-grid, .method-grid { grid-template-columns: 1fr; }
+    .hero-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .hero-search { grid-column: 1 / -1; }
     .article-feature-grid { grid-template-columns: 1fr; }
     .article-feature-image { max-width: 560px; }
     .hero-map { max-width: 560px; transform: none; }
     .path-grid { grid-template-columns: 1fr; }
     .path-grid a { min-height: 175px; }
     .path-grid a + a { border-top: 1px solid var(--ink); border-left: 0; }
+  }
+  @media (max-width: 560px) {
+    .hero-filter { grid-template-columns: 1fr; }
+    .hero-search { grid-column: auto; }
   }
 </style>

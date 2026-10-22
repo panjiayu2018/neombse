@@ -1,6 +1,6 @@
 # NeoMBSE
 
-An independent English-language directory for UML, SysML v1, and SysML v2 tools. The site is built as static HTML with Astro and performs search and filtering in the visitor's browser.
+An independent directory for UML, SysML v1, and SysML v2 tools. The site is built as static HTML with Astro and performs search and filtering in the visitor's browser.
 
 ## Local development
 

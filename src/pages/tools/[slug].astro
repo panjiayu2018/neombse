@@ -54,11 +54,6 @@ const schema = {
     <div class="container detail-grid">
       <main>
         <section>
-          <p class="eyebrow">Editorial assessment</p>
-          <h2>What to know</h2>
-          <p class="lead">{tool.editorialNote}</p>
-        </section>
-        <section>
           <p class="eyebrow">Evidence matrix</p>
           <h2>Verified capabilities</h2>
           <p>Unknown means the capability has not yet been verified; it does not mean the product lacks it.</p>
@@ -75,14 +70,6 @@ const schema = {
             {tool.sources.map((source) => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a></li>)}
           </ol>
         </section>
-        {tool.sourceDescriptionZh && (
-          <section>
-            <p class="eyebrow">Imported source note</p>
-            <h2>Original Chinese description</h2>
-            <p class="source-context">Preserved from {tool.sourceCollection}. Source update label: {tool.sourceUpdatedText || 'not recorded'}.</p>
-            <div class="source-zh" lang="zh-CN">{tool.sourceDescriptionZh.split('\n\n').map((paragraph) => <p>{paragraph}</p>)}</div>
-          </section>
-        )}
       </main>
 
       <aside class="facts panel">
@@ -127,9 +114,6 @@ const schema = {
   .source-list { padding-left: 1.2rem; }
   .source-list li + li { margin-top: .5rem; }
   .source-list a { color: var(--teal-dark); font-weight: 750; }
-  .source-context { font-size: .9rem; }
-  .source-zh { padding: 1.2rem; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(255,253,248,.76); }
-  .source-zh p:last-child { margin-bottom: 0; }
   .facts { position: sticky; top: 1.5rem; padding: 1.25rem; }
   dl { margin: 0; }
   dl div { padding: .8rem 0; border-top: 1px solid var(--line); }
