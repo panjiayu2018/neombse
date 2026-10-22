@@ -2,6 +2,7 @@
 import MainLayout from '../layouts/MainLayout.astro';
 import ToolCard from '../components/ToolCard.astro';
 import { featuredTools, tools } from '../lib/tools';
+import { featuredArticle } from '../data/articles';
 
 const standardCount = new Set(tools.flatMap((tool) => tool.standards)).size;
 const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
@@ -70,6 +71,24 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
     </div>
   </section>
 
+  <section class="section article-feature">
+    <div class="container article-feature-grid">
+      <a class="article-feature-image" href={`/articles/${featuredArticle.slug}/`} aria-label={`Read ${featuredArticle.title}`}>
+        <img src={featuredArticle.coverImage} alt={featuredArticle.coverAlt} width="1028" height="328" loading="lazy" />
+      </a>
+      <div>
+        <p class="eyebrow">Applied modeling note</p>
+        <h2>{featuredArticle.title}</h2>
+        <p>{featuredArticle.summary}</p>
+        <div class="article-feature-meta">
+          <span>{featuredArticle.category}</span>
+          <span>{featuredArticle.figureCount} figures</span>
+        </div>
+        <a class="article-feature-link" href={`/articles/${featuredArticle.slug}/`}>Read the article →</a>
+      </div>
+    </div>
+  </section>
+
   <section class="section method-strip">
     <div class="container method-grid">
       <div><p class="eyebrow">Verified capabilities</p><h2>“Unknown” is a useful answer.</h2></div>
@@ -115,12 +134,22 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
   .featured-section { background: rgba(255,253,248,.52); }
   .heading-action { color: var(--ink-soft); }
   .heading-action a { color: var(--teal-dark); font-weight: 800; }
+  .article-feature { padding-block: clamp(3rem, 6vw, 5rem); }
+  .article-feature-grid { display: grid; grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr); align-items: center; gap: clamp(2rem, 5vw, 4.5rem); max-width: 1000px; }
+  .article-feature-image { display: grid; place-items: center; padding: 1rem; border: 1px solid var(--line); border-radius: 14px; background: white; box-shadow: 0 12px 28px rgba(16, 37, 43, .07); }
+  .article-feature-image img { width: 100%; height: auto; }
+  .article-feature h2 { font-size: clamp(1.7rem, 3.3vw, 2.55rem); line-height: 1.15; }
+  .article-feature h2 + p { margin-top: 1rem; color: var(--ink-soft); }
+  .article-feature-meta { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: 1rem 0; color: var(--ink-soft); font-family: var(--font-mono); font-size: .72rem; }
+  .article-feature-link { color: var(--teal-dark); font-weight: 800; }
   .method-strip { background: var(--teal-dark); color: var(--paper); }
   .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
   .method-strip .eyebrow, .method-strip .lead { color: var(--paper); }
   .method-strip .button { margin-top: 1rem; }
   @media (max-width: 860px) {
     .hero-grid, .method-grid { grid-template-columns: 1fr; }
+    .article-feature-grid { grid-template-columns: 1fr; }
+    .article-feature-image { max-width: 560px; }
     .hero-map { max-width: 560px; transform: none; }
     .path-grid { grid-template-columns: 1fr; }
     .path-grid a { min-height: 175px; }

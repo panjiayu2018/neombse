@@ -13,3 +13,8 @@ GPT给出的攻略.docx
 # Original image archive stays local. Referenced copies are published from public/images/tools/.
 tools/pics/
 tools/sysmlpics/
+
+# Local editorial source material. Publish prepared copies from public/ instead.
+article/
+neombselogo.png
+当前.cloudflare界面.png

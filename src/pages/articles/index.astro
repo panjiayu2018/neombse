@@ -1,0 +1,60 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { articles } from '../../data/articles';
+---
+
+<MainLayout
+  title="Modeling Articles — NeoMBSE"
+  description="Applied UML and SysML articles, worked models, and technical notes from NeoMBSE."
+>
+  <header class="articles-header">
+    <div class="container narrow">
+      <p class="eyebrow">Applied modeling</p>
+      <h1>Articles</h1>
+      <p class="lead">Worked models and technical notes that put UML and SysML concepts into practice. The tool directory remains NeoMBSE's primary focus.</p>
+    </div>
+  </header>
+
+  <section class="section articles-list">
+    <div class="container">
+      {articles.map((article) => (
+        <article class="article-card panel">
+          <a class="article-cover" href={`/articles/${article.slug}/`}>
+            <img src={article.coverImage} alt={article.coverAlt} width="1028" height="328" loading="eager" />
+          </a>
+          <div class="article-copy">
+            <p class="article-kicker">{article.category} · {article.publishedLabel}</p>
+            <h2><a href={`/articles/${article.slug}/`}>{article.title}</a></h2>
+            <p>{article.summary}</p>
+            <div class="article-meta">
+              <span>By {article.authors.join(' and ')}</span>
+              <span>{article.figureCount} model figures</span>
+            </div>
+            <a class="article-link" href={`/articles/${article.slug}/`}>Read the article →</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</MainLayout>
+
+<style>
+  .articles-header { padding: clamp(4rem, 8vw, 7rem) 0 2rem; }
+  .articles-header h1 { font-size: clamp(2.8rem, 7vw, 5.2rem); }
+  .articles-header .lead { max-width: 700px; margin-top: 1.25rem; }
+  .articles-list { padding-top: 2rem; }
+  .article-card { display: grid; grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr); max-width: 1000px; margin-inline: auto; overflow: hidden; }
+  .article-cover { display: grid; min-height: 330px; place-items: center; padding: 1.5rem; border-right: 1px solid var(--line); background: white; }
+  .article-cover img { width: 100%; height: auto; }
+  .article-copy { padding: clamp(1.5rem, 4vw, 3rem); }
+  .article-kicker { margin-bottom: 1rem; color: var(--teal-dark); font-family: var(--font-mono); font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .article-copy h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); line-height: 1.15; }
+  .article-copy h2 a { text-decoration: none; }
+  .article-copy > p:not(.article-kicker) { margin-top: 1.2rem; color: var(--ink-soft); }
+  .article-meta { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: 1.5rem 0; color: var(--ink-soft); font-size: .82rem; }
+  .article-link { color: var(--teal-dark); font-weight: 800; }
+  @media (max-width: 760px) {
+    .article-card { grid-template-columns: 1fr; }
+    .article-cover { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  }
+</style>

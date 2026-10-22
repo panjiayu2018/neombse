@@ -1,0 +1,222 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import ArticleFigure from '../../components/ArticleFigure.astro';
+import { featuredArticle as article } from '../../data/articles';
+
+const imageBase = '/articles/modeling-optogenetics-with-sysml-v2';
+const toc = [
+  { href: '#introduction', label: 'Introduction' },
+  { href: '#expression-and-light-delivery', label: '1. Expression and light delivery' },
+  { href: '#molecular-structure-and-photocycles', label: '2. Molecular structure and photocycles' },
+  { href: '#photocurrents-and-neuronal-activity', label: '3. Photocurrents and neuronal activity' },
+  { href: '#response-time-courses', label: '4. Response time courses' },
+  { href: '#references', label: 'References' },
+];
+---
+
+<MainLayout
+  title={`${article.title} — NeoMBSE`}
+  description={article.summary}
+  canonicalPath={`/articles/${article.slug}/`}
+  ogType="article"
+>
+  <header class="article-hero">
+    <div class="container article-hero-inner">
+      <a class="article-breadcrumb" href="/articles/">Articles / {article.category}</a>
+      <h1>{article.title}</h1>
+      <p class="article-deck">{article.summary}</p>
+      <div class="byline">
+        <span>Jiayu Pan</span>
+        <span>Fengmei Lü</span>
+        <span>{article.publishedLabel}</span>
+        <span>{article.figureCount} figures</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="container article-layout">
+    <aside class="article-toc" aria-label="Article contents">
+      <p>On this page</p>
+      <ol>
+        {toc.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+      </ol>
+      <a class="directory-return" href="/tools/">Explore the tool directory →</a>
+    </aside>
+
+    <article class="article-body">
+      <section id="introduction" class="article-section introduction">
+        <p class="article-purpose">The purpose of this article is to demonstrate applications of SysML v2 modeling. Readers who have recently taken an interest in ontology modeling may also find it worthwhile.</p>
+
+        <p>The 2026 Nobel Prize in Physiology or Medicine was awarded to Karl Deisseroth, Peter Hegemann, and Georg Nagel for their discoveries concerning light-gated ion channels and optogenetics <a href="#reference-1">[1]</a>. Against this background, this article uses SysML v2 <a href="#reference-2">[2]</a> to represent the main mechanisms by which optogenetics regulates neuronal activity. The domain knowledge is drawn primarily from the review by Piatkevich and Boyden <a href="#reference-3">[3]</a>.</p>
+
+        <p>In this type of optogenetic approach, target neurons are first made to express microbial rhodopsins, after which appropriate light stimulation is used to regulate the activity of their ion channels or ion pumps. After absorbing a photon, retinal undergoes isomerization, inducing a conformational change in the protein that in turn alters transmembrane ion transport and generates a photocurrent. The amplitude and time course of the photocurrent depend on factors including the number of functional photosensitive proteins in the membrane, illumination parameters, the kinetics of the photosensitive proteins, membrane potential, and ion gradients. The eventual electrical response of the neuron is jointly determined by these photocurrents, the cell's intrinsic electrical properties, and network input; membrane capacitance, input resistance, and the states of endogenous ion channels are important factors <a href="#reference-3">[3]</a>.</p>
+
+        <p>The model presented here focuses on the molecular mechanisms and single-cell responses involved in these processes. The specific structure and dynamics of network input are not elaborated.</p>
+
+        <p>The SysML v2 model was developed by Jiayu Pan and rendered using CATIAMagic MSOSA. Dr. Fengmei Lü provided domain-knowledge support in neurology. If any part of the model conflicts with the domain knowledge, the most likely reason is that Jiayu Pan did not fully understand that knowledge or represent it properly in the model.</p>
+
+        <div class="modeling-note">
+          <p><strong>Reading note.</strong> When examining the structures of the part defs, readers who have questions about part multiplicities are kindly asked to set those questions aside for now. Determining the appropriate multiplicity of a part also involves clarifying what concept another part def actually represents. As this article was prepared in haste, some of these issues have not been fully resolved, and the multiplicities have temporarily been set to 1.</p>
+          <p>For readability, the Action Flow views show only control flows and hide item flows. The action defs and parameter types outside the Action Flow regions help readers understand the inputs and outputs of each action and infer possible item flows between actions.</p>
+          <p>For example, in Figure 11, a control flow exists between <code>&lt;dl&gt; : DeliverLight</code> and <code>&lt;ocp&gt; : OpenCationPore</code>. The output of DeliverLight and the input of OpenCationPore specialize the same item def, OpticalPulse, suggesting that an item flow of type OpticalPulse might exist between these two actions.</p>
+          <p>Such an inference is not rigorous and applies only when there is a single parameter of the given type. All flows are explicitly declared in the model. Where the above inference might be misleading, the flow is explicitly displayed in the view.</p>
+        </div>
+      </section>
+
+      <section id="expression-and-light-delivery" class="article-section">
+        <p class="section-number">Section 01</p>
+        <h2>Expression and Light Delivery</h2>
+
+        <h3>1.1 Structure of the Targeted Expression System</h3>
+        <p>Figure 1 uses ExpressionSystem to organize the gene delivery system, target neuron, and neuronal membrane, with the system performing EstablishPhotosensitivity. This structure separates “how to make the cell photosensitive” from the subsequent question of “how to illuminate it,” avoiding the implication that rhodopsins are naturally occurring photosensitive components of the neuron.</p>
+        <ArticleFigure number={1} src={`${imageBase}/figure-01-expression-system.png`} width={1028} height={328} alt="SysML v2 part definition showing an expression system, gene delivery system, target neuron, and neuronal membrane" caption="Part def structure of the targeted expression system" />
+
+        <h3>1.2 Establishing Photosensitivity in the Target Neuron</h3>
+        <p>Figure 2 expands the actions performed by the system in an Action Flow view: delivering the opsin gene, expressing the protein, folding and trafficking it, and then binding it to retinal to form functional rhodopsin. The actions are placed in the swimlanes of the parts that actually carry out these functions, showing the functional dependencies from genetic information to photosensitive proteins in the membrane.</p>
+        <ArticleFigure number={2} src={`${imageBase}/figure-02-establish-photosensitivity.jpg`} width={4590} height={2687} alt="SysML v2 action flow for establishing photosensitivity in a target neuron" caption="Action flow for establishing photosensitivity in the target neuron" />
+
+        <h3>1.3 Structure of the Optical Delivery System</h3>
+        <p>In Figure 3, OpticalDeliverySystem comprises a light source, brain tissue, a population of rhodopsin molecules, and a target neuron, and performs OpticalDelivery. Brain tissue is modeled as a separate part because the output of the light source cannot simply be equated with the light stimulus at the cell membrane.</p>
+        <ArticleFigure number={3} src={`${imageBase}/figure-03-optical-delivery-system.png`} width={1093} height={368} alt="SysML v2 part definition for an optical delivery system" caption="Optical delivery system" />
+
+        <h3>1.4 Light Delivery and Neuronal Response</h3>
+        <p>Figure 4 represents, in sequence across four swimlanes, light emission, propagation through tissue, photoactivation of the molecular population, and changes in neuronal electrical activity. Both the output of the light source and the result after propagation through tissue are of type OpticalPulse (light pulse).</p>
+        <ArticleFigure number={4} src={`${imageBase}/figure-04-light-delivery-neuronal-response.jpg`} width={5313} height={2260} alt="SysML v2 action flow for optical delivery and neuronal response" caption="Action flow for light delivery and neuronal response" />
+      </section>
+
+      <section id="molecular-structure-and-photocycles" class="article-section">
+        <p class="section-number">Section 02</p>
+        <h2>Molecular Structure and Photocycles</h2>
+
+        <h3>2.1 Structure of a Rhodopsin Monomer</h3>
+        <p>Figure 5 decomposes RhodopsinMonomer (rhodopsin monomer) into seven TransmembraneHelix (transmembrane helix) parts and one RetinalBindingSite (retinal-binding site) part; the binding site holds one Retinal (retinal). The diagram uses part to describe the structural components of the protein and item to describe the bound retinal, and has Retinal exhibit the RetinalIsomerization state machine.</p>
+        <ArticleFigure number={5} src={`${imageBase}/figure-05-rhodopsin-monomer.jpg`} width={1755} height={1540} alt="SysML v2 structure of a microbial rhodopsin monomer" caption="Structure of a microbial rhodopsin monomer" />
+
+        <h3>2.2 Retinal Isomerization</h3>
+        <p>Figure 6 uses AllTrans and Cis13 to represent the all-trans and 13-cis states, respectively, with photoExcitation and thermalReset triggering photoisomerization and resetting.</p>
+        <ArticleFigure number={6} src={`${imageBase}/figure-06-retinal-isomerization.png`} width={819} height={396} alt="SysML v2 state machine for retinal isomerization" caption="State machine associated with retinal isomerization" />
+
+        <h3>2.3 The Four-State Photocycle of ChR2</h3>
+        <p>In Figure 7, C1 represents the dark-adapted closed state, and C2 represents the light-adapted closed state; the two open states, O1 and O2, have different conductances.</p>
+        <ArticleFigure number={7} src={`${imageBase}/figure-07-chr2-photocycle.png`} width={1095} height={492} alt="SysML v2 four-state photocycle of ChR2" caption="Four-state photocycle of ChR2" />
+
+        <h3>2.4 Spectral Photocycle of Halorhodopsin</h3>
+        <p>Figure 8 uses Ground580 and several Intermediate states to represent the photocycle of halorhodopsin. The numbers indicate the approximate absorption peaks of the ground state or intermediate states, thereby distinguishing the different states in the photochemical process.</p>
+        <ArticleFigure number={8} src={`${imageBase}/figure-08-halorhodopsin-photocycle.jpg`} width={2637} height={1117} alt="SysML v2 spectral photocycle of halorhodopsin" caption="Example spectral photocycle of halorhodopsin" />
+
+        <h3>2.5 Functional Decomposition of the Chloride Pump</h3>
+        <p>Figure 9 expands ChloridePumpCycle (chloride-pump transport cycle) in functional terms: absorbing a photon, isomerizing retinal, changing the ion-binding site, acquiring and transferring chloride ions, releasing them into the cell, and finally restoring the ground-state conformation.</p>
+        <ArticleFigure number={9} src={`${imageBase}/figure-09-chloride-pump-cycle.jpg`} width={4631} height={3247} alt="SysML v2 action flow for a chloride-pump transport cycle" caption="Action flow of the chloride-pump transport cycle" />
+      </section>
+
+      <section id="photocurrents-and-neuronal-activity" class="article-section">
+        <p class="section-number">Section 03</p>
+        <h2>How Photocurrents Alter Neuronal Activity</h2>
+
+        <h3>3.1 Structure of the Cation-Channel Excitation System</h3>
+        <p>Figure 10 decomposes CationExcitationSystem (cation-channel excitation system) into a light source, a depolarizing cation channel, a neuronal membrane, and voltage-gated ion channels. Here, the role dcc (DepolarizingCationChannel, depolarizing cation channel) is played by MicrobialRhodopsin.</p>
+        <ArticleFigure number={10} src={`${imageBase}/figure-10-cation-excitation-system.png`} width={1177} height={360} alt="SysML v2 structure of a cation-channel excitation system" caption="Optogenetic excitation system based on cation channels" />
+
+        <h3>3.2 From Depolarization to Action Potentials</h3>
+        <p>Figure 11 starts from a single entry point and proceeds to DeliverLight (deliver a light pulse), followed in sequence by opening the channel pore, conducting cations, and integrating membrane currents.</p>
+        <ArticleFigure number={11} src={`${imageBase}/figure-11-cation-channel-excitation.jpg`} width={5682} height={3382} alt="SysML v2 control flow for cation-channel excitation" caption="Control flow of cation-channel excitation" />
+
+        <h3>3.3 Structure of the Anion-Channel Modulation System</h3>
+        <p>The AnionModulationSystem in Figure 12 comprises a light source, an anion channel, and a neuronal membrane, and performs the action AnionChannelModulation. Here, the role ac (AnionChannel, anion channel) is played by MicrobialRhodopsin.</p>
+        <ArticleFigure number={12} src={`${imageBase}/figure-12-anion-modulation-system.png`} width={1100} height={390} alt="SysML v2 structure of an anion-channel modulation system" caption="Optogenetic modulation system based on anion channels" />
+
+        <h3>3.4 Chloride Currents, Depolarization, and Shunting</h3>
+        <p>Figure 13 sequentially delivers light, opens the anion channel, conducts chloride ions, and integrates membrane currents, before comparing the chloride reversal potential ECl with the initial membrane potential Vm in the scenario.</p>
+        <ArticleFigure number={13} src={`${imageBase}/figure-13-anion-channel-modulation.jpg`} width={6097} height={4082} alt="SysML v2 control flow for anion-channel modulation" caption="Control flow of anion-channel modulation" />
+
+        <h3>3.5 Structural Comparison of Three Hyperpolarization Mechanisms</h3>
+        <p>Figure 14 places an outward proton pump, an inward chloride pump, and a potassium channel in a single comparison system. Under the selected conditions, all three can hyperpolarize the membrane, but they differ in the ions transported, transport direction, and energy source.</p>
+        <ArticleFigure number={14} src={`${imageBase}/figure-14-hyperpolarization-mechanisms.png`} width={1603} height={264} alt="SysML v2 comparison of three hyperpolarization mechanisms" caption="System for comparing optogenetic inhibition mechanisms" />
+
+        <h3>3.6 Selecting a Transport Mechanism and Producing a Membrane Response</h3>
+        <p>Figure 15 shows that, after a light pulse is delivered, effectorKind is used to select the proton-pump, chloride-pump, or potassium-channel branch. After the selected action is completed, the branches converge through merge and proceed to HyperpolarizeMembrane.</p>
+        <ArticleFigure number={15} src={`${imageBase}/figure-15-inhibition-mechanisms.jpg`} width={5833} height={3527} alt="SysML v2 control flow for optogenetic inhibition mechanisms" caption="Control flow of inhibition mediated by different transport mechanisms" />
+      </section>
+
+      <section id="response-time-courses" class="article-section">
+        <p class="section-number">Section 04</p>
+        <h2>Response Time Courses and Aftereffects</h2>
+
+        <h3>4.1 Time Course of the Molecular Population Photocurrent</h3>
+        <p>Figure 16 starts from DarkRecovered, enters Rising upon illumination, reaches Peak, and then proceeds to Steady under continued illumination. Rising, Peak, and Steady can all receive a light-off event and transition to DarkRecovering; a short pulse need not pass through the full steady state before ending.</p>
+        <ArticleFigure number={16} src={`${imageBase}/figure-16-photocurrent-response.jpg`} width={3528} height={859} alt="SysML v2 state machine of the molecular population photocurrent response" caption="State machine of the molecular population photocurrent response" />
+
+        <h3>4.2 Post-Illumination Effects of Chloride Loading</h3>
+        <p>Figure 17 considers a scenario in which an inward chloride pump produces sufficient chloride loading: intracellular chloride concentration rises, the GABA reversal potential shifts in the positive direction, and excitability may consequently increase after the light is turned off.</p>
+        <ArticleFigure number={17} src={`${imageBase}/figure-17-chloride-loading-aftereffects.jpg`} width={4610} height={2204} alt="SysML v2 action flow of chloride-loading aftereffects" caption="Action flow of the aftereffects of chloride loading" />
+
+        <h3>4.3 Effects of Proton Pumps at Presynaptic Terminals</h3>
+        <p>Figure 18 expands another conditional mechanism: proton extrusion changes the local pH, followed by a terminal calcium response and an increase in spontaneous neurotransmitter release.</p>
+        <ArticleFigure number={18} src={`${imageBase}/figure-18-proton-pump-effects.jpg`} width={4298} height={2494} alt="SysML v2 action flow of proton-pump effects at presynaptic terminals" caption="Action flow of proton-pump effects at presynaptic terminals" />
+
+        <h3>4.4 Depolarization Block Caused by Sustained Depolarization</h3>
+        <p>Figure 19 considers a scenario involving sufficiently sustained cation-channel activation: a high proportion of channels remain open, depolarization is maintained, voltage-gated sodium channels become inactivated, and the neuron ultimately cannot continue generating action potentials within the time window under consideration.</p>
+        <ArticleFigure number={19} src={`${imageBase}/figure-19-depolarization-block.jpg`} width={4696} height={2760} alt="SysML v2 action flow of depolarization block" caption="Action flow of depolarization block" />
+      </section>
+
+      <section id="references" class="article-section references">
+        <p class="section-number">Sources</p>
+        <h2>References</h2>
+        <ol>
+          <li id="reference-1"><span>[1]</span> NOBELPRIZE.ORG. <a href="https://www.nobelprize.org/prizes/medicine/2026/press-release/" target="_blank" rel="noreferrer">The Nobel Prize in Physiology or Medicine 2026: press release</a> [EB/OL]. (2026-10-05) [2026-10-06].</li>
+          <li id="reference-2"><span>[2]</span> OBJECT MANAGEMENT GROUP. <a href="https://www.omg.org/spec/SysML/2.0/Language/PDF" target="_blank" rel="noreferrer">OMG Systems Modeling Language (SysML), version 2.0, part 1: language specification</a>: formal/2026-03-02 [S/OL]. 2026-03 [2026-10-06].</li>
+          <li id="reference-3"><span>[3]</span> PIATKEVICH K D, BOYDEN E S. <a href="https://doi.org/10.1017/S0033583523000033" target="_blank" rel="noreferrer">Optogenetic control of neural activity: the biophysics of microbial rhodopsins in neuroscience</a> [J]. <em>Quarterly Reviews of Biophysics</em>, 2024, 57: e1. DOI: 10.1017/S0033583523000033.</li>
+        </ol>
+      </section>
+    </article>
+  </div>
+</MainLayout>
+
+<style>
+  .article-hero { padding: clamp(4rem, 8vw, 7.5rem) 0 clamp(3rem, 6vw, 5rem); border-bottom: 1px solid var(--line); }
+  .article-hero-inner { max-width: 1060px; }
+  .article-breadcrumb { display: inline-block; margin-bottom: 1.25rem; color: var(--teal-dark); font-family: var(--font-mono); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+  .article-hero h1 { max-width: 1050px; font-size: clamp(2.55rem, 6vw, 5rem); line-height: 1.02; }
+  .article-deck { max-width: 820px; margin: 1.6rem 0 0; color: var(--ink-soft); font-size: clamp(1.08rem, 2vw, 1.28rem); line-height: 1.7; }
+  .byline { display: flex; flex-wrap: wrap; gap: .55rem 1.4rem; margin-top: 1.6rem; color: var(--ink-soft); font-family: var(--font-mono); font-size: .75rem; }
+  .byline span + span { position: relative; }
+  .byline span + span::before { position: absolute; left: -.82rem; color: var(--orange); content: '•'; }
+  .article-layout { display: grid; grid-template-columns: 220px minmax(0, 820px); justify-content: center; gap: clamp(2.5rem, 6vw, 5.5rem); padding-top: clamp(3rem, 6vw, 5rem); padding-bottom: clamp(5rem, 9vw, 8rem); }
+  .article-toc { position: sticky; top: 1.5rem; align-self: start; padding-top: .25rem; }
+  .article-toc > p { margin: 0 0 .8rem; font-family: var(--font-mono); font-size: .7rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+  .article-toc ol { margin: 0; padding: 0; list-style: none; }
+  .article-toc li + li { margin-top: .6rem; }
+  .article-toc a { color: var(--ink-soft); font-size: .78rem; line-height: 1.4; text-decoration: none; }
+  .article-toc a:hover { color: var(--teal-dark); }
+  .directory-return { display: block; margin-top: 1.4rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--teal-dark) !important; font-weight: 800; }
+  .article-body { min-width: 0; }
+  .article-section { scroll-margin-top: 2rem; }
+  .article-section + .article-section { margin-top: 5rem; padding-top: 3rem; border-top: 1px solid var(--ink); }
+  .article-body p { color: var(--ink-soft); font-size: 1.04rem; line-height: 1.82; }
+  .article-body p + p { margin-top: 1.15rem; }
+  .article-purpose { color: var(--ink) !important; font-size: 1.35rem !important; font-weight: 650; line-height: 1.55 !important; }
+  .article-body a { color: var(--teal-dark); font-weight: 700; }
+  .section-number { margin-bottom: .8rem !important; color: var(--teal-dark) !important; font-family: var(--font-mono); font-size: .72rem !important; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  .article-body h2 { max-width: 720px; margin-bottom: 2.5rem; font-size: clamp(2rem, 4.5vw, 3.35rem); }
+  .article-body h3 { margin: 3.5rem 0 .8rem; font-size: clamp(1.35rem, 2.5vw, 1.75rem); line-height: 1.25; letter-spacing: -.02em; }
+  .modeling-note { margin: 2.5rem 0 0; padding: 1.3rem 1.4rem; border-left: 4px solid var(--orange); border-radius: 0 14px 14px 0; background: var(--orange-soft); }
+  .modeling-note p { font-size: .93rem; line-height: 1.7; }
+  code { padding: .12rem .32rem; border-radius: 4px; background: rgba(16, 37, 43, .08); color: var(--ink); font-family: var(--font-mono); font-size: .85em; }
+  .references ol { margin: 0; padding: 0; list-style: none; }
+  .references li { position: relative; padding-left: 2.2rem; color: var(--ink-soft); font-size: .9rem; line-height: 1.7; }
+  .references li + li { margin-top: 1.15rem; }
+  .references li > span { position: absolute; left: 0; color: var(--ink); font-family: var(--font-mono); font-weight: 800; }
+  @media (max-width: 900px) {
+    .article-layout { grid-template-columns: 1fr; }
+    .article-toc { position: static; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 12px; background: rgba(255, 253, 248, .62); }
+    .article-toc ol { columns: 2; column-gap: 2rem; }
+    .directory-return { display: none; }
+  }
+  @media (max-width: 620px) {
+    .article-layout { width: min(100% - 1.2rem, 1160px); }
+    .article-toc ol { columns: 1; }
+    .byline span + span::before { display: none; }
+    .article-body p { font-size: 1rem; }
+    .article-section + .article-section { margin-top: 4rem; padding-top: 2.4rem; }
+  }
+</style>
