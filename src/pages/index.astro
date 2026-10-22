@@ -21,12 +21,11 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
         </div>
       </div>
       <div class="hero-map panel" aria-label="Directory summary">
-        <div class="map-header"><span>Directory / 001</span><span>Imported catalog</span></div>
         <div class="map-orbit" aria-hidden="true">
           <span class="node node--a">UML</span>
           <span class="node node--b">SysML v1</span>
           <span class="node node--c">SysML v2</span>
-          <span class="map-core">N</span>
+          <span class="map-core map-core--logo"></span>
         </div>
         <div class="map-stats">
           <div><strong>{tools.length}</strong><span>tools structured</span></div>
@@ -108,10 +107,10 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
   .hero-copy .lead { max-width: 720px; margin: 1.7rem 0 0; }
   .hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
   .hero-map { padding: 1.1rem; transform: rotate(1.5deg); }
-  .map-header { display: flex; justify-content: space-between; padding-bottom: .8rem; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-family: var(--font-mono); font-size: .65rem; text-transform: uppercase; }
-  .map-orbit { position: relative; display: grid; height: 280px; place-items: center; margin: 1rem 0; border: 1px dashed var(--line); border-radius: 50%; }
+  .map-orbit { position: relative; display: grid; height: 280px; place-items: center; margin: 0 0 1rem; border: 1px dashed var(--line); border-radius: 50%; }
   .map-orbit::before { position: absolute; width: 65%; height: 65%; border: 1px dashed var(--line); border-radius: 50%; content: ""; }
-  .map-core { z-index: 1; display: grid; width: 70px; height: 70px; place-items: center; border-radius: 20px; background: var(--ink); color: var(--orange); font-size: 2rem; font-weight: 900; }
+  .map-core { z-index: 1; width: 96px; height: 96px; }
+  .map-core--logo { background: url('/brand/neombse-logo.png') left center / auto 100% no-repeat; mix-blend-mode: multiply; }
   .node { position: absolute; z-index: 2; padding: .35rem .55rem; border: 1px solid var(--ink); border-radius: 7px; background: var(--paper); font-family: var(--font-mono); font-size: .7rem; font-weight: 700; }
   .node--a { top: 12%; left: 8%; }
   .node--b { right: 4%; bottom: 28%; }
