@@ -1,28 +1,31 @@
 {
   "id": "mermaid",
   "name": "Mermaid",
-  "vendor": "Mermaid Chart",
-  "website": "https://mermaid.ai/app/dashboard",
-  "description": "A JavaScript-based diagram generator that renders Markdown-like text into flowcharts, sequence diagrams, class diagrams, state diagrams, ER diagrams, and use-case diagrams.",
+  "vendor": "Mermaid project",
+  "website": "https://mermaid.js.org/",
+  "description": "An open-source JavaScript diagram renderer that turns Markdown-like text into flowcharts, sequence diagrams, class diagrams, state diagrams, ER diagrams, and other visuals.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Browser"
-  ],
-  "accessModes": [
-    "Web application"
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Library / SDK"
   ],
   "runtimes": [
-    "Node.js",
-    "Browser"
+    "Browser JavaScript",
+    "Node.js"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Diagramming tool"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Textual"
@@ -39,16 +42,22 @@
   },
   "latestVersion": "12.0.0",
   "releaseDate": "2026-09-10",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/mermaid.png",
   "sourceDescriptionZh": "使用类似Markdown的语法描述图形，并由JavaScript渲染。支持流程图、序列图、类图、状态图、ER图。12.0开始支持用例图。",
   "sourceUpdatedText": "2026年9月10日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "https://mermaid.ai/app/dashboard"
+      "label": "Mermaid documentation",
+      "url": "https://mermaid.js.org/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "spdxLicenseId": "MIT",
+  "featureEvidence": {},
+  "classificationNotes": [
+    "This record covers the MIT-licensed Mermaid renderer. Mermaid Chart is a separate commercial service."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

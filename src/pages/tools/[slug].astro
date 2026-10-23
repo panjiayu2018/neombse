@@ -19,18 +19,24 @@ const featureLabels: Record<keyof Tool['features'], string> = {
   requirementsManagement: 'Requirements management',
   sysmlV2Api: 'SysML v2 API',
 };
+const environmentTags = tool.operatingSystems.length
+  ? tool.operatingSystems
+  : tool.deliveryModes.includes('Web Application')
+    ? ['Web browser']
+    : tool.deliveryModes;
+const listOrUnknown = (values: string[]) => values.length ? values.join(', ') : 'Not applicable / not verified';
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   name: tool.name,
   applicationCategory: 'DeveloperApplication',
-  operatingSystem: tool.platforms.join(', '),
+  operatingSystem: tool.operatingSystems.length ? tool.operatingSystems.join(', ') : 'Web browser',
   description: tool.description,
   url: tool.website,
 };
 ---
 
-<MainLayout title={`${tool.name}: platforms, standards, and capabilities — NeoMBSE`} description={tool.description} canonicalPath={`/tools/${tool.id}/`}>
+<MainLayout title={`${tool.name}: operating systems, licensing, and capabilities — NeoMBSE`} description={tool.description} canonicalPath={`/tools/${tool.id}/`}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <article>
     <header class="tool-hero">
@@ -44,9 +50,10 @@ const schema = {
           <a class="button button--accent" href={tool.website} target="_blank" rel="noopener noreferrer">Visit official site ↗</a>
         </div>
         <div class="tag-row">
-          {tool.platforms.map((item) => <span class="tag">{item}</span>)}
+          {environmentTags.map((item) => <span class="tag">{item}</span>)}
           {tool.standards.map((item) => <span class="tag">{item}</span>)}
-          {tool.licenseTypes.map((item) => <span class="tag">{item}</span>)}
+          <span class="tag">{tool.sourceLicense}</span>
+          {tool.pricingModels.map((item) => <span class="tag">{item}</span>)}
         </div>
       </div>
     </header>
@@ -58,11 +65,35 @@ const schema = {
           <h2>Verified capabilities</h2>
           <p>Unknown means the capability has not yet been verified; it does not mean the product lacks it.</p>
           <div class="capability-list">
-            {Object.entries(tool.features).map(([key, value]) => (
-              <div><span>{featureLabels[key as keyof Tool['features']]}</span><strong class:list={[`state--${value.toLowerCase()}`]}>{value}</strong></div>
-            ))}
+            {Object.entries(tool.features).map(([key, value]) => {
+              const evidence = tool.featureEvidence?.[key as keyof Tool['features']];
+              return (
+                <div class="capability-row">
+                  <div class="capability-copy">
+                    <span>{featureLabels[key as keyof Tool['features']]}</span>
+                    {evidence && (
+                      <p>
+                        {evidence.availability && <span class="evidence-type">{evidence.availability}</span>}
+                        {evidence.note && <span>{evidence.note}</span>}
+                        <a href={evidence.url} target="_blank" rel="noopener noreferrer">Evidence source ↗</a>
+                      </p>
+                    )}
+                  </div>
+                  <strong class:list={[`state--${value.toLowerCase()}`]}>{value}</strong>
+                </div>
+              );
+            })}
           </div>
         </section>
+        {tool.classificationNotes && tool.classificationNotes.length > 0 && (
+          <section>
+            <p class="eyebrow">Scope and classification</p>
+            <h2>Important distinctions</h2>
+            <ul class="scope-notes">
+              {tool.classificationNotes.map((note) => <li>{note}</li>)}
+            </ul>
+          </section>
+        )}
         <section>
           <p class="eyebrow">Evidence sources</p>
           <h2>Sources reviewed</h2>
@@ -76,13 +107,16 @@ const schema = {
         <h2>Tool profile</h2>
         <dl>
           <div><dt>Vendor</dt><dd>{tool.vendor}</dd></div>
-          <div><dt>Platforms</dt><dd>{tool.platforms.join(', ')}</dd></div>
-          <div><dt>Access</dt><dd>{tool.accessModes.join(', ')}</dd></div>
-          <div><dt>Runtime / host</dt><dd>{tool.runtimes.join(', ')}</dd></div>
+          <div><dt>Operating systems</dt><dd>{listOrUnknown(tool.operatingSystems)}</dd></div>
+          <div><dt>Delivery / access</dt><dd>{listOrUnknown(tool.deliveryModes)}</dd></div>
+          <div><dt>Runtime</dt><dd>{listOrUnknown(tool.runtimes)}</dd></div>
+          <div><dt>Host applications</dt><dd>{listOrUnknown(tool.hostApplications)}</dd></div>
           <div><dt>Standards</dt><dd>{tool.standards.join(', ')}</dd></div>
           <div><dt>Tool type</dt><dd>{tool.toolTypes.join(', ')}</dd></div>
           <div><dt>Interface</dt><dd>{tool.modelingModes.join(', ')}</dd></div>
-          <div><dt>License</dt><dd>{tool.licenseTypes.join(', ')}</dd></div>
+          <div><dt>Source license</dt><dd>{tool.sourceLicense}{tool.spdxLicenseId ? ` · ${tool.spdxLicenseId}` : ''}</dd></div>
+          <div><dt>Pricing model</dt><dd>{tool.pricingModels.join(', ')}</dd></div>
+          <div><dt>License term</dt><dd>{tool.licenseTerms.join(', ')}</dd></div>
           <div><dt>Latest version</dt><dd>{tool.latestVersion ?? 'Not yet verified'}</dd></div>
           <div><dt>Release date</dt><dd>{formatDate(tool.releaseDate)}</dd></div>
           <div><dt>Last checked</dt><dd>{formatDate(tool.lastChecked)}</dd></div>
@@ -106,7 +140,12 @@ const schema = {
   main h2, .facts h2 { margin-bottom: 1rem; font-size: 2rem; }
   main > section > p:not(.eyebrow) { color: var(--ink-soft); }
   .capability-list { margin-top: 1.4rem; border-top: 1px solid var(--line); }
-  .capability-list div { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .capability-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  .capability-copy { display: grid; gap: .35rem; }
+  .capability-copy > span { font-weight: 750; }
+  .capability-copy p { display: flex; flex-wrap: wrap; gap: .35rem .65rem; margin: 0; color: var(--ink-soft); font-size: .78rem; }
+  .capability-copy a { color: var(--teal-dark); font-weight: 750; }
+  .evidence-type { padding: .08rem .38rem; border-radius: 999px; background: var(--paper-deep); color: var(--ink); font-family: var(--font-mono); font-size: .66rem; font-weight: 800; }
   .capability-list strong { min-width: 86px; padding: .25rem .5rem; border-radius: 999px; font-family: var(--font-mono); font-size: .72rem; text-align: center; }
   .state--yes { background: #d6eadf; color: var(--green); }
   .state--no { background: #f2d8d2; color: var(--red); }
@@ -114,6 +153,8 @@ const schema = {
   .source-list { padding-left: 1.2rem; }
   .source-list li + li { margin-top: .5rem; }
   .source-list a { color: var(--teal-dark); font-weight: 750; }
+  .scope-notes { padding-left: 1.2rem; }
+  .scope-notes li + li { margin-top: .65rem; }
   .facts { position: sticky; top: 1.5rem; padding: 1.25rem; }
   dl { margin: 0; }
   dl div { padding: .8rem 0; border-top: 1px solid var(--line); }

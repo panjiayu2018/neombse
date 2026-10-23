@@ -5,25 +5,28 @@
   "website": "https://sourceforge.net/projects/violet/",
   "description": "A long-running lightweight UML diagram editor that resumed active updates in 2026.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -40,7 +43,7 @@
   },
   "latestVersion": "2.3.2-SNAPSHOT",
   "releaseDate": "2026-04-18",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/violet.png",
   "sourceDescriptionZh": "老牌轻量UML编辑器，2026年恢复更新。",
   "sourceUpdatedText": "2026年4月18日",
@@ -51,5 +54,8 @@
       "url": "https://sourceforge.net/projects/violet/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

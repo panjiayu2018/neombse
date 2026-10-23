@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "build": "npm run check:data && astro check && astro build",
     "preview": "astro preview",
     "check": "astro check",
+    "check:data": "node scripts/validate-tool-data.mjs",
     "import:legacy": "node scripts/import-legacy-tools.mjs"
   },
   "engines": {

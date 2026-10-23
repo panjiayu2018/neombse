@@ -5,14 +5,23 @@
   "website": "https://www.itemis.com/en/products/itemis-create/",
   "description": "A commercial state-machine modeling and multi-language code-generation tool formerly known as YAKINDU Statechart Tools.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Cross-platform"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application",
+    "IDE Extension",
+    "Web Application"
   ],
   "runtimes": [
-    "Java"
+    "JVM",
+    "Browser JavaScript"
+  ],
+  "hostApplications": [
+    "Eclipse",
+    "VS Code"
   ],
   "standards": [
     "UML"
@@ -20,8 +29,12 @@
   "toolTypes": [
     "Code generator"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -29,16 +42,16 @@
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
-    "collaboration": "Unknown",
+    "collaboration": "Yes",
     "codeGeneration": "Yes",
     "reverseEngineering": "Unknown",
-    "simulation": "Unknown",
+    "simulation": "Yes",
     "requirementsManagement": "Unknown",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "5.6.3",
   "releaseDate": "2026-07-29",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/itemis.png",
   "sourceDescriptionZh": "原名YAKINDU Statechart Tools。状态机建模工具，支持各种语言的代码生成，提供EA插件。",
   "sourceUpdatedText": "2026年7月29日",
@@ -49,5 +62,28 @@
       "url": "https://www.itemis.com/en/products/itemis-create/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.itemis.com/en/products/itemis-create/documentation/",
+      "checkedAt": "2026-10-23"
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.itemis.com/en/products/itemis-create/documentation/",
+      "checkedAt": "2026-10-23"
+    },
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.itemis.com/en/products/itemis-create/",
+      "checkedAt": "2026-10-23",
+      "note": "Available in the cloud edition, not every edition.",
+      "availability": "Edition-specific"
+    }
+  },
+  "classificationNotes": [
+    "The product family includes Eclipse desktop, VS Code, and browser editions; capabilities can vary by edition."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

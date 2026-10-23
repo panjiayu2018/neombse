@@ -5,23 +5,26 @@
   "website": "https://www.ibm.com/products/rhapsody-systems-engineering",
   "description": "A commercial browser-based SysML v2 modeling environment distinct from the traditional desktop IBM Engineering Systems Design Rhapsody product.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Browser"
-  ],
-  "accessModes": [
-    "Web application"
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application"
   ],
   "runtimes": [
-    "Browser"
+    "Browser JavaScript"
   ],
+  "hostApplications": [],
   "standards": [
     "SysML v2"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -38,7 +41,7 @@
   },
   "latestVersion": "1.8",
   "releaseDate": "2026-07-09",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/rhapsodyse.png",
   "sourceDescriptionZh": "面向SysML v2的Web建模环境，和传统桌面版 IBM Engineering Systems Design Rhapsody区分开。",
   "sourceUpdatedText": "2026年7月9日",
@@ -49,5 +52,8 @@
       "url": "https://www.ibm.com/products/rhapsody-systems-engineering"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

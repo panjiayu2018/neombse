@@ -5,16 +5,17 @@
   "website": "https://sensmetry.com/syside/",
   "description": "A SysML v2 tool family combining VS Code textual editing, interactive graphical and grid views, and a Python API for model automation.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Editor integration",
-    "Desktop"
+  "deliveryModes": [
+    "IDE Extension",
+    "Desktop Application"
   ],
-  "runtimes": [
+  "runtimes": [],
+  "hostApplications": [
     "VS Code"
   ],
   "standards": [
@@ -23,9 +24,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Freemium",
-    "Commercial"
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Unknown"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical",
@@ -43,7 +47,7 @@
   },
   "latestVersion": "0.11.0",
   "releaseDate": "2026-09-29",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/syside.png",
   "sourceDescriptionZh": "Sensmetry开发的原生SysML v2工具系列，目前是文本式SysML v2工具中成熟度较高的一套。主要分为Syside Editor、Syside Modeler和Syside Automator。Editor提供VS Code中的SysML v2/KerML文本编辑、语法检查、自动完成、导航等；Modeler在此基础上增加交互式图形视图和Grid View；Automator提供Python API，用于模型查询、计算、测试和自动化。",
   "sourceUpdatedText": "2026年9月29日",
@@ -54,5 +58,8 @@
       "url": "https://sensmetry.com/syside/"
     }
   ],
-  "featured": true
+  "featured": true,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

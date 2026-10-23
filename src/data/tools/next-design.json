@@ -5,15 +5,14 @@
   "website": "https://en.nextdesign.app/",
   "description": "A commercial systems and software modeling tool that defines languages and views through metamodels and provides UML and SysML extension packages.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML",
     "SysML v1"
@@ -21,8 +20,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -39,7 +42,7 @@
   },
   "latestVersion": "5",
   "releaseDate": "2026-05-29",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/nextdesign.png",
   "sourceDescriptionZh": "日本DENSO CREATE开发的系统与软件建模工具，支持通过元模型定义建模语言和视图，并提供UML/SysML扩展包，可用于类图、状态机图、活动图等模型的建立与管理。",
   "sourceUpdatedText": "2026年5月29日",
@@ -50,5 +53,8 @@
       "url": "https://en.nextdesign.app/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

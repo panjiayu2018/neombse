@@ -5,15 +5,14 @@
   "website": "http://www.trufun.net/index.html",
   "description": "A China-developed modeling platform with stated support for UML 2.5 and SysML 1.6.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML",
     "SysML v1"
@@ -21,7 +20,11 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Unknown"
+  ],
+  "licenseTerms": [
     "Unknown"
   ],
   "modelingModes": [
@@ -39,7 +42,7 @@
   },
   "latestVersion": "2024",
   "releaseDate": "2024-03-01",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/trufun.png",
   "sourceDescriptionZh": "国产UML/SysML建模工具，全面支持SysML1.6和UML2.5。",
   "sourceUpdatedText": "2024年3月1日",
@@ -50,5 +53,8 @@
       "url": "http://www.trufun.net/index.html"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

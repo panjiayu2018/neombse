@@ -5,15 +5,16 @@
   "website": "https://marketplace.visualstudio.com/items?itemName=juce.asyst-vscode",
   "description": "An early-stage SysML v2 modeling tool available as a VS Code extension with standalone Windows and Linux editions.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux"
   ],
-  "accessModes": [
-    "Editor integration",
-    "Desktop"
+  "deliveryModes": [
+    "IDE Extension",
+    "Desktop Application"
   ],
-  "runtimes": [
+  "runtimes": [],
+  "hostApplications": [
     "VS Code"
   ],
   "standards": [
@@ -22,8 +23,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Freeware"
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -40,7 +45,7 @@
   },
   "latestVersion": "Pre-alpha 0.1.49",
   "releaseDate": "2026-08-20",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/asys.png",
   "sourceDescriptionZh": "新出现的工具，目前仍为Pre-alpha。",
   "sourceUpdatedText": "2026年8月20日",
@@ -51,5 +56,8 @@
       "url": "https://marketplace.visualstudio.com/items?itemName=juce.asyst-vscode"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

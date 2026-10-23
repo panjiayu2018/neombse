@@ -5,40 +5,43 @@
   "website": "http://www.sparxsystems.com",
   "description": "A commercial Windows modeling suite combining UML and systems modeling with requirements management, estimation, testing support, repositories, and team collaboration.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
   ],
   "features": {
-    "xmiImport": "Unknown",
-    "xmiExport": "Unknown",
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
     "collaboration": "Yes",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
     "simulation": "Unknown",
     "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "17.2",
   "releaseDate": "2026-07-28",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/ea.png",
   "sourceDescriptionZh": "性价比很高，目前最流行的UML建模工具。还包含需求管理、项目估算、测试支持。团队建模支持。",
   "sourceUpdatedText": "2026年7月28日",
@@ -49,5 +52,29 @@
       "url": "http://www.sparxsystems.com"
     }
   ],
-  "featured": true
+  "featured": true,
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://imap.sparxsystems.com/enterprise_architect_user_guide/17.2/model_exchange/importexport.html",
+      "checkedAt": "2026-10-23"
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://imap.sparxsystems.com/enterprise_architect_user_guide/17.2/model_exchange/importexport.html",
+      "checkedAt": "2026-10-23"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://news.sparxsystems.com/enterprise_architect_user_guide/17.2/modeling_domains/software_getting_started.html",
+      "checkedAt": "2026-10-23"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://news.sparxsystems.com/enterprise_architect_user_guide/17.2/modeling_domains/software_getting_started.html",
+      "checkedAt": "2026-10-23"
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

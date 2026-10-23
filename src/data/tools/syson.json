@@ -5,23 +5,26 @@
   "website": "https://mbse-syson.org/",
   "description": "An open-source, browser-based graphical modeling environment designed natively for SysML v2, with growing textual import and export support.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Browser"
-  ],
-  "accessModes": [
-    "Web application"
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application"
   ],
   "runtimes": [
-    "Browser"
+    "Browser JavaScript"
   ],
+  "hostApplications": [],
   "standards": [
     "SysML v2"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -29,7 +32,7 @@
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
-    "collaboration": "Unknown",
+    "collaboration": "Yes",
     "codeGeneration": "Unknown",
     "reverseEngineering": "Unknown",
     "simulation": "Unknown",
@@ -38,7 +41,7 @@
   },
   "latestVersion": "2026.9.3",
   "releaseDate": "2026-10-02",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/syson.png",
   "sourceDescriptionZh": "Obeo主导开发、Eclipse 基金会旗下的开源SysML v2图形化建模工具。完全基于Web，目标就是建立原生SysML v2图形建模环境，而不是在UML/SysML v1工具上增加兼容层。\n\n目前支持General View、结构、需求、行为等SysML v2元素的图形编辑，也在不断增强SysML v2文本导入/导出能力。",
   "sourceUpdatedText": "2026年10月2日",
@@ -49,5 +52,16 @@
       "url": "https://mbse-syson.org/"
     }
   ],
-  "featured": true
+  "featured": true,
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://doc.mbse-syson.org/syson/v2024.11.0/user-manual/faq/faq.html",
+      "checkedAt": "2026-10-23"
+    }
+  },
+  "classificationNotes": [
+    "A product-specific GraphQL API is not equivalent to the standard SysML v2 API; standard API support remains Unknown."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

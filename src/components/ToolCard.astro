@@ -4,6 +4,12 @@ import { formatDate } from '../lib/tools';
 
 interface Props { tool: Tool; }
 const { tool } = Astro.props;
+const environmentTags = tool.operatingSystems.length
+  ? tool.operatingSystems
+  : tool.deliveryModes.includes('Web Application')
+    ? ['Web browser']
+    : tool.deliveryModes;
+const pricing = tool.pricingModels.filter((item) => item !== 'Unknown').join(' + ') || 'Pricing unknown';
 ---
 
 <article class="tool-card">
@@ -19,9 +25,9 @@ const { tool } = Astro.props;
     <p class="tool-card__description">{tool.description}</p>
   </div>
   <div class="tag-row">
-    {tool.platforms.slice(0, 2).map((item) => <span class="tag">{item}</span>)}
+    {environmentTags.slice(0, 2).map((item) => <span class="tag">{item}</span>)}
     {tool.standards.slice(0, 2).map((item) => <span class="tag tag--standard">{item}</span>)}
-    <span class="tag">{tool.licenseTypes[0]}</span>
+    <span class="tag">{tool.sourceLicense} · {pricing}</span>
   </div>
   <a class="tool-card__link" href={`/tools/${tool.id}/`}>
     Review tool <span aria-hidden="true">→</span>

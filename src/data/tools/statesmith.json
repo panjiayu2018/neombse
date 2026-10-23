@@ -5,23 +5,30 @@
   "website": "https://github.com/StateSmith/StateSmith",
   "description": "An open-source state-machine code generator supporting multiple programming languages and several diagram-authoring workflows.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Cross-platform"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
   "runtimes": [
     ".NET"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Code generator"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Textual"
@@ -38,7 +45,7 @@
   },
   "latestVersion": "0.22.2",
   "releaseDate": "2026-05-11",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/StateSmith.png",
   "sourceDescriptionZh": "状态机代码生成工具，支持多种编程语言和多种建模工具。",
   "sourceUpdatedText": "2026年5月11日",
@@ -49,5 +56,8 @@
       "url": "https://github.com/StateSmith/StateSmith"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

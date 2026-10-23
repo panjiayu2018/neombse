@@ -5,22 +5,25 @@
   "website": "https://www.omnigroup.com/omnigraffle",
   "description": "The iPadOS edition of OmniGraffle, a general-purpose visual design and diagramming application with UML stencils.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "iOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Mobile Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Diagramming tool"
   ],
-  "licenseTypes": [
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
     "Unknown"
   ],
   "modelingModes": [
@@ -38,7 +41,7 @@
   },
   "latestVersion": "3.21",
   "releaseDate": "2024-12-12",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/omnigraffleios.png",
   "sourceDescriptionZh": "绘图工具iPadOS版，支持UML，需要iPadOS 16。",
   "sourceUpdatedText": "2024年12月12日",
@@ -49,5 +52,8 @@
       "url": "https://www.omnigroup.com/omnigraffle"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

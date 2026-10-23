@@ -5,20 +5,21 @@
   "website": "https://github.com/Systems-Modeling/SysML-v2-Release",
   "description": "The official SysML v2 reference and pilot implementation, including textual editing, parsing and validation, a Jupyter kernel, visualization, standard libraries, and API support.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Editor integration",
-    "Notebook",
-    "Command line",
-    "Desktop"
+  "deliveryModes": [
+    "IDE Extension",
+    "Notebook Integration",
+    "CLI",
+    "Desktop Application"
   ],
-  "runtimes": [
+  "runtimes": [],
+  "hostApplications": [
     "Eclipse",
-    "Jupyter"
+    "JupyterLab"
   ],
   "standards": [
     "SysML v2"
@@ -26,8 +27,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical",
@@ -45,7 +50,7 @@
   },
   "latestVersion": "2026-08",
   "releaseDate": "2026-09-12",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/pilot.png",
   "sourceDescriptionZh": "OMG维护的SysML v2官方参考实现/试验实现。它长期伴随SysML v2规范开发，是很多商业和开源工具实现SysML v2时的重要参考。包括Eclipse文本编辑器、SysML/KerML解析与验证、Jupyter Kernel、模型可视化、标准模型库以及Systems Modeling API支持。",
   "sourceUpdatedText": "2026年9月12日",
@@ -56,5 +61,18 @@
       "url": "https://github.com/Systems-Modeling/SysML-v2-Release"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://github.com/Systems-Modeling/SysML-v2-Release",
+      "checkedAt": "2026-10-23",
+      "note": "Provided by a dedicated API / Services component.",
+      "availability": "Component-specific"
+    }
+  },
+  "classificationNotes": [
+    "The editor, notebook, and API Services are separable components of the pilot release."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

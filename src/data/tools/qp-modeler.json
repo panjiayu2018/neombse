@@ -5,25 +5,28 @@
   "website": "https://www.state-machine.com/products/qm",
   "description": "A model-driven design tool for hierarchical state machines in real-time embedded software, with C and C++ generation for the QP framework.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Code generator"
   ],
-  "licenseTypes": [
-    "Freeware"
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -40,7 +43,7 @@
   },
   "latestVersion": "7.0.3",
   "releaseDate": "2026-02-28",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/qm.png",
   "sourceDescriptionZh": "由Quantum Leaps从2010年开始开发的模型驱动设计工具，主要用于实时嵌入式软件的状态机建模和代码生成。重点支持层次化状态机，并可结合QP实时事件框架自动生成C或C++代码。",
   "sourceUpdatedText": "2026年2月28日",
@@ -51,5 +54,8 @@
       "url": "https://www.state-machine.com/products/qm"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

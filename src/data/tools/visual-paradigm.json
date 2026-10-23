@@ -5,40 +5,47 @@
   "website": "https://www.visual-paradigm.com/",
   "description": "A broad commercial modeling suite with UML, use-case specifications, textual analysis, code-to-sequence reverse engineering, requirements management, reporting, and ArchiMate support.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Cross-platform"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
   "runtimes": [
-    "Java"
+    "JVM"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
   ],
   "features": {
-    "xmiImport": "Unknown",
-    "xmiExport": "Unknown",
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
     "collaboration": "Unknown",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
-    "simulation": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
+    "simulation": "Yes",
     "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "18.0 (2026-05-21)",
   "releaseDate": "2026-05-21",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/visualparadigm.png",
   "sourceDescriptionZh": "18.0版本已经宣称AI驱动。很用心的UML建模工具。支持编写用例规约。支持文本分析和CRC卡。支持自定义形状或导入Visio的图形。Java代码转序列图。有需求管理功能。可用性好，图形漂亮。报表生成，影响分析。业务规则编辑器，对企业架构语言ArchiMate的支持。",
   "sourceUpdatedText": "2026年5月21日",
@@ -49,5 +56,46 @@
       "url": "https://www.visual-paradigm.com/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://www.visual-paradigm.com/support/edition-comparison.jsp",
+      "checkedAt": "2026-10-23",
+      "note": "Availability and model coverage vary by edition.",
+      "availability": "Edition-specific"
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://www.visual-paradigm.com/support/edition-comparison.jsp",
+      "checkedAt": "2026-10-23",
+      "note": "Availability and model coverage vary by edition.",
+      "availability": "Edition-specific"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.visual-paradigm.com/support/edition-comparison.jsp",
+      "checkedAt": "2026-10-23",
+      "note": "Availability varies by edition.",
+      "availability": "Edition-specific"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://www.visual-paradigm.com/support/edition-comparison.jsp",
+      "checkedAt": "2026-10-23",
+      "note": "Availability varies by edition.",
+      "availability": "Edition-specific"
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.visual-paradigm.com/support/edition-comparison.jsp",
+      "checkedAt": "2026-10-23",
+      "note": "Verified for business-process simulation; not a general claim for all UML/SysML behavior models.",
+      "availability": "Edition-specific"
+    }
+  },
+  "classificationNotes": [
+    "The verified simulation claim is for business-process simulation and should not be read as arbitrary UML/SysML behavior execution."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

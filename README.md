@@ -22,6 +22,7 @@ Open `http://localhost:4321/`.
 
 ```powershell
 npm.cmd run check
+npm.cmd run check:data
 npm.cmd run build
 ```
 
@@ -31,7 +32,7 @@ The production output is written to `dist/`.
 
 Each tool is stored as one JSON file in `src/data/tools/`. Adding a record automatically adds it to the directory and creates a static detail page at `/tools/<id>/`.
 
-The current catalog is imported from `tools/umltools.html` and `tools/sysmltools.html`. The importer merges duplicated records, applies the reviewed English metadata in `scripts/legacy-tool-overrides.mjs`, copies referenced images, and writes the site JSON files:
+The current catalog is imported from `tools/umltools.html` and `tools/sysmltools.html`. The importer merges duplicated records, applies the reviewed English metadata in `scripts/legacy-tool-overrides.mjs`, then applies the evidence-backed classification and capability corrections in `scripts/audit-overrides.mjs`. It copies referenced images and writes the site JSON files:
 
 ```powershell
 npm.cmd run import:legacy
@@ -39,7 +40,20 @@ npm.cmd run import:legacy
 
 Update the two source HTML files and their image folders first, then update the English override map when a new heading is introduced. The import fails rather than silently publishing a tool without reviewed English metadata.
 
+The audit override is part of the import pipeline so a future legacy import cannot silently restore ambiguous values such as `Cross-platform`, treat a browser as an operating system, or discard capability evidence.
+
 The original `tools/pics/` and `tools/sysmlpics/` archives remain local and are ignored by Git to avoid storing two copies of every image. Referenced images are copied into the tracked `public/images/tools/` directory by the importer.
+
+Classification fields intentionally separate:
+
+- client operating systems;
+- delivery / access modes;
+- runtimes and host applications;
+- source-code licensing and pricing models.
+
+Capability evidence is attached to the individual capability and records the source, review date, availability condition, and any scope note.
+
+`npm run check:data` validates required classifications, rejects ambiguous operating-system values, and confirms that capability evidence agrees with the published state. It also runs automatically before each production build.
 
 Capability values are deliberately three-state:
 

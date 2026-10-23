@@ -9,6 +9,7 @@ import {
   TEXTUAL_IDS,
   TOOL_OVERRIDES,
 } from './legacy-tool-overrides.mjs';
+import { applyAuditOverrides } from './audit-overrides.mjs';
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const root = join(scriptDirectory, '..');
@@ -174,19 +175,22 @@ for (const entry of entries) {
     ? ['SysML v2']
     : (STANDARD_OVERRIDES[override.id] ?? ['UML']);
   const imageName = basename(entry.image);
-  const tool = {
+  const tool = applyAuditOverrides({
     id: override.id,
     name: override.name,
     vendor: override.vendor,
     website: entry.website,
     description: override.summary,
     editorialNote: `Imported from the UMLChina ${entry.source === 'sysml' ? 'SysML v2' : 'UML'} tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.`,
-    platforms: platforms(entry.platform),
-    accessModes: accessModes(entry.platform),
+    operatingSystems: platforms(entry.platform),
+    deliveryModes: accessModes(entry.platform),
     runtimes: runtimes(entry.platform),
+    hostApplications: [],
     standards,
     toolTypes: toolTypes(override.id),
-    licenseTypes: licenses(entry.fee),
+    sourceLicense: licenses(entry.fee).includes('Open Source') ? 'Open Source' : 'Unknown',
+    pricingModels: ['Unknown'],
+    licenseTerms: ['Unknown'],
     modelingModes: modelingModes(override.id),
     features: featureStates(override.id, sourceDescriptionZh),
     latestVersion: override.version,
@@ -198,7 +202,7 @@ for (const entry of entries) {
     sourceCollection: entry.source === 'sysml' ? 'UMLChina SysML v2 tools' : 'UMLChina UML tools',
     sources: [{ label: 'Product or project page', url: entry.website }],
     featured: new Set(['enterprise-architect', 'plantuml', 'gaphor', 'syson', 'syside', 'catia-magic-cameo-sysml-v2']).has(override.id),
-  };
+  });
 
   const publishedImage = join(imageDirectory, imageName);
   await writeFile(join(dataDirectory, `${tool.id}.json`), `${JSON.stringify(tool, null, 2)}\n`, 'utf8');

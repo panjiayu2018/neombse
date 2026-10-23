@@ -6,7 +6,7 @@ import { featuredTools, tools } from '../lib/tools';
 import { featuredArticle } from '../data/articles';
 
 const standardCount = new Set(tools.flatMap((tool) => tool.standards)).size;
-const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
+const operatingSystemCount = new Set(tools.flatMap((tool) => tool.operatingSystems)).size;
 ---
 
 <MainLayout>
@@ -15,7 +15,7 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
       <div class="hero-copy">
         <p class="eyebrow">Independent modeling tool directory</p>
         <h1>Choose tools by <em>evidence,</em> not noise.</h1>
-        <p class="lead">Explore UML, SysML v1, and SysML v2 tools by platform, license, and capabilities.</p>
+        <p class="lead">Explore UML, SysML v1, and SysML v2 tools by operating system, delivery mode, source license, pricing, and verified capabilities.</p>
       </div>
       <div class="hero-map panel" aria-label="Directory summary">
         <div class="map-orbit" aria-hidden="true">
@@ -26,7 +26,7 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
         </div>
         <div class="map-stats">
           <div><strong>{tools.length}</strong><span>tools</span></div>
-          <div><strong>{platformCount}</strong><span>platforms</span></div>
+          <div><strong>{operatingSystemCount}</strong><span>operating systems</span></div>
           <div><strong>{standardCount}</strong><span>standards</span></div>
         </div>
       </div>
@@ -40,7 +40,7 @@ const platformCount = new Set(tools.flatMap((tool) => tool.platforms)).size;
     <div class="container">
       <div class="section-heading">
         <div><p class="eyebrow">From the catalog</p><h2>Representative tools.</h2></div>
-        <div class="heading-action"><p>Browse UML and SysML tools across platforms, standards, and licensing models.</p><a href="/tools/">View all {tools.length} tools →</a></div>
+        <div class="heading-action"><p>Browse UML and SysML tools across operating systems, delivery modes, standards, and licensing models.</p><a href="/tools/">View all {tools.length} tools →</a></div>
       </div>
       <div class="tool-grid">{featuredTools.map((tool) => <ToolCard tool={tool} />)}</div>
     </div>

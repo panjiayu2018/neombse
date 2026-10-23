@@ -5,15 +5,14 @@
   "website": "https://www.softwareideas.net/en/download",
   "description": "A lightweight commercial modeling application for Windows with support for UML, BPMN, and SysML.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML",
     "SysML v1"
@@ -21,25 +20,30 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Free Tier Available",
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
   ],
   "features": {
-    "xmiImport": "Unknown",
-    "xmiExport": "Unknown",
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
     "collaboration": "Unknown",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
     "simulation": "Unknown",
-    "requirementsManagement": "Unknown",
+    "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "15.55",
   "releaseDate": "2026-08-13",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/softwareideas.png",
   "sourceDescriptionZh": "轻量级建模工具，支持UML、BPMN、SysML。",
   "sourceUpdatedText": "2026年8月13日",
@@ -50,5 +54,46 @@
       "url": "https://www.softwareideas.net/en/download"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://www.softwareideas.net/en/edition-comparison",
+      "checkedAt": "2026-10-23",
+      "note": "Available in Professional and Ultimate editions.",
+      "availability": "Edition-specific"
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://www.softwareideas.net/en/edition-comparison",
+      "checkedAt": "2026-10-23",
+      "note": "Available in Professional and Ultimate editions.",
+      "availability": "Edition-specific"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.softwareideas.net/en/edition-comparison",
+      "checkedAt": "2026-10-23",
+      "note": "Availability varies by edition.",
+      "availability": "Edition-specific"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://www.softwareideas.net/en/edition-comparison",
+      "checkedAt": "2026-10-23",
+      "note": "Availability varies by edition.",
+      "availability": "Edition-specific"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.softwareideas.net/",
+      "checkedAt": "2026-10-23",
+      "note": "Scope varies by edition.",
+      "availability": "Edition-specific"
+    }
+  },
+  "classificationNotes": [
+    "XMI import and export require Professional or Ultimate editions; other capabilities also vary by edition."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

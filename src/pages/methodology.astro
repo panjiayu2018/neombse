@@ -11,13 +11,25 @@ import MainLayout from '../layouts/MainLayout.astro';
     <h3>Yes</h3><p>A current official source or reproducible product test supports the capability.</p>
     <h3>No</h3><p>A reliable source or test establishes that the capability is not supported. An absent marketing claim is not sufficient evidence for No.</p>
     <h3>Unknown</h3><p>The capability has not yet been verified. Unknown is not a negative finding.</p>
+    <p>Evidence is attached to the individual capability whenever available. A status may also include an availability condition such as <strong>Plugin</strong>, <strong>Edition-specific</strong>, or <strong>Component-specific</strong>.</p>
     <h2>Classification rules</h2>
     <ul>
-      <li><strong>Platform</strong> is where the product runs, such as Windows, Linux, macOS, or a browser.</li>
-      <li><strong>Access mode</strong> describes how people use it, such as desktop, web application, command line, or editor integration.</li>
-      <li><strong>Runtime or host</strong> records dependencies such as Java, Eclipse, or VS Code.</li>
+      <li><strong>Operating system</strong> records supported client operating systems such as Windows, Linux, macOS, Android, iOS, or ChromeOS. “Cross-platform” is not used because it does not identify the supported systems.</li>
+      <li><strong>Delivery / access mode</strong> describes how people use the product: desktop application, web application, mobile application, IDE extension, command line, library / SDK, notebook integration, or API service. A browser is an access method, not an operating system.</li>
+      <li><strong>Runtime</strong> records execution dependencies such as JVM, .NET, Python, Node.js, Electron, or browser JavaScript.</li>
+      <li><strong>Host application</strong> records a required environment such as VS Code, Eclipse, JupyterLab, or Confluence.</li>
       <li><strong>Modeling interface</strong> separates graphical, textual, and hybrid experiences.</li>
       <li><strong>Tool type</strong> distinguishes semantic model editors from diagram generators and drawing tools.</li>
+      <li><strong>Source license</strong> identifies whether the code is open source, proprietary, source available, or still unknown.</li>
+      <li><strong>Pricing model</strong> is independent from source licensing and records free, free-tier, paid, custom-quote, or unknown offers.</li>
+    </ul>
+    <h2>Capability boundaries</h2>
+    <ul>
+      <li><strong>XMI</strong> means UML/SysML model interchange, not arbitrary XML import or export.</li>
+      <li><strong>Code generation</strong> means target-language implementation or executable state-machine code; rendering SVG or PNG diagrams does not qualify.</li>
+      <li><strong>Reverse engineering</strong> identifies the source boundary, such as source code to diagrams or source code to a semantic model.</li>
+      <li><strong>Simulation</strong> may mean behavior execution, business-process simulation, or numerical simulation; the evidence note states the verified scope.</li>
+      <li><strong>SysML v2 API</strong> means the OMG Systems Modeling API and Services. A product-specific REST or GraphQL API is not sufficient.</li>
     </ul>
     <h2>Source priority</h2>
     <ol>
@@ -28,5 +40,7 @@ import MainLayout from '../layouts/MainLayout.astro';
     </ol>
     <h2>Corrections</h2>
     <p>Every record includes a last-checked date and source links. Vendors and users can <a href="/submit/">submit a correction</a>; all changes are reviewed before publication.</p>
+    <h2>Coverage policy</h2>
+    <p>Candidate products are reviewed before they enter the main directory. Viewers, repositories, integration platforms, and automation libraries may be included, but their tool type must make clear that they are not necessarily modeling editors. Related MBSE products that do not implement UML or SysML are kept outside the main directory.</p>
   </article>
 </MainLayout>

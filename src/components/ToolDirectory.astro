@@ -4,10 +4,14 @@ import ToolCard from './ToolCard.astro';
 
 interface Props { tools: Tool[]; deferResults?: boolean; }
 const { tools, deferResults = false } = Astro.props;
-const platforms = [...new Set(tools.flatMap((tool) => tool.platforms))].sort();
+const operatingSystems = [...new Set(tools.flatMap((tool) => tool.operatingSystems))].sort();
+const deliveryModes = [...new Set(tools.flatMap((tool) => tool.deliveryModes))].sort();
 const standards = [...new Set(tools.flatMap((tool) => tool.standards))].sort();
-const licenses = [...new Set(tools.flatMap((tool) => tool.licenseTypes))].sort();
+const sourceLicenses = [...new Set(tools.map((tool) => tool.sourceLicense))].sort();
+const pricingModels = [...new Set(tools.flatMap((tool) => tool.pricingModels))].sort();
 const modes = [...new Set(tools.flatMap((tool) => tool.modelingModes))].sort();
+const toolTypes = [...new Set(tools.flatMap((tool) => tool.toolTypes))].sort();
+const runtimeHosts = [...new Set(tools.flatMap((tool) => [...tool.runtimes, ...tool.hostApplications]))].sort();
 const capabilityLabels: Record<keyof Tool['features'], string> = {
   xmiImport: 'XMI import',
   xmiExport: 'XMI export',
@@ -29,11 +33,17 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
       <label for="tool-search">Search the directory</label>
       <input id="tool-search" type="search" placeholder="Tool, vendor, or capability…" data-filter-search />
     </div>
-    <div class="filter-grid">
-      <label>Platform
-        <select data-filter="platform">
-          <option value="">All platforms</option>
-          {platforms.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+    <div class="filter-grid filter-grid--primary">
+      <label>Operating system
+        <select data-filter="os">
+          <option value="">All operating systems</option>
+          {operatingSystems.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+        </select>
+      </label>
+      <label>Delivery / access
+        <select data-filter="delivery">
+          <option value="">All delivery modes</option>
+          {deliveryModes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
         </select>
       </label>
       <label>Standard
@@ -42,16 +52,16 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
           {standards.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
         </select>
       </label>
-      <label>License
-        <select data-filter="license">
-          <option value="">All licenses</option>
-          {licenses.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+      <label>Source license
+        <select data-filter="source-license">
+          <option value="">All source licenses</option>
+          {sourceLicenses.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
         </select>
       </label>
-      <label>Interface
-        <select data-filter="mode">
-          <option value="">All interfaces</option>
-          {modes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+      <label>Pricing
+        <select data-filter="pricing">
+          <option value="">All pricing models</option>
+          {pricingModels.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
         </select>
       </label>
       <label>Capability
@@ -61,6 +71,29 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
         </select>
       </label>
     </div>
+    <details class="advanced-filters">
+      <summary>Advanced filters</summary>
+      <div class="filter-grid filter-grid--advanced">
+        <label>Runtime / host
+          <select data-filter="runtime-host">
+            <option value="">All runtimes and hosts</option>
+            {runtimeHosts.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+          </select>
+        </label>
+        <label>Tool type
+          <select data-filter="tool-type">
+            <option value="">All tool types</option>
+            {toolTypes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+          </select>
+        </label>
+        <label>Modeling interface
+          <select data-filter="mode">
+            <option value="">All interfaces</option>
+            {modes.map((item) => <option value={item.toLowerCase()}>{item}</option>)}
+          </select>
+        </label>
+      </div>
+    </details>
     <div class="filter-footer">
       <p aria-live="polite"><strong data-result-count>{tools.length}</strong><span data-result-label>{deferResults ? ' tools available' : ' tools shown'}</span></p>
       <button type="button" data-clear-filters>Clear filters</button>
@@ -71,10 +104,14 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
     {tools.map((tool) => (
       <div
         data-tool
-        data-search={`${tool.name} ${tool.vendor} ${tool.description} ${tool.toolTypes.join(' ')}`.toLowerCase()}
-        data-platform={tool.platforms.join('|').toLowerCase()}
+        data-search={`${tool.name} ${tool.vendor} ${tool.description} ${tool.toolTypes.join(' ')} ${tool.operatingSystems.join(' ')} ${tool.deliveryModes.join(' ')} ${tool.runtimes.join(' ')} ${tool.hostApplications.join(' ')}`.toLowerCase()}
+        data-os={tool.operatingSystems.join('|').toLowerCase()}
+        data-delivery={tool.deliveryModes.join('|').toLowerCase()}
         data-standard={tool.standards.join('|').toLowerCase()}
-        data-license={tool.licenseTypes.join('|').toLowerCase()}
+        data-source-license={tool.sourceLicense.toLowerCase()}
+        data-pricing={tool.pricingModels.join('|').toLowerCase()}
+        data-runtime-host={[...tool.runtimes, ...tool.hostApplications].join('|').toLowerCase()}
+        data-tool-type={tool.toolTypes.join('|').toLowerCase()}
         data-mode={tool.modelingModes.join('|').toLowerCase()}
         data-capability={Object.entries(tool.features).filter(([, value]) => value === 'Yes').map(([key]) => key.toLowerCase()).join('|')}
       >
@@ -86,7 +123,7 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
   <div class="empty-state" data-empty-state hidden>
     <span aria-hidden="true">∅</span>
     <h2>No tools match those filters.</h2>
-    <p>Try broadening the platform, standard, license, or interface selection.</p>
+    <p>Try broadening the operating system, delivery, standard, licensing, or capability selection.</p>
     <button type="button" data-clear-filters>Reset the directory</button>
   </div>
 </section>
@@ -112,9 +149,13 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
       tools.forEach((tool) => {
         if (!(tool instanceof HTMLElement)) return;
         const matches = (!query || tool.dataset.search?.includes(query))
-          && (!values.platform || tool.dataset.platform?.split('|').includes(values.platform))
+          && (!values.os || tool.dataset.os?.split('|').includes(values.os))
+          && (!values.delivery || tool.dataset.delivery?.split('|').includes(values.delivery))
           && (!values.standard || tool.dataset.standard?.split('|').includes(values.standard))
-          && (!values.license || tool.dataset.license?.split('|').includes(values.license))
+          && (!values['source-license'] || tool.dataset.sourceLicense === values['source-license'])
+          && (!values.pricing || tool.dataset.pricing?.split('|').includes(values.pricing))
+          && (!values['runtime-host'] || tool.dataset.runtimeHost?.split('|').includes(values['runtime-host']))
+          && (!values['tool-type'] || tool.dataset.toolType?.split('|').includes(values['tool-type']))
           && (!values.mode || tool.dataset.mode?.split('|').includes(values.mode))
           && (!values.capability || tool.dataset.capability?.split('|').includes(values.capability));
         tool.hidden = !matches;
@@ -142,9 +183,13 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
     const params = new URLSearchParams(window.location.search);
     if (search instanceof HTMLInputElement) search.value = params.get('q') ?? '';
     const presetFilters = {
-      platform: params.get('platform'),
+      os: params.get('os') ?? params.get('platform'),
+      delivery: params.get('delivery'),
       standard: params.get('standard'),
-      license: params.get('license'),
+      'source-license': params.get('sourceLicense') ?? params.get('license'),
+      pricing: params.get('pricing'),
+      'runtime-host': params.get('runtime'),
+      'tool-type': params.get('type'),
       mode: params.get('mode'),
       capability: params.get('capability'),
     };
@@ -166,6 +211,10 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
   input { padding: .75rem 1rem; font-size: 1rem; }
   select { padding: .65rem .75rem; }
   .filter-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; margin-top: .8rem; }
+  .filter-grid--primary { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .filter-grid--advanced { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .advanced-filters { margin-top: 1rem; border-top: 1px solid var(--line); }
+  .advanced-filters summary { width: fit-content; padding-top: .9rem; color: var(--teal-dark); cursor: pointer; font-size: .78rem; font-weight: 800; }
   .filter-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1rem; padding-top: .8rem; border-top: 1px solid var(--line); }
   .filter-footer p { margin: 0; color: var(--ink-soft); font-size: .84rem; }
   button { border: 0; background: transparent; color: var(--teal-dark); cursor: pointer; font-weight: 800; }
@@ -175,6 +224,6 @@ const capabilities = Object.entries(capabilityLabels).filter(([key]) =>
   .empty-state span { font-family: var(--font-mono); font-size: 3rem; }
   .empty-state p { color: var(--ink-soft); }
   .empty-state button { margin-top: .5rem; padding: .7rem 1rem; border: 1px solid var(--teal); border-radius: 999px; }
-  @media (max-width: 800px) { .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 800px) { .filter-grid, .filter-grid--primary, .filter-grid--advanced { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 520px) { .filter-grid { grid-template-columns: 1fr; } }
 </style>

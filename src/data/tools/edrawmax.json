@@ -5,27 +5,31 @@
   "website": "https://www.edrawsoft.com/ad/edraw-max/",
   "description": "A cross-platform general-purpose diagramming suite that supports UML, flowcharts, organization charts, network diagrams, ER diagrams, collaboration, and AI-assisted features.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Browser",
+  "operatingSystems": [
     "Windows",
-    "Linux",
-    "macOS"
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Web application",
-    "Desktop"
+  "deliveryModes": [
+    "Web Application",
+    "Desktop Application"
   ],
   "runtimes": [
-    "Browser"
+    "Browser JavaScript"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Diagramming tool"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -42,7 +46,7 @@
   },
   "latestVersion": "16",
   "releaseDate": "2026-09-14",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/edrawmax.png",
   "sourceDescriptionZh": "老牌通用绘图软件，2019年被中国公司万兴科技（Wondershare）控股收购。支持流程图、组织结构图、网络图、UML、ER 图、平面图等多种图形，是Microsoft Visio的同类竞争产品。现已发展为覆盖Windows、macOS、Linux、移动端和浏览器的跨平台绘图工具，并加入在线协作和AI功能。",
   "sourceUpdatedText": "2026年9月14日",
@@ -53,5 +57,8 @@
       "url": "https://www.edrawsoft.com/ad/edraw-max/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

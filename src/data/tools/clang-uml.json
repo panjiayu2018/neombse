@@ -5,25 +5,28 @@
   "website": "https://clang-uml.github.io/",
   "description": "An open-source reverse-engineering tool that generates class, sequence, package, and other diagrams from C and C++ code in PlantUML, Mermaid, or JSON form.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Code generator"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Textual"
@@ -40,7 +43,7 @@
   },
   "latestVersion": "0.6.3",
   "releaseDate": "2026-07-06",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/clang.png",
   "sourceDescriptionZh": "C/C++逆向生成UML类图、序列图、包图等，以PlantUML、Mermaid和JSON格式呈现。",
   "sourceUpdatedText": "2026年7月6日",
@@ -51,5 +54,10 @@
       "url": "https://clang-uml.github.io/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [
+    "Reverse engineering means converting C/C++ AST data into PlantUML, Mermaid, or JSON diagrams."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

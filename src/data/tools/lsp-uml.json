@@ -5,13 +5,16 @@
   "website": "https://github.com/flying-dice/lsp-uml",
   "description": "An open-source VS Code extension that derives UML class, sequence, activity, and use-case diagrams from a running language server.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Not specified"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Editor integration"
+  "deliveryModes": [
+    "IDE Extension"
   ],
-  "runtimes": [
+  "runtimes": [],
+  "hostApplications": [
     "VS Code"
   ],
   "standards": [
@@ -20,8 +23,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Textual"
@@ -38,7 +45,7 @@
   },
   "latestVersion": "0.4.6",
   "releaseDate": "2026-08-30",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/lsp.png",
   "sourceDescriptionZh": "从VS Code已运行的Language Server绘制UML类图、序列图、活动图和用例图。",
   "sourceUpdatedText": "2026年8月30日",
@@ -49,5 +56,8 @@
       "url": "https://github.com/flying-dice/lsp-uml"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

@@ -5,23 +5,30 @@
   "website": "https://www.christianpauli.de/statemodeler.html",
   "description": "A state-machine modeling tool available as a standalone editor or Eclipse plugin, with Java, C#, and C++ code generation.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Cross-platform"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
   "runtimes": [
-    "Java"
+    "JVM"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Code generator"
   ],
-  "licenseTypes": [
-    "Freeware"
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -38,7 +45,7 @@
   },
   "latestVersion": "3.3",
   "releaseDate": "2026-02-13",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/sustate.png",
   "sourceDescriptionZh": "状态机建模工具，可以生成Java、C#、C++代码。有独立编辑和Eclipse插件两种形式。",
   "sourceUpdatedText": "2026年2月13日",
@@ -49,5 +56,8 @@
       "url": "https://www.christianpauli.de/statemodeler.html"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

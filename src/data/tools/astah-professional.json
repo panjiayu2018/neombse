@@ -5,40 +5,47 @@
   "website": "https://astah.net/products/astah-professional/",
   "description": "A mature commercial UML modeling tool, formerly named JUDE, with a plugin ecosystem and recent improvements to AI assistance, sequence diagrams, search, and collaboration.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Cross-platform"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
   "runtimes": [
-    "Java"
+    "JVM"
   ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
   ],
   "features": {
-    "xmiImport": "Unknown",
-    "xmiExport": "Unknown",
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
     "collaboration": "Yes",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
     "simulation": "Unknown",
-    "requirementsManagement": "Unknown",
+    "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "12.0",
   "releaseDate": "2026-07-15",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/astah.png",
   "sourceDescriptionZh": "日本老牌UML建模工具，曾用名：JUDE。支持自行编写的插件。新版本支持AI建模。近年来持续加入 AI 辅助建模功能，12.0版进一步改进了序列图编辑、模型检索和团队协作能力。",
   "sourceUpdatedText": "2026年7月15日",
@@ -49,5 +56,42 @@
       "url": "https://astah.net/products/astah-professional/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://astah.net/products/plugins-integrations/",
+      "checkedAt": "2026-10-23",
+      "note": "Requires the XMI extension; supported versions and diagram fidelity are limited.",
+      "availability": "Plugin"
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://astah.net/products/plugins-integrations/",
+      "checkedAt": "2026-10-23",
+      "note": "Requires the XMI extension; supported versions and diagram fidelity are limited.",
+      "availability": "Plugin"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://astah.net/products/astah-professional/",
+      "checkedAt": "2026-10-23"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://astah.net/products/astah-professional/",
+      "checkedAt": "2026-10-23"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://astah.net/products/compare-editions/",
+      "checkedAt": "2026-10-23",
+      "note": "Model-level requirements and traceability; not necessarily enterprise requirements management.",
+      "availability": "Edition-specific"
+    }
+  },
+  "classificationNotes": [
+    "The desktop product supports Windows, macOS, and Linux; JVM is a runtime, not an operating system."
+  ],
+  "classificationReviewedAt": "2026-10-23"
 }

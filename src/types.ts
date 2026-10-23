@@ -5,6 +5,15 @@ export interface Source {
   url: string;
 }
 
+export interface FeatureEvidence {
+  status: EvidenceState;
+  url: string;
+  checkedAt: string;
+  availability?: 'Built-in' | 'Plugin' | 'Edition-specific' | 'Component-specific' | 'External integration';
+  version?: string;
+  note?: string;
+}
+
 export interface ToolFeatures {
   xmiImport: EvidenceState;
   xmiExport: EvidenceState;
@@ -23,14 +32,23 @@ export interface Tool {
   website: string;
   description: string;
   editorialNote: string;
-  platforms: string[];
-  accessModes: string[];
+  operatingSystems: string[];
+  deliveryModes: string[];
   runtimes: string[];
+  hostApplications: string[];
   standards: string[];
   toolTypes: string[];
-  licenseTypes: string[];
+  sourceLicense: 'Open Source' | 'Proprietary' | 'Source Available' | 'Unknown';
+  spdxLicenseId?: string;
+  pricingModels: Array<'Free' | 'Free Tier Available' | 'Paid' | 'Custom Quote' | 'Unknown'>;
+  licenseTerms: Array<'Perpetual' | 'Subscription' | 'Usage-based' | 'Unknown'>;
+  trialAvailable?: boolean | 'Unknown';
+  commercialUseAllowed?: boolean | 'Unknown';
   modelingModes: string[];
   features: ToolFeatures;
+  featureEvidence?: Partial<Record<keyof ToolFeatures, FeatureEvidence>>;
+  classificationNotes?: string[];
+  classificationReviewedAt?: string;
   latestVersion: string | null;
   releaseDate: string | null;
   lastChecked: string;

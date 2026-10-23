@@ -3,16 +3,19 @@
   "name": "Umbrello",
   "vendor": "KDE",
   "website": "https://apps.kde.org/umbrello/",
-  "description": "An open-source UML modeling application from the KDE ecosystem, primarily distributed for Linux.",
+  "description": "An open-source UML modeling application from the KDE ecosystem with source-code generation and distributions for Linux and Windows.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Linux"
+  "operatingSystems": [
+    "Linux",
+    "Windows",
+    "macOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
+  "runtimes": [],
+  "hostApplications": [
+    "Qt / KDE"
   ],
   "standards": [
     "UML"
@@ -20,8 +23,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -30,15 +37,15 @@
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
     "collaboration": "Unknown",
-    "codeGeneration": "Unknown",
+    "codeGeneration": "Yes",
     "reverseEngineering": "Unknown",
     "simulation": "Unknown",
     "requirementsManagement": "Unknown",
     "sysmlV2Api": "Unknown"
   },
-  "latestVersion": "26.08.1",
-  "releaseDate": "2026-09-10",
-  "lastChecked": "2026-10-22",
+  "latestVersion": "26.08.2",
+  "releaseDate": "2026-10-08",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/umbrello.png",
   "sourceDescriptionZh": "基于KDE的Linux平台UML建模工具。开源。暂停更新2年后，2025年底开始重新更新。",
   "sourceUpdatedText": "2026年9月10日",
@@ -49,5 +56,14 @@
       "url": "https://apps.kde.org/umbrello/"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://apps.kde.org/umbrello/",
+      "checkedAt": "2026-10-23"
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

@@ -5,13 +5,16 @@
   "website": "https://marketplace.visualstudio.com/items?itemName=JamieD.sysml-v2-support",
   "description": "An open-source VS Code extension with language-server support, model and feature explorers, requirements tooling, traceability, and multiple SysML v2 views.",
   "editorialNote": "Imported from the UMLChina SysML v2 tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
-    "Not specified"
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
   ],
-  "accessModes": [
-    "Editor integration"
+  "deliveryModes": [
+    "IDE Extension"
   ],
-  "runtimes": [
+  "runtimes": [],
+  "hostApplications": [
     "VS Code"
   ],
   "standards": [
@@ -20,8 +23,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical",
@@ -39,7 +46,7 @@
   },
   "latestVersion": "0.53.0",
   "releaseDate": "2026-10-05",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/sysmlv2support.png",
   "sourceDescriptionZh": "具有完整LSP、标准库、Model Explorer、Feature Explorer、Feature Inspector、Requirements Workbench、模型元素/关系编辑和 Traceability Matrix。支持General、Interconnection、Action Flow、State Transition、Sequence、Case等视图。",
   "sourceUpdatedText": "2026年10月5日",
@@ -50,5 +57,8 @@
       "url": "https://marketplace.visualstudio.com/items?itemName=JamieD.sysml-v2-support"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

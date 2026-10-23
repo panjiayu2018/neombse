@@ -5,25 +5,28 @@
   "website": "https://www.modeliosoft.com",
   "description": "An open-source UML and BPMN modeling environment with collaboration-oriented features and support for shared model storage.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows",
     "Linux",
     "macOS"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Open Source"
+  "sourceLicense": "Open Source",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -40,7 +43,7 @@
   },
   "latestVersion": "6.2",
   "releaseDate": "2026-08-26",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/modelio1.png",
   "sourceDescriptionZh": "UML和BPMN建模，强调协作建模，提供模型网络存储。",
   "sourceUpdatedText": "2026年8月26日",
@@ -51,5 +54,8 @@
       "url": "https://www.modeliosoft.com"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }

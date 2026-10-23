@@ -5,23 +5,26 @@
   "website": "https://backendside.com/erpdesk.php",
   "description": "A Windows modeling application for ER, class, business-process, and sequence diagrams with XMI support.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
-  "platforms": [
+  "operatingSystems": [
     "Windows"
   ],
-  "accessModes": [
-    "Desktop"
+  "deliveryModes": [
+    "Desktop Application"
   ],
-  "runtimes": [
-    "Native application"
-  ],
+  "runtimes": [],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Model editor"
   ],
-  "licenseTypes": [
-    "Commercial"
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
   ],
   "modelingModes": [
     "Graphical"
@@ -38,7 +41,7 @@
   },
   "latestVersion": "1.2",
   "releaseDate": "2026-09-01",
-  "lastChecked": "2026-10-22",
+  "lastChecked": "2026-10-23",
   "image": "/images/tools/erpdesk.png",
   "sourceDescriptionZh": "2026年推出的Windows平台UML建模工具，支持ER图、类图、业务流程图和序列图，支持XMI。",
   "sourceUpdatedText": "2026年9月1日",
@@ -49,5 +52,8 @@
       "url": "https://backendside.com/erpdesk.php"
     }
   ],
-  "featured": false
+  "featured": false,
+  "featureEvidence": {},
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-10-23"
 }
