@@ -1,0 +1,45 @@
+{
+  "id": "astah-sysml",
+  "name": "Astah SysML",
+  "vendor": "Change Vision",
+  "website": "https://astah.net/products/astah-sysml/",
+  "description": "A dedicated desktop SysML v1 modeling product with requirements and parametric diagrams, model traceability, compare-and-merge workflows, scripting, and Cameo-oriented exchange.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. Astah SysML is a separate SKU from Astah Professional and Astah System Safety.",
+  "operatingSystems": ["Windows", "macOS"],
+  "deliveryModes": ["Desktop Application"],
+  "runtimes": ["JVM"],
+  "hostApplications": [],
+  "standards": ["SysML v1"],
+  "toolTypes": ["Model editor"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Paid"],
+  "licenseTerms": ["Unknown"],
+  "trialAvailable": true,
+  "modelingModes": ["Graphical"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Yes",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "xmiExport": {"status": "Yes", "url": "https://astah.net/products/astah-sysml/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "The official page states OMG XMI 2.5 export; Cameo import uses MDXML or MDZIP."},
+    "collaboration": {"status": "Yes", "url": "https://astah.net/products/astah-sysml/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for file comparison and merge rather than real-time co-editing."},
+    "requirementsManagement": {"status": "Yes", "url": "https://astah.net/products/astah-sysml/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for model-level requirements, tables, relationships, and traceability."}
+  },
+  "classificationNotes": ["The product currently supports SysML v1; SysML v2 is provided through separate Astah extensions.", "MDXML/MDZIP import is not labeled as generic XMI import in this record."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": "11.0",
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://astah.net/products/astah-sysml/"},
+    {"label": "Official downloads and platform page", "url": "https://astah.net/downloads/"}
+  ],
+  "featured": false
+}

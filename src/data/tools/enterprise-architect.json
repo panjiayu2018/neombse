@@ -2,7 +2,7 @@
   "id": "enterprise-architect",
   "name": "Enterprise Architect",
   "vendor": "Sparx Systems",
-  "website": "http://www.sparxsystems.com",
+  "website": "https://sparxsystems.com/products/ea/",
   "description": "A commercial Windows modeling suite combining UML and systems modeling with requirements management, estimation, testing support, repositories, and team collaboration.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
   "operatingSystems": [
@@ -14,7 +14,8 @@
   "runtimes": [],
   "hostApplications": [],
   "standards": [
-    "UML"
+    "UML",
+    "SysML v1"
   ],
   "toolTypes": [
     "Model editor"
@@ -48,8 +49,12 @@
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "http://www.sparxsystems.com"
+      "label": "Official product page",
+      "url": "https://sparxsystems.com/products/ea/"
+    },
+    {
+      "label": "Official SysML user guide",
+      "url": "https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/sysml.html"
     }
   ],
   "featured": true,
@@ -75,6 +80,8 @@
       "checkedAt": "2026-10-23"
     }
   },
-  "classificationNotes": [],
+  "classificationNotes": [
+    "Enterprise Architect supports SysML 1.1 through 1.5. SysML availability depends on the edition or an MDG Technology license."
+  ],
   "classificationReviewedAt": "2026-10-23"
 }

@@ -142,6 +142,7 @@ const CLASSIFICATION_NOTES = {
   'clang-uml': ['Reverse engineering means converting C/C++ AST data into PlantUML, Mermaid, or JSON diagrams.'],
   gojs: ['GoJS is a JavaScript diagramming library / SDK, not a ready-to-use UML modeling application.'],
   'itemis-create': ['The product family includes Eclipse desktop, VS Code, and browser editions; capabilities can vary by edition.'],
+  'enterprise-architect': ['Enterprise Architect supports SysML 1.1 through 1.5. SysML availability depends on the edition or an MDG Technology license.'],
   mermaid: ['This record covers the MIT-licensed Mermaid renderer. Mermaid Chart is a separate commercial service.'],
   'papyrus-web': ['Desktop Eclipse Papyrus extensions do not automatically establish equivalent Papyrus Web capabilities.'],
   plantuml: ['Graphviz may be required for some diagram types.'],
@@ -157,6 +158,14 @@ const CLASSIFICATION_NOTES = {
 };
 
 const PRODUCT_OVERRIDES = {
+  'enterprise-architect': {
+    website: 'https://sparxsystems.com/products/ea/',
+    standards: ['UML', 'SysML v1'],
+    sources: [
+      { label: 'Official product page', url: 'https://sparxsystems.com/products/ea/' },
+      { label: 'Official SysML user guide', url: 'https://sparxsystems.com/enterprise_architect_user_guide/17.1/modeling_languages/sysml.html' },
+    ],
+  },
   mermaid: {
     vendor: 'Mermaid project',
     website: 'https://mermaid.js.org/',

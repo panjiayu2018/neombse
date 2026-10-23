@@ -1,0 +1,45 @@
+{
+  "id": "ansys-system-architecture-modeler",
+  "name": "Ansys System Architecture Modeler",
+  "vendor": "Ansys, a Synopsys company",
+  "website": "https://ansys.synopsys.com/products/connect/ansys-system-architecture-modeler",
+  "description": "A cloud-native SysML v2 modeling platform with graphical and textual views, real-time collaboration, standard API access, requirements verification workflows, and model execution.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit and classified from official product documentation and the OMG SysML v2 tools directory.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application", "API Service"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model editor"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Unknown"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Graphical", "Textual"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "collaboration": {"status": "Yes", "url": "https://ansys.synopsys.com/products/connect/ansys-system-architecture-modeler", "checkedAt": "2026-10-23", "availability": "Built-in"},
+    "simulation": {"status": "Yes", "url": "https://ansys.synopsys.com/products/connect/ansys-system-architecture-modeler", "checkedAt": "2026-10-23", "availability": "Edition-specific", "note": "The official page describes SysML v2 model execution and connected simulation workflows."},
+    "requirementsManagement": {"status": "Yes", "url": "https://ansys.synopsys.com/products/connect/ansys-system-architecture-modeler", "checkedAt": "2026-10-23", "note": "Verified for requirements traceability and automated verification workflows."},
+    "sysmlV2Api": {"status": "Yes", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/", "checkedAt": "2026-10-23", "availability": "Built-in"}
+  },
+  "classificationNotes": ["Textual SysML v2 import/export is not counted as XMI model exchange."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://ansys.synopsys.com/products/connect/ansys-system-architecture-modeler"},
+    {"label": "OMG SysML v2 tools directory", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"}
+  ],
+  "featured": false
+}

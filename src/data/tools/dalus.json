@@ -1,0 +1,44 @@
+{
+  "id": "dalus",
+  "name": "Dalus",
+  "vendor": "Dalus",
+  "website": "https://dalus.io/",
+  "description": "An AI-driven collaborative systems engineering platform for SysML v2 architecture modeling, requirements management, traceability, verification, and Python-backed simulation.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit and classified from the official product page and the OMG SysML v2 tools directory.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model editor"],
+  "sourceLicense": "Unknown",
+  "pricingModels": ["Unknown"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Graphical"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {"status": "Yes", "url": "https://dalus.io/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "The official page describes live collaboration."},
+    "simulation": {"status": "Yes", "url": "https://dalus.io/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for behavior and performance simulation using Python scripts."},
+    "requirementsManagement": {"status": "Yes", "url": "https://dalus.io/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Includes assignment, status tracking, verification, and traceability."}
+  },
+  "classificationNotes": ["Source-code licensing and pricing remain Unknown until a reviewed source states them."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://dalus.io/"},
+    {"label": "OMG SysML v2 tools directory", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"}
+  ],
+  "featured": false
+}

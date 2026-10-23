@@ -32,6 +32,8 @@ The production output is written to `dist/`.
 
 Each tool is stored as one JSON file in `src/data/tools/`. Adding a record automatically adds it to the directory and creates a static detail page at `/tools/<id>/`.
 
+Audit-only additions that do not exist in the two legacy HTML catalogs are also stored as individual JSON records in this directory. Re-running the legacy importer updates its own matching records but does not delete these independently reviewed additions.
+
 The current catalog is imported from `tools/umltools.html` and `tools/sysmltools.html`. The importer merges duplicated records, applies the reviewed English metadata in `scripts/legacy-tool-overrides.mjs`, then applies the evidence-backed classification and capability corrections in `scripts/audit-overrides.mjs`. It copies referenced images and writes the site JSON files:
 
 ```powershell
@@ -52,6 +54,8 @@ Classification fields intentionally separate:
 - source-code licensing and pricing models.
 
 Capability evidence is attached to the individual capability and records the source, review date, availability condition, and any scope note.
+
+Unverified P2/P3 candidates live in `src/data/toolCandidates.ts` and are published separately at `/coverage/`. They must not be promoted into `src/data/tools/` until their scope and claims have been checked against primary sources.
 
 `npm run check:data` validates required classifications, rejects ambiguous operating-system values, and confirms that capability evidence agrees with the published state. It also runs automatically before each production build.
 

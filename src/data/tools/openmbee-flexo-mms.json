@@ -1,0 +1,44 @@
+{
+  "id": "openmbee-flexo-mms",
+  "name": "OpenMBEE Flexo / MMS",
+  "vendor": "OpenMBEE",
+  "website": "https://www.openmbee.org/flexo.html",
+  "description": "Open-source model repository and API infrastructure for collaborative MBSE, including a graph-native MMS store and an implementation of the OMG SysML v2 API Services specification.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This record covers repository and service infrastructure rather than treating Flexo / MMS as an ordinary modeling editor.",
+  "operatingSystems": [],
+  "deliveryModes": ["API Service", "Web Application"],
+  "runtimes": [],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model repository", "API infrastructure"],
+  "sourceLicense": "Open Source",
+  "pricingModels": ["Free"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Programmatic"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "collaboration": {"status": "Yes", "url": "https://www.openmbee.org/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "OpenMBEE describes the platform as an open-source collaborative engineering system."},
+    "sysmlV2Api": {"status": "Yes", "url": "https://www.openmbee.org/flexo.html", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Flexo SysMLv2 is an implementation of the OMG SysML v2 API Services specification."}
+  },
+  "classificationNotes": ["This record is for repository and API infrastructure. OpenMBEE's separate SysML v2 Web Modeler is not treated as the same product.", "OpenMBEE prefers Apache-2.0 across its projects, but no single SPDX identifier is asserted here for every component."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official Flexo / MMS page", "url": "https://www.openmbee.org/flexo.html"},
+    {"label": "Official OpenMBEE overview", "url": "https://www.openmbee.org/"},
+    {"label": "OpenMBEE license policy", "url": "https://www.openmbee.org/licenses.html"}
+  ],
+  "featured": false
+}

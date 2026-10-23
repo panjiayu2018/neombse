@@ -14,7 +14,13 @@ import { tools } from '../../lib/tools';
       </div>
     </div>
   </header>
-  <section class="container directory-wrap"><ToolDirectory tools={tools} /></section>
+  <section class="container directory-wrap">
+    <ToolDirectory tools={tools} />
+    <aside class="coverage-note">
+      <p><strong>Coverage is still growing.</strong> NeoMBSE keeps unverified products outside the main results until their scope and claims have been checked.</p>
+      <a href="/coverage/">View the coverage queue →</a>
+    </aside>
+  </section>
 </MainLayout>
 
 <style>
@@ -22,5 +28,9 @@ import { tools } from '../../lib/tools';
   .directory-heading { display: grid; grid-template-columns: 1.3fr .7fr; align-items: end; gap: 2rem; }
   .directory-heading .lead { margin: 0; }
   .directory-wrap { padding-bottom: 7rem; }
+  .coverage-note { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  .coverage-note p { max-width: 760px; margin: 0; color: var(--ink-soft); }
+  .coverage-note a { flex: 0 0 auto; color: var(--teal-dark); font-weight: 800; text-decoration: none; }
   @media (max-width: 760px) { .directory-heading { grid-template-columns: 1fr; } }
+  @media (max-width: 620px) { .coverage-note { align-items: flex-start; flex-direction: column; } }
 </style>

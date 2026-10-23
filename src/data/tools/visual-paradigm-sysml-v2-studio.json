@@ -1,0 +1,42 @@
+{
+  "id": "visual-paradigm-sysml-v2-studio",
+  "name": "Visual Paradigm SysML v2 Studio",
+  "vendor": "Visual Paradigm",
+  "website": "https://sysml.visual-paradigm.com/",
+  "description": "A browser-based SysML v2 environment with textual authoring, synchronized diagrams, validation, AI assistance, and cloud project sharing.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This browser product is separate from the independently developed VS Code extension already listed as SysML v2 Studio for VS Code.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model editor"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Paid"],
+  "licenseTerms": ["Perpetual", "Subscription"],
+  "modelingModes": ["Graphical", "Textual"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {"status": "Yes", "url": "https://sysml.visual-paradigm.com/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for sharing cloud-stored projects with a team."}
+  },
+  "classificationNotes": ["Do not merge this record with SysML v2 Studio for VS Code; the products have different vendors and delivery modes.", "Built-in requirement constructs do not by themselves establish enterprise requirements-management capability."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://sysml.visual-paradigm.com/"},
+    {"label": "Official pricing page", "url": "https://sysml.visual-paradigm.com/pricing/"}
+  ],
+  "featured": false
+}

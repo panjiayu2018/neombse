@@ -1,0 +1,40 @@
+{
+  "id": "intercax-syndeia",
+  "name": "InterCAX Syndeia",
+  "vendor": "InterCAX",
+  "website": "https://intercax.com/products/syndeia/",
+  "description": "An API-first digital-thread platform for connecting, querying, visualizing, and automating model and engineering data across SysML tools, PLM, ALM, CAD, simulation, and repositories.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. Syndeia is classified as an integration platform, not a SysML model editor.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application", "API Service"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Integration platform", "Digital thread platform"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Unknown"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Graphical", "Programmatic"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": ["The SysML v2 standard tag denotes an integration target; Syndeia is not represented as implementing the modeling language itself.", "A product-specific REST API does not by itself establish support for the OMG Systems Modeling API and Services specification."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://intercax.com/products/syndeia/"},
+    {"label": "OMG SysML v2 tools directory", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"}
+  ],
+  "featured": false
+}

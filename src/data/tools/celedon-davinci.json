@@ -1,0 +1,45 @@
+{
+  "id": "celedon-davinci",
+  "name": "Celedon Davinci",
+  "vendor": "Celedon Solutions",
+  "website": "https://celedon.solutions/davinci/",
+  "description": "An AI-assisted engineering platform combining SysML v2 modeling, requirements traceability, collaborative digital threads, simulation, CAD workflows, and code synthesis.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit and classified from the official product page and the OMG SysML v2 tools directory.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model editor", "Integration platform"],
+  "sourceLicense": "Unknown",
+  "pricingModels": ["Unknown"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Graphical", "Textual"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {"status": "Yes", "url": "https://celedon.solutions/davinci/", "checkedAt": "2026-10-23", "availability": "Built-in"},
+    "codeGeneration": {"status": "Yes", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/", "checkedAt": "2026-10-23", "note": "The OMG directory explicitly describes code synthesis."},
+    "simulation": {"status": "Yes", "url": "https://celedon.solutions/davinci/", "checkedAt": "2026-10-23", "availability": "Built-in"},
+    "requirementsManagement": {"status": "Yes", "url": "https://celedon.solutions/davinci/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for requirements traceability and compliance checks."}
+  },
+  "classificationNotes": ["Source-code licensing and pricing remain Unknown because the reviewed pages did not establish them clearly.", "SysML text export is not counted as XMI export."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://celedon.solutions/davinci/"},
+    {"label": "OMG SysML v2 tools directory", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"}
+  ],
+  "featured": false
+}

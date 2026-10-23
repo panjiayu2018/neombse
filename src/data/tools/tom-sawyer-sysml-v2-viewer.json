@@ -1,0 +1,43 @@
+{
+  "id": "tom-sawyer-sysml-v2-viewer",
+  "name": "Tom Sawyer SysML v2 Viewer",
+  "vendor": "Tom Sawyer Software",
+  "website": "https://www.tomsawyer.com/sysml-v2-viewer",
+  "description": "A deployable viewer that connects to SysML v2 API-compliant repositories and automatically lays out interactive graph visualizations for model exploration and presentation.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. It is intentionally classified as a viewer, not a model editor.",
+  "operatingSystems": [],
+  "deliveryModes": ["Web Application"],
+  "runtimes": ["Browser JavaScript"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Model viewer"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Custom Quote"],
+  "licenseTerms": ["Unknown"],
+  "trialAvailable": true,
+  "modelingModes": ["Graphical"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "sysmlV2Api": {"status": "Yes", "url": "https://www.tomsawyer.com/sysml-v2-viewer", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Connects to repositories implementing the OMG Systems Modeling API and Services specification."}
+  },
+  "classificationNotes": ["The viewer does not author or edit SysML v2 model content.", "It can be deployed on premises or in AWS and is also offered for OEM embedding."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": "2.1.0",
+  "releaseDate": "2026-05-20",
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://www.tomsawyer.com/sysml-v2-viewer"},
+    {"label": "Official 2.1 release announcement", "url": "https://www.tomsawyer.com/news/tom-sawyer-software-releases-sysml-v2-viewer-2.1"}
+  ],
+  "featured": false
+}

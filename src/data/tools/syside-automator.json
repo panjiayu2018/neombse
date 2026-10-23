@@ -1,0 +1,39 @@
+{
+  "id": "syside-automator",
+  "name": "Syside Automator",
+  "vendor": "Sensmetry",
+  "website": "https://sensmetry.com/syside/",
+  "description": "A Python library and command-line toolkit for programmatic SysML v2 model editing, evaluation, validation, diagram and CSV export, reporting, and CI/CD automation.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This automation product is recorded separately from the Syside modeling editor.",
+  "operatingSystems": ["Windows", "macOS", "Linux"],
+  "deliveryModes": ["Library / SDK", "CLI"],
+  "runtimes": ["Python"],
+  "hostApplications": [],
+  "standards": ["SysML v2"],
+  "toolTypes": ["Automation tool", "Library / SDK"],
+  "sourceLicense": "Unknown",
+  "pricingModels": ["Paid"],
+  "licenseTerms": ["Unknown"],
+  "modelingModes": ["Programmatic"],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "simulation": {"status": "Yes", "url": "https://sensmetry.com/syside/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for model evaluation and simulation through Python automation."}
+  },
+  "classificationNotes": ["ReqIF import/export is not counted as XMI model exchange.", "Python APIs for automation are not automatically equivalent to the OMG Systems Modeling API and Services specification.", "Source-code licensing remains Unknown until a component-specific license source is verified."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [{"label": "Official Syside product page", "url": "https://sensmetry.com/syside/"}],
+  "featured": false
+}

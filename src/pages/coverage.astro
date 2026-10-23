@@ -1,0 +1,80 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { toolCandidates } from '../data/toolCandidates';
+
+const p2 = toolCandidates.filter((candidate) => candidate.priority === 'P2');
+const p3 = toolCandidates.filter((candidate) => candidate.priority === 'P3');
+---
+
+<MainLayout title="Tool coverage queue — NeoMBSE" description="Products being reviewed for possible inclusion in the NeoMBSE UML and SysML tool directory.">
+  <article class="section container coverage-page">
+    <header class="coverage-heading">
+      <div>
+        <p class="eyebrow">Editorial coverage queue / {toolCandidates.length} candidates</p>
+        <h1>Under review.</h1>
+      </div>
+      <p class="lead">These products are not yet part of the verified directory. They remain here until their availability, scope, licensing, and capability claims can be checked against current primary sources.</p>
+    </header>
+
+    <div class="callout">
+      <strong>Not a product ranking.</strong> P2 means the candidate is relevant to current coverage gaps. P3 means its fit with NeoMBSE's inclusion policy still needs a closer editorial decision.
+    </div>
+
+    <section>
+      <div class="section-title"><div><p class="eyebrow">P2</p><h2>Expand ecosystem coverage</h2></div><span>{p2.length} candidates</span></div>
+      <div class="candidate-grid">
+        {p2.map((candidate) => (
+          <article class="candidate panel">
+            <div class="candidate-top"><span class="tag">{candidate.area}</span><span>{candidate.priority}</span></div>
+            <h3>{candidate.name}</h3>
+            <p class="candidate-function">{candidate.function}</p>
+            <p>{candidate.reviewNote}</p>
+            <a href={candidate.website} target="_blank" rel="noopener noreferrer">Review source lead <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title"><div><p class="eyebrow">P3</p><h2>Review editorial fit</h2></div><span>{p3.length} candidates</span></div>
+      <div class="candidate-grid">
+        {p3.map((candidate) => (
+          <article class="candidate panel">
+            <div class="candidate-top"><span class="tag">{candidate.area}</span><span>{candidate.priority}</span></div>
+            <h3>{candidate.name}</h3>
+            <p class="candidate-function">{candidate.function}</p>
+            <p>{candidate.reviewNote}</p>
+            <a href={candidate.website} target="_blank" rel="noopener noreferrer">Review source lead <span aria-hidden="true">→</span></a>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <footer class="coverage-footer">
+      <p>Products move into the main directory only after their classification and factual claims pass the same evidence rules used for existing records.</p>
+      <a class="button button--light" href="/methodology/">Read the methodology</a>
+    </footer>
+  </article>
+</MainLayout>
+
+<style>
+  .coverage-page { display: grid; gap: 4rem; }
+  .coverage-heading { display: grid; grid-template-columns: 1.15fr .85fr; align-items: end; gap: 2rem; }
+  .coverage-heading h1 { max-width: 720px; }
+  .coverage-heading .lead { margin: 0; }
+  .coverage-page section { display: grid; gap: 1.4rem; }
+  .section-title { display: flex; align-items: end; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+  .section-title h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
+  .section-title .eyebrow { margin-bottom: .55rem; }
+  .section-title > span { color: var(--ink-soft); font-family: var(--font-mono); font-size: .72rem; }
+  .candidate-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .candidate { display: grid; align-content: start; gap: .65rem; padding: 1.2rem; box-shadow: none; }
+  .candidate-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--teal-dark); font-family: var(--font-mono); font-size: .68rem; font-weight: 800; }
+  .candidate h3 { margin-top: .35rem; }
+  .candidate p { margin: 0; color: var(--ink-soft); }
+  .candidate .candidate-function { color: var(--ink); font-weight: 750; }
+  .candidate a { margin-top: .3rem; color: var(--teal-dark); font-weight: 800; text-decoration: none; }
+  .coverage-footer { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+  .coverage-footer p { max-width: 680px; margin: 0; color: var(--ink-soft); }
+  @media (max-width: 760px) { .coverage-heading, .candidate-grid { grid-template-columns: 1fr; } .section-title, .coverage-footer { align-items: flex-start; flex-direction: column; } }
+</style>

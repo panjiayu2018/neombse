@@ -1,0 +1,46 @@
+{
+  "id": "astah-system-safety",
+  "name": "Astah System Safety",
+  "vendor": "Change Vision",
+  "website": "https://astah.net/products/astah-system-safety/",
+  "description": "A desktop modeling product combining SysML with UAF, STAMP/STPA, GSN/D-Case, ASAM SCDL, traceability, team workflows, and safety analysis.",
+  "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This is a separate safety-engineering SKU with broader exchange capabilities than Astah SysML.",
+  "operatingSystems": ["Windows", "macOS"],
+  "deliveryModes": ["Desktop Application"],
+  "runtimes": ["JVM"],
+  "hostApplications": [],
+  "standards": ["SysML v1", "UAF"],
+  "toolTypes": ["Model editor", "Safety analysis tool"],
+  "sourceLicense": "Proprietary",
+  "pricingModels": ["Paid"],
+  "licenseTerms": ["Unknown"],
+  "trialAvailable": true,
+  "modelingModes": ["Graphical"],
+  "features": {
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "xmiImport": {"status": "Yes", "url": "https://astah.net/products/astah-system-safety/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "The official page describes OMG XMI and Cameo model exchange."},
+    "xmiExport": {"status": "Yes", "url": "https://astah.net/products/astah-system-safety/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "The official page explicitly lists OMG XMI 2.5 export."},
+    "collaboration": {"status": "Yes", "url": "https://astah.net/products/astah-system-safety/", "checkedAt": "2026-10-23", "availability": "Built-in"},
+    "requirementsManagement": {"status": "Yes", "url": "https://astah.net/products/astah-system-safety/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for requirements-to-solution traceability inside the model."}
+  },
+  "classificationNotes": ["Safety-analysis notation support is recorded separately from UML/SysML capability.", "The 40-day trial is longer than the standard Astah product trial."],
+  "classificationReviewedAt": "2026-10-23",
+  "latestVersion": "11.0",
+  "releaseDate": null,
+  "lastChecked": "2026-10-23",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {"label": "Official product page", "url": "https://astah.net/products/astah-system-safety/"},
+    {"label": "Official downloads and platform page", "url": "https://astah.net/downloads/"}
+  ],
+  "featured": false
+}
