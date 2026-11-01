@@ -1,0 +1,96 @@
+name: Suggest a correction
+description: Propose a factual correction or update to an existing NeoMBSE tool record.
+title: "[Correction]: "
+labels:
+  - "submission: correction"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Identify the exact record and provide a current primary source for the proposed change.
+
+  - type: input
+    id: tool-page
+    attributes:
+      label: NeoMBSE tool page
+      placeholder: https://neombse.com/tools/example-tool/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: fields
+    attributes:
+      label: Field to correct
+      description: Select every area affected by the correction.
+      multiple: true
+      options:
+        - Name, vendor, or official website
+        - Description or classification
+        - Operating system, delivery mode, runtime, or host application
+        - Standard, tool type, or modeling interface
+        - Source license, pricing, trial, or commercial use
+        - Version or release date
+        - Capability status or evidence
+        - Broken source link
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-value
+    attributes:
+      label: Current information
+      description: Quote or summarize the information currently shown on NeoMBSE.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-value
+    attributes:
+      label: Proposed correction
+      description: State the replacement value or the exact change requested.
+    validations:
+      required: true
+
+  - type: textarea
+    id: primary-sources
+    attributes:
+      label: Current primary sources
+      description: Link to official documentation, release notes, a repository, or a standards-body source. State what each link proves.
+      placeholder: https://example.com/docs — confirms the proposed value
+    validations:
+      required: true
+
+  - type: input
+    id: version-edition
+    attributes:
+      label: Relevant version or edition
+      description: Optional. State whether the correction is version-specific, edition-specific, or requires a plugin.
+      placeholder: Version 5.0, Enterprise edition, plugin required
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the tool
+      options:
+        - Vendor or product team
+        - Project maintainer or contributor
+        - User
+        - No relationship
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional notes
+      description: Optional. Explain any scope, migration, product-family, or historical distinction relevant to the correction.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I understand that NeoMBSE will independently verify this correction before publication.
+          required: true

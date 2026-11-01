@@ -1,12 +1,41 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+
+const newToolUrl = 'https://github.com/panjiayu2018/neombse/issues/new?template=new-tool.yml';
+const correctionUrl = 'https://github.com/panjiayu2018/neombse/issues/new?template=correction.yml';
 ---
 
-<MainLayout title="Submit a Tool or Update — NeoMBSE" description="Submit a UML or SysML tool, version update, source, or correction for editorial review.">
-  <article class="section container narrow prose">
+<MainLayout title="Submit a Tool or Correction — NeoMBSE" description="Submit a UML or SysML tool or propose a correction using a structured public form.">
+  <article class="section container submit-page">
     <p class="eyebrow">Contribute evidence</p>
-    <h1>Submit a tool or update.</h1>
-    <p class="lead">Vendors, maintainers, and users can propose new tools, corrections, version changes, and supporting sources. All submissions are reviewed before publication.</p>
+    <h1>Submit a tool or correction.</h1>
+    <p class="lead">Choose the relevant form below. Submissions are public GitHub issues, require a GitHub account, and are reviewed before publication.</p>
+
+    <div class="submission-grid" aria-label="Submission options">
+      <section class="submission-card panel">
+        <p class="eyebrow">New directory entry</p>
+        <h2>Submit a new tool</h2>
+        <p>Propose a UML, SysML, or closely related modeling tool that is not yet in the directory.</p>
+        <a class="button button--accent" href={newToolUrl} target="_blank" rel="noopener noreferrer">Open new-tool form</a>
+      </section>
+      <section class="submission-card panel">
+        <p class="eyebrow">Existing directory entry</p>
+        <h2>Suggest a correction</h2>
+        <p>Report an incorrect field, outdated version, broken source, or newly documented capability.</p>
+        <a class="button" href={correctionUrl} target="_blank" rel="noopener noreferrer">Open correction form</a>
+      </section>
+    </div>
+
+    <section class="submit-section prose">
+      <h2>What happens next</h2>
+      <ol>
+        <li>The submission is checked for an official product page, documentation, release note, repository, or standards-body source.</li>
+        <li>Claims are classified using the <a href="/methodology/">verification methodology</a>. More information may be requested in the GitHub issue.</li>
+        <li>The submission is published, declined with a reason, or kept open until sufficient evidence is available.</li>
+      </ol>
+    </section>
+
+    <section class="submit-section prose">
     <h2>What to include</h2>
     <ul>
       <li>Tool name and official website.</li>
@@ -17,5 +46,18 @@ import MainLayout from '../layouts/MainLayout.astro';
     </ul>
     <h2>Editorial policy</h2>
     <p>A submission does not guarantee publication. Evidence is assessed using the <a href="/methodology/">NeoMBSE verification methodology</a>. Sponsored relationships do not determine technical findings.</p>
+    </section>
   </article>
 </MainLayout>
+
+<style>
+  .submit-page { max-width: 1040px; }
+  .submit-page > .lead { max-width: 760px; margin-top: 1rem; }
+  .submission-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2.5rem; }
+  .submission-card { display: flex; min-height: 280px; flex-direction: column; align-items: flex-start; padding: 1.5rem; }
+  .submission-card h2 { margin-top: .2rem; font-size: 1.7rem; }
+  .submission-card > p:not(.eyebrow) { color: var(--ink-soft); }
+  .submission-card .button { margin-top: auto; }
+  .submit-section { max-width: 760px; margin-top: 3.5rem; }
+  @media (max-width: 720px) { .submission-grid { grid-template-columns: 1fr; } .submission-card { min-height: 240px; } }
+</style>

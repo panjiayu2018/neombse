@@ -1,0 +1,135 @@
+name: Submit a new tool
+description: Propose a UML, SysML, or closely related modeling tool for editorial review.
+title: "[New tool]: "
+labels:
+  - "submission: new tool"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Submit facts that can be checked against current first-party sources. A submission does not guarantee publication.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      placeholder: Example Modeling Tool
+    validations:
+      required: true
+
+  - type: input
+    id: official-website
+    attributes:
+      label: Official website
+      description: Link to the vendor or project website, not a third-party directory.
+      placeholder: https://example.com/product
+    validations:
+      required: true
+
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor or project
+      placeholder: Company, foundation, or project name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: standards
+    attributes:
+      label: Relevant standards or area
+      description: Select every option that applies.
+      multiple: true
+      options:
+        - UML
+        - SysML v1
+        - SysML v2
+        - Related integration or infrastructure
+        - Other modeling standard
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What the tool does
+      description: Briefly describe its main purpose and whether it is an editor, viewer, library, integration, or analysis tool.
+      placeholder: Describe the tool in a few factual sentences.
+    validations:
+      required: true
+      min_length: 30
+
+  - type: textarea
+    id: primary-sources
+    attributes:
+      label: Current primary sources
+      description: Provide at least one official product page, documentation page, repository, release note, or standards-body listing. State what each link supports.
+      placeholder: |
+        https://example.com/docs — delivery modes and supported standards
+        https://example.com/releases — current version and release date
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Current version or release
+      description: Optional. Include a date or release-note link when available.
+      placeholder: 2026.1, version 5.0, or public preview
+
+  - type: dropdown
+    id: delivery
+    attributes:
+      label: Delivery or access modes
+      description: Optional. Select every option that applies.
+      multiple: true
+      options:
+        - Desktop application
+        - Web application
+        - Mobile application
+        - IDE extension
+        - Command line
+        - Library or SDK
+        - Notebook integration
+        - API service
+
+  - type: input
+    id: operating-systems
+    attributes:
+      label: Supported operating systems
+      description: Optional. List only operating systems confirmed by an official source.
+      placeholder: Windows, macOS, Linux
+
+  - type: input
+    id: licensing
+    attributes:
+      label: License or pricing source
+      description: Optional. Link to the official license, repository license file, or pricing page.
+      placeholder: https://example.com/pricing
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to the tool
+      options:
+        - Vendor or product team
+        - Project maintainer or contributor
+        - User
+        - No relationship
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-notes
+    attributes:
+      label: Additional notes
+      description: Optional. Add edition limits, plugins, maturity warnings, or other distinctions that affect classification.
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission confirmation
+      options:
+        - label: I have provided current sources and understand that NeoMBSE will independently review the submission before publication.
+          required: true
