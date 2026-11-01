@@ -64,15 +64,6 @@ const operatingSystemCount = new Set(tools.flatMap((tool) => tool.operatingSyste
     </div>
   </section>
 
-  <section class="section method-strip">
-    <div class="container method-grid">
-      <div><p class="eyebrow">Verified capabilities</p><h2>“Unknown” is a useful answer.</h2></div>
-      <div>
-        <p class="lead">A missing claim is not proof that a feature is absent. NeoMBSE records Yes, No, or Unknown—and attaches evidence when a capability is confirmed.</p>
-        <a class="button button--accent" href="/methodology/">Read the methodology</a>
-      </div>
-    </div>
-  </section>
 </MainLayout>
 
 <style>
@@ -107,12 +98,8 @@ const operatingSystemCount = new Set(tools.flatMap((tool) => tool.operatingSyste
   .article-feature h2 + p { margin-top: 1rem; color: var(--ink-soft); }
   .article-feature-meta { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin: 1rem 0; color: var(--ink-soft); font-family: var(--font-mono); font-size: .72rem; }
   .article-feature-link { color: var(--teal-dark); font-weight: 800; }
-  .method-strip { background: var(--teal-dark); color: var(--paper); }
-  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
-  .method-strip .eyebrow, .method-strip .lead { color: var(--paper); }
-  .method-strip .button { margin-top: 1rem; }
   @media (max-width: 860px) {
-    .hero-grid, .method-grid { grid-template-columns: 1fr; }
+    .hero-grid { grid-template-columns: 1fr; }
     .article-feature-grid { grid-template-columns: 1fr; }
     .article-feature-image { max-width: 560px; }
     .hero-map { max-width: 560px; transform: none; }
