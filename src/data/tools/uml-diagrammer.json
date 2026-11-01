@@ -41,7 +41,7 @@
   },
   "latestVersion": "7.46",
   "releaseDate": "2025-10-03",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/umldiagrammer.png",
   "sourceDescriptionZh": "除支持UML外，还支持传统流程图、网络图等。",
   "sourceUpdatedText": "2025年10月3日",
@@ -53,7 +53,8 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

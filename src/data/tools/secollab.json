@@ -1,0 +1,82 @@
+{
+  "id": "secollab",
+  "name": "SECollab",
+  "vendor": "SodiusWillert",
+  "website": "https://www.sodiuswillert.com/en/products/secollab",
+  "description": "A web platform for collaborative review and traceability across requirements, models, tests, and engineering repositories.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "UML",
+    "SysML v1",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model review",
+    "Collaboration platform"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Subscription"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.sodiuswillert.com/en/products/secollab",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The product is designed for browser-based model and document review."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.sodiuswillert.com/en/products/secollab",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "The official page describes traceability and review across requirements, models, and tests."
+    }
+  },
+  "classificationNotes": [
+    "SECollab reviews and connects models; it is not classified as a general-purpose SysML authoring tool."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official SECollab product page",
+      "url": "https://www.sodiuswillert.com/en/products/secollab"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

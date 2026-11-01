@@ -23,9 +23,10 @@
   "toolTypes": [
     "Model editor"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Proprietary",
   "pricingModels": [
-    "Free"
+    "Free Tier Available",
+    "Paid"
   ],
   "licenseTerms": [
     "Unknown"
@@ -45,19 +46,22 @@
   },
   "latestVersion": "Pre-alpha 0.1.49",
   "releaseDate": "2026-08-20",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/asys.png",
   "sourceDescriptionZh": "新出现的工具，目前仍为Pre-alpha。",
   "sourceUpdatedText": "2026年8月20日",
   "sourceCollection": "UMLChina SysML v2 tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official VS Code Marketplace page",
       "url": "https://marketplace.visualstudio.com/items?itemName=juce.asyst-vscode"
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
-  "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationNotes": [
+    "The extension is proprietary and offered in Free and Pro tiers; Pre-alpha describes product maturity, not an open-source license."
+  ],
+  "classificationReviewedAt": "2026-11-01"
 }

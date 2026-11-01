@@ -28,7 +28,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Textual"
@@ -45,7 +45,7 @@
   },
   "latestVersion": "0.4.6",
   "releaseDate": "2026-08-30",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/lsp.png",
   "sourceDescriptionZh": "从VS Code已运行的Language Server绘制UML类图、序列图、活动图和用例图。",
   "sourceUpdatedText": "2026年8月30日",
@@ -57,7 +57,9 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

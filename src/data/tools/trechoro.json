@@ -1,0 +1,66 @@
+{
+  "id": "trechoro",
+  "name": "Trechoro",
+  "vendor": "Sparx Systems",
+  "website": "https://sparxsystems.com/mbse/sysml2/",
+  "description": "A native KerML and SysML v2 modeling environment announced by Sparx Systems with graphical and textual model views.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2",
+    "KerML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Unknown"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": [
+    "The official page presents behavior execution and simulation as roadmap work, so simulation is not marked Yes. Public version and licensing details were not established."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Trechoro product page",
+      "url": "https://sparxsystems.com/mbse/sysml2/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

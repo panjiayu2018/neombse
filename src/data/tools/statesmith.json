@@ -11,7 +11,8 @@
     "Linux"
   ],
   "deliveryModes": [
-    "Desktop Application"
+    "CLI",
+    "Library / SDK"
   ],
   "runtimes": [
     ".NET"
@@ -28,9 +29,10 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
+    "Graphical",
     "Textual"
   ],
   "features": {
@@ -45,19 +47,29 @@
   },
   "latestVersion": "0.22.2",
   "releaseDate": "2026-05-11",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/StateSmith.png",
   "sourceDescriptionZh": "状态机代码生成工具，支持多种编程语言和多种建模工具。",
   "sourceUpdatedText": "2026年5月11日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official source repository",
       "url": "https://github.com/StateSmith/StateSmith"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "Apache-2.0",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://github.com/StateSmith/StateSmith",
+      "checkedAt": "2026-11-01",
+      "note": "Generates state-machine code from draw.io or PlantUML input.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

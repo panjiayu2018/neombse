@@ -25,6 +25,7 @@ const environmentTags = tool.operatingSystems.length
     ? ['Web browser']
     : tool.deliveryModes;
 const listOrUnknown = (values: string[]) => values.length ? values.join(', ') : 'Not applicable / not verified';
+const booleanOrUnknown = (value: boolean | 'Unknown' | undefined) => value === true ? 'Yes' : value === false ? 'No' : 'Not yet verified';
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -117,6 +118,8 @@ const schema = {
           <div><dt>Source license</dt><dd>{tool.sourceLicense}{tool.spdxLicenseId ? ` · ${tool.spdxLicenseId}` : ''}</dd></div>
           <div><dt>Pricing model</dt><dd>{tool.pricingModels.join(', ')}</dd></div>
           <div><dt>License term</dt><dd>{tool.licenseTerms.join(', ')}</dd></div>
+          <div><dt>Trial available</dt><dd>{booleanOrUnknown(tool.trialAvailable)}</dd></div>
+          <div><dt>Commercial use allowed</dt><dd>{booleanOrUnknown(tool.commercialUseAllowed)}</dd></div>
           <div><dt>Latest version</dt><dd>{tool.latestVersion ?? 'Not yet verified'}</dd></div>
           <div><dt>Release date</dt><dd>{formatDate(tool.releaseDate)}</dd></div>
           <div><dt>Last checked</dt><dd>{formatDate(tool.lastChecked)}</dd></div>

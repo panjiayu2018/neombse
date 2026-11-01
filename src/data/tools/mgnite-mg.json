@@ -1,0 +1,98 @@
+{
+  "id": "mgnite-mg",
+  "name": "Mgnite Mg",
+  "vendor": "Mgnite",
+  "website": "https://www.mgnite.com/mg/",
+  "description": "A SysML v2 modeling environment with browser and Jupyter workflows, Python integration, Git-oriented collaboration, and engineering-tool connectors.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application",
+    "Notebook Integration",
+    "Library / SDK"
+  ],
+  "runtimes": [
+    "Browser JavaScript",
+    "Python"
+  ],
+  "hostApplications": [
+    "JupyterLab"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Integration platform"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Free Tier Available"
+  ],
+  "licenseTerms": [
+    "Usage-based"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.mgnite.com/mg/",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The product page describes Git-based model collaboration."
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.mgnite.com/mg/",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "Simulation is provided through engineering-tool integrations such as Simulink."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.mgnite.com/mg/",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "Requirements traceability is provided through connectors including DOORS Next."
+    },
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://www.mgnite.com/mg/",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The product page identifies support for the standard SysML v2 API."
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Mgnite Mg product page",
+      "url": "https://www.mgnite.com/mg/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

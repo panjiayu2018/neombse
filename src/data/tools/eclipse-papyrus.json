@@ -31,7 +31,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -40,7 +40,7 @@
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
     "collaboration": "Unknown",
-    "codeGeneration": "Yes",
+    "codeGeneration": "Unknown",
     "reverseEngineering": "Unknown",
     "simulation": "Unknown",
     "requirementsManagement": "Unknown",
@@ -48,7 +48,7 @@
   },
   "latestVersion": "7.0.0",
   "releaseDate": "2025-06-25",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/papyrus.png",
   "sourceDescriptionZh": "前身为TOPCASED。Eclipse的UML插件，随Eclipse升级。致力于关键系统的建模。支持UML2.5、SysML 1.6（目前尚不支持v2），可自行添加图形，代码生成器。",
   "sourceUpdatedText": "2025年6月25日",
@@ -60,7 +60,16 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "EPL-2.0",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Unknown",
+      "url": "https://eclipse.dev/papyrus/",
+      "checkedAt": "2026-11-01",
+      "note": "Current first-party material did not establish code generation in the base Papyrus distribution; add-ons are separate."
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

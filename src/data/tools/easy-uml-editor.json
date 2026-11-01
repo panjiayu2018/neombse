@@ -12,7 +12,9 @@
   "runtimes": [
     "Browser JavaScript"
   ],
-  "hostApplications": [],
+  "hostApplications": [
+    "Confluence"
+  ],
   "standards": [
     "UML"
   ],
@@ -41,7 +43,7 @@
   },
   "latestVersion": "4.9.0",
   "releaseDate": "2026-06-03",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/easyuml.png",
   "sourceDescriptionZh": "Confluence Cloud中的图形化UML编辑器。",
   "sourceUpdatedText": "2026年6月3日",
@@ -53,7 +55,8 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

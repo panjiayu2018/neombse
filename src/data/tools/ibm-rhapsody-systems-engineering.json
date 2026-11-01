@@ -41,7 +41,7 @@
   },
   "latestVersion": "1.8",
   "releaseDate": "2026-07-09",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/rhapsodyse.png",
   "sourceDescriptionZh": "面向SysML v2的Web建模环境，和传统桌面版 IBM Engineering Systems Design Rhapsody区分开。",
   "sourceUpdatedText": "2026年7月9日",
@@ -53,7 +53,8 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

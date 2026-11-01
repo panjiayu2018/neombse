@@ -30,8 +30,8 @@
     "Graphical"
   ],
   "features": {
-    "xmiImport": "Unknown",
-    "xmiExport": "Unknown",
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
     "collaboration": "Unknown",
     "codeGeneration": "Unknown",
     "reverseEngineering": "Unknown",
@@ -41,7 +41,7 @@
   },
   "latestVersion": "1.2",
   "releaseDate": "2026-09-01",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/erpdesk.png",
   "sourceDescriptionZh": "2026年推出的Windows平台UML建模工具，支持ER图、类图、业务流程图和序列图，支持XMI。",
   "sourceUpdatedText": "2026年9月1日",
@@ -53,7 +53,23 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "commercialUseAllowed": "Unknown",
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://backendside.com/erpdesk.php",
+      "checkedAt": "2026-11-01",
+      "note": "The official product page describes XMI 2.1 round-trip support.",
+      "availability": "Built-in"
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://backendside.com/erpdesk.php",
+      "checkedAt": "2026-11-01",
+      "note": "The official product page describes XMI 2.1 round-trip support.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

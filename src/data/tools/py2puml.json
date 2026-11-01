@@ -11,7 +11,8 @@
     "Linux"
   ],
   "deliveryModes": [
-    "Desktop Application"
+    "CLI",
+    "Library / SDK"
   ],
   "runtimes": [
     "Python"
@@ -21,14 +22,15 @@
     "UML"
   ],
   "toolTypes": [
-    "Code generator"
+    "Reverse engineering tool",
+    "Library / SDK"
   ],
   "sourceLicense": "Open Source",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Textual"
@@ -45,21 +47,31 @@
   },
   "latestVersion": "0.11.0",
   "releaseDate": "2026-02-18",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/py2uml.png",
   "sourceDescriptionZh": "Python应用逆向生成PlantUML类图。",
   "sourceUpdatedText": "2026年2月18日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official source repository",
       "url": "https://github.com/lucsorel/py2puml"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://github.com/lucsorel/py2puml",
+      "checkedAt": "2026-11-01",
+      "note": "The CLI and Python API generate PlantUML class diagrams from Python code.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [
     "Reverse engineering means converting Python code to UML notation, not creating an XMI semantic model repository."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

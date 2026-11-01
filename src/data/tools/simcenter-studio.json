@@ -1,0 +1,76 @@
+{
+  "id": "simcenter-studio",
+  "name": "Simcenter Studio",
+  "vendor": "Siemens",
+  "website": "https://www.siemens.com/en-gb/products/simcenter/integration-solutions/studio/",
+  "description": "A system architecture exploration environment that combines SysML v2 textual input, Python-driven analysis, simulation workflows, and engineering integrations.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [
+    "Python"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Architecture analysis",
+    "Simulation environment"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "simulation": {
+      "status": "Yes",
+      "url": "https://blogs.sw.siemens.com/simcenter/product/simcenter-studio/",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official product announcement describes architecture exploration, simulation, and analysis workflows."
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Simcenter Studio page",
+      "url": "https://www.siemens.com/en-gb/products/simcenter/integration-solutions/studio/"
+    },
+    {
+      "label": "Official Siemens product article",
+      "url": "https://blogs.sw.siemens.com/simcenter/product/simcenter-studio/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

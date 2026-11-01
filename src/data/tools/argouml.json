@@ -1,0 +1,69 @@
+{
+  "id": "argouml",
+  "name": "ArgoUML",
+  "vendor": "ArgoUML project",
+  "website": "https://argouml-tigris-org.github.io/",
+  "description": "A legacy Java UML modeling application retained for historical coverage; it is no longer an actively maintained modern tool.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [
+    "JVM"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "sourceLicense": "Open Source",
+  "spdxLicenseId": "EPL-1.0",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Perpetual"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": true,
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": [
+    "The project is legacy/inactive. Its licensing page also documents legacy BSD-licensed components, so the SPDX field represents the main project license rather than every bundled file."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official ArgoUML project site",
+      "url": "https://argouml-tigris-org.github.io/"
+    },
+    {
+      "label": "Official license page",
+      "url": "https://argouml-tigris-org.github.io/tigris/wiki-argouml/wiki/License.html"
+    }
+  ],
+  "featured": false
+}

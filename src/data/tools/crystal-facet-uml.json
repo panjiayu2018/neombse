@@ -24,7 +24,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -41,7 +41,7 @@
   },
   "latestVersion": "1.69.0",
   "releaseDate": "2026-03-08",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/crystal.png",
   "sourceDescriptionZh": "2016年开始开发，强调多个图共享同一套模型元素，使元素名称、层次结构以及关系在不同视图之间保持一致。",
   "sourceUpdatedText": "2026年3月8日",
@@ -53,7 +53,9 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "GPL-3.0-only",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -29,7 +29,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -46,7 +46,7 @@
   },
   "latestVersion": "3.3.2",
   "releaseDate": "2026-05-02",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/gaphor.png",
   "sourceDescriptionZh": "开源建模工具，支持UML、SysML，用Python实现。",
   "sourceUpdatedText": "2026年5月2日",
@@ -58,7 +58,9 @@
     }
   ],
   "featured": true,
+  "spdxLicenseId": "Apache-2.0",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

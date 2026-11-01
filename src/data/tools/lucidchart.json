@@ -1,0 +1,70 @@
+{
+  "id": "lucidchart",
+  "name": "Lucidchart",
+  "vendor": "Lucid Software",
+  "website": "https://lucid.co/diagram/uml",
+  "description": "A browser-based collaborative diagramming product with UML shape libraries, templates, and text-to-sequence-diagram notation.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Diagramming tool"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Free Tier Available",
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Subscription"
+  ],
+  "trialAvailable": true,
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://lucid.co/diagram/uml",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official UML page describes real-time team collaboration."
+    }
+  },
+  "classificationNotes": [
+    "This is a UML diagramming product; semantic repository, XMI, and SysML capabilities remain unverified."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Lucid UML page",
+      "url": "https://lucid.co/diagram/uml"
+    }
+  ],
+  "featured": false
+}

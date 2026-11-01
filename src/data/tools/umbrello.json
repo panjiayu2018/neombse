@@ -14,9 +14,7 @@
     "Desktop Application"
   ],
   "runtimes": [],
-  "hostApplications": [
-    "Qt / KDE"
-  ],
+  "hostApplications": [],
   "standards": [
     "UML"
   ],
@@ -28,7 +26,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -45,7 +43,7 @@
   },
   "latestVersion": "26.08.2",
   "releaseDate": "2026-10-08",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/umbrello.png",
   "sourceDescriptionZh": "基于KDE的Linux平台UML建模工具。开源。暂停更新2年后，2025年底开始重新更新。",
   "sourceUpdatedText": "2026年9月10日",
@@ -57,13 +55,15 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "GPL-2.0-or-later",
+  "commercialUseAllowed": true,
   "featureEvidence": {
     "codeGeneration": {
       "status": "Yes",
       "url": "https://apps.kde.org/umbrello/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     }
   },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

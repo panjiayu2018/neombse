@@ -6,16 +6,30 @@
   "description": "A deployable viewer that connects to SysML v2 API-compliant repositories and automatically lays out interactive graph visualizations for model exploration and presentation.",
   "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. It is intentionally classified as a viewer, not a model editor.",
   "operatingSystems": [],
-  "deliveryModes": ["Web Application"],
-  "runtimes": ["Browser JavaScript"],
+  "deliveryModes": [
+    "Web Application"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
   "hostApplications": [],
-  "standards": ["SysML v2"],
-  "toolTypes": ["Model viewer"],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model viewer"
+  ],
   "sourceLicense": "Proprietary",
-  "pricingModels": ["Custom Quote"],
-  "licenseTerms": ["Unknown"],
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
   "trialAvailable": true,
-  "modelingModes": ["Graphical"],
+  "modelingModes": [
+    "Graphical"
+  ],
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
@@ -27,17 +41,32 @@
     "sysmlV2Api": "Yes"
   },
   "featureEvidence": {
-    "sysmlV2Api": {"status": "Yes", "url": "https://www.tomsawyer.com/sysml-v2-viewer", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Connects to repositories implementing the OMG Systems Modeling API and Services specification."}
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://www.tomsawyer.com/sysml-v2-viewer",
+      "checkedAt": "2026-10-23",
+      "availability": "Built-in",
+      "note": "Connects to repositories implementing the OMG Systems Modeling API and Services specification."
+    }
   },
-  "classificationNotes": ["The viewer does not author or edit SysML v2 model content.", "It can be deployed on premises or in AWS and is also offered for OEM embedding."],
-  "classificationReviewedAt": "2026-10-23",
+  "classificationNotes": [
+    "The viewer does not author or edit SysML v2 model content.",
+    "It can be deployed on premises or in AWS and is also offered for OEM embedding."
+  ],
+  "classificationReviewedAt": "2026-11-01",
   "latestVersion": "2.1.0",
   "releaseDate": "2026-05-20",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "sourceCollection": "NeoMBSE coverage audit",
   "sources": [
-    {"label": "Official product page", "url": "https://www.tomsawyer.com/sysml-v2-viewer"},
-    {"label": "Official 2.1 release announcement", "url": "https://www.tomsawyer.com/news/tom-sawyer-software-releases-sysml-v2-viewer-2.1"}
+    {
+      "label": "Official product page",
+      "url": "https://www.tomsawyer.com/sysml-v2-viewer"
+    },
+    {
+      "label": "Official 2.1 release announcement",
+      "url": "https://www.tomsawyer.com/news/tom-sawyer-software-releases-sysml-v2-viewer-2.1"
+    }
   ],
   "featured": false
 }

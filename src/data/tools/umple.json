@@ -7,12 +7,18 @@
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
   "operatingSystems": [],
   "deliveryModes": [
-    "Web Application"
+    "Web Application",
+    "CLI",
+    "IDE Extension"
   ],
   "runtimes": [
+    "JVM",
     "Browser JavaScript"
   ],
-  "hostApplications": [],
+  "hostApplications": [
+    "Eclipse",
+    "VS Code"
+  ],
   "standards": [
     "UML"
   ],
@@ -24,7 +30,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical",
@@ -35,26 +41,43 @@
     "xmiExport": "Unknown",
     "collaboration": "Unknown",
     "codeGeneration": "Yes",
-    "reverseEngineering": "Unknown",
+    "reverseEngineering": "Yes",
     "simulation": "Unknown",
     "requirementsManagement": "Unknown",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "1.37.1",
   "releaseDate": "2026-08-05",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/umple.png",
   "sourceDescriptionZh": "最新版引入AI能力。自称“Model-Oriented Programming”，把图形和文本结合起来，支持Java、PHP和Ruby代码生成，可以在线使用，也可以作为Eclipse插件。开源。",
   "sourceUpdatedText": "2026年8月5日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "https://github.com/umple/umple/releases"
+      "label": "Official source repository",
+      "url": "https://github.com/umple/umple"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://github.com/umple/umple",
+      "checkedAt": "2026-11-01",
+      "note": "Generates implementation code from textual Umple models.",
+      "availability": "Built-in"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://github.com/umple/umple",
+      "checkedAt": "2026-11-01",
+      "note": "The Umplificator imports structure from existing code.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -28,7 +28,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical",
@@ -41,12 +41,12 @@
     "codeGeneration": "Unknown",
     "reverseEngineering": "Unknown",
     "simulation": "Unknown",
-    "requirementsManagement": "Unknown",
+    "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "0.53.0",
   "releaseDate": "2026-10-05",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/sysmlv2support.png",
   "sourceDescriptionZh": "具有完整LSP、标准库、Model Explorer、Feature Explorer、Feature Inspector、Requirements Workbench、模型元素/关系编辑和 Traceability Matrix。支持General、Interconnection、Action Flow、State Transition、Sequence、Case等视图。",
   "sourceUpdatedText": "2026年10月5日",
@@ -58,7 +58,17 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://marketplace.visualstudio.com/items?itemName=JamieD.sysml-v2-support",
+      "checkedAt": "2026-11-01",
+      "note": "The extension includes a requirements workbench and traceability matrices.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

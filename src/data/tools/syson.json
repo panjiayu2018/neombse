@@ -24,7 +24,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -41,7 +41,7 @@
   },
   "latestVersion": "2026.9.3",
   "releaseDate": "2026-10-02",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/syson.png",
   "sourceDescriptionZh": "Obeo主导开发、Eclipse 基金会旗下的开源SysML v2图形化建模工具。完全基于Web，目标就是建立原生SysML v2图形建模环境，而不是在UML/SysML v1工具上增加兼容层。\n\n目前支持General View、结构、需求、行为等SysML v2元素的图形编辑，也在不断增强SysML v2文本导入/导出能力。",
   "sourceUpdatedText": "2026年10月2日",
@@ -53,15 +53,24 @@
     }
   ],
   "featured": true,
+  "spdxLicenseId": "EPL-2.0",
+  "commercialUseAllowed": true,
   "featureEvidence": {
     "collaboration": {
       "status": "Yes",
       "url": "https://doc.mbse-syson.org/syson/v2024.11.0/user-manual/faq/faq.html",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://doc.mbse-syson.org/syson/latest/user-manual/features/requirements.html",
+      "checkedAt": "2026-11-01",
+      "note": "The official user manual documents requirement modeling and traceability.",
+      "availability": "Built-in"
     }
   },
   "classificationNotes": [
     "A product-specific GraphQL API is not equivalent to the standard SysML v2 API; standard API support remains Unknown."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

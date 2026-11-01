@@ -6,16 +6,30 @@
   "description": "A Visual Studio Code extension for authoring SysML v2 textual notation with syntax highlighting, diagnostics, navigation, outline views, and automatic diagram generation.",
   "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This is a separate offering from legacy Astah products and its files are not data-compatible with them.",
   "operatingSystems": [],
-  "deliveryModes": ["IDE Extension"],
+  "deliveryModes": [
+    "IDE Extension"
+  ],
   "runtimes": [],
-  "hostApplications": ["VS Code"],
-  "standards": ["SysML v2"],
-  "toolTypes": ["Model editor"],
+  "hostApplications": [
+    "VS Code"
+  ],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
   "sourceLicense": "Proprietary",
-  "pricingModels": ["Paid"],
-  "licenseTerms": ["Unknown"],
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
   "trialAvailable": true,
-  "modelingModes": ["Textual"],
+  "modelingModes": [
+    "Textual"
+  ],
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
@@ -27,12 +41,21 @@
     "sysmlV2Api": "Unknown"
   },
   "featureEvidence": {},
-  "classificationNotes": ["A valid Astah SysML, Astah System Safety, or faculty site license is required after the 20-day trial.", "Automatic diagram generation is not the same as direct graphical editing.", "The editor is not data-compatible with legacy Astah products."],
-  "classificationReviewedAt": "2026-10-23",
+  "classificationNotes": [
+    "A valid Astah SysML, Astah System Safety, or faculty site license is required after the 20-day trial.",
+    "Automatic diagram generation is not the same as direct graphical editing.",
+    "The editor is not data-compatible with legacy Astah products."
+  ],
+  "classificationReviewedAt": "2026-11-01",
   "latestVersion": null,
   "releaseDate": null,
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "sourceCollection": "NeoMBSE coverage audit",
-  "sources": [{"label": "Official product page", "url": "https://astah.net/products/sysml-v2-editor-for-visual-studio-code/"}],
+  "sources": [
+    {
+      "label": "Official product page",
+      "url": "https://astah.net/products/sysml-v2-editor-for-visual-studio-code/"
+    }
+  ],
   "featured": false
 }

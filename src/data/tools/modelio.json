@@ -26,7 +26,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -43,7 +43,7 @@
   },
   "latestVersion": "6.2",
   "releaseDate": "2026-08-26",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/modelio1.png",
   "sourceDescriptionZh": "UML和BPMN建模，强调协作建模，提供模型网络存储。",
   "sourceUpdatedText": "2026年8月26日",
@@ -55,7 +55,17 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "GPL-3.0-only",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.modeliosoft.com/en/modules/teamwork-manager.html",
+      "checkedAt": "2026-11-01",
+      "note": "Collaboration is supplied by the Teamwork Manager module.",
+      "availability": "Plugin"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

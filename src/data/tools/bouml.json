@@ -2,7 +2,7 @@
   "id": "bouml",
   "name": "BOUML",
   "vendor": "BOUML project",
-  "website": "http://bouml.free.fr/download.html",
+  "website": "https://www.bouml.fr/",
   "description": "A cross-platform UML modeling tool with C++ and Java plugin support whose published update history ended in 2021.",
   "editorialNote": "Imported from the UMLChina UML tools collection. The English summary is a concise editorial translation; capability fields remain Unknown unless the source explicitly states support.",
   "operatingSystems": [
@@ -21,12 +21,12 @@
   "toolTypes": [
     "Model editor"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Source Available",
   "pricingModels": [
-    "Unknown"
+    "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -35,27 +35,47 @@
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
     "collaboration": "Unknown",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
     "simulation": "Unknown",
     "requirementsManagement": "Unknown",
     "sysmlV2Api": "Unknown"
   },
   "latestVersion": "7.9",
   "releaseDate": null,
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/bouml.png",
   "sourceDescriptionZh": "支持C++和Java编写的插件。版本更新频率很快。",
   "sourceUpdatedText": "2021年8月已终结",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "http://bouml.free.fr/download.html"
+      "label": "Official BOUML site",
+      "url": "https://www.bouml.fr/"
+    },
+    {
+      "label": "Official BOUML licensing terms",
+      "url": "https://www.bouml.fr/legal-mentions.html"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
-  "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.bouml.fr/legal-mentions.html",
+      "checkedAt": "2026-11-01",
+      "note": "The official licensing page explicitly covers built-in language generators."
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://www.bouml.fr/legal-mentions.html",
+      "checkedAt": "2026-11-01",
+      "note": "The official licensing page explicitly covers language reverse-engineering tools."
+    }
+  },
+  "classificationNotes": [
+    "BOUML 7.x is free to use, while only selected plug-outs are GPL-licensed; the current application is therefore classified Source Available rather than Open Source."
+  ],
+  "classificationReviewedAt": "2026-11-01"
 }

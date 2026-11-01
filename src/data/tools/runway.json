@@ -19,9 +19,9 @@
   "toolTypes": [
     "Model editor"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Proprietary",
   "pricingModels": [
-    "Unknown"
+    "Paid"
   ],
   "licenseTerms": [
     "Unknown"
@@ -41,7 +41,7 @@
   },
   "latestVersion": "2.0",
   "releaseDate": "2021-10-28",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/runway.png",
   "sourceDescriptionZh": "Mac原生UML工具，只有5M大小。",
   "sourceUpdatedText": "2021年10月28日",
@@ -53,7 +53,8 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

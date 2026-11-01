@@ -17,14 +17,14 @@
     "UML"
   ],
   "toolTypes": [
-    "Diagramming tool"
+    "Model editor"
   ],
   "sourceLicense": "Open Source",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -41,7 +41,7 @@
   },
   "latestVersion": "2026.05.0",
   "releaseDate": "2026-06-10",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/papyrusweb.png",
   "sourceDescriptionZh": "Papyrus新增web界面的工具，支持UML2.5，可自行添加图形，代码生成器。",
   "sourceUpdatedText": "2026年6月10日",
@@ -53,16 +53,18 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "EPL-2.0",
+  "commercialUseAllowed": true,
   "featureEvidence": {
     "codeGeneration": {
       "status": "Unknown",
       "url": "https://papyrus-web.fr/projects",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Code generation could not be verified for Papyrus Web itself; desktop Papyrus add-ons are distinct."
     }
   },
   "classificationNotes": [
     "Desktop Eclipse Papyrus extensions do not automatically establish equivalent Papyrus Web capabilities."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

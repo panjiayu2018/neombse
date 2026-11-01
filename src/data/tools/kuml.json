@@ -12,12 +12,18 @@
   ],
   "deliveryModes": [
     "Web Application",
-    "Desktop Application"
+    "Desktop Application",
+    "CLI",
+    "IDE Extension"
   ],
   "runtimes": [
+    "JVM",
     "Browser JavaScript"
   ],
-  "hostApplications": [],
+  "hostApplications": [
+    "IntelliJ IDEA",
+    "Obsidian"
+  ],
   "standards": [
     "UML",
     "SysML v2"
@@ -30,7 +36,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical",
@@ -48,7 +54,7 @@
   },
   "latestVersion": "0.54.1",
   "releaseDate": "2026-09-12",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/kuml.png",
   "sourceDescriptionZh": "使用Kotlin类型安全DSL的文本建模，支持 UML 2.x、SysML 2、C4、BPMN，并提供桌面、Web、命令行及IDE集成。强调自己不是PlantUML/Mermaid那种“文本画图工具”，而是“真正的模型+文本DSL”。",
   "sourceUpdatedText": "2026年9月12日",
@@ -60,7 +66,9 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "Apache-2.0",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

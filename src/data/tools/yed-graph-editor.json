@@ -11,10 +11,12 @@
     "Linux"
   ],
   "deliveryModes": [
-    "Desktop Application"
+    "Desktop Application",
+    "Web Application"
   ],
   "runtimes": [
-    "JVM"
+    "JVM",
+    "Browser JavaScript"
   ],
   "hostApplications": [],
   "standards": [
@@ -45,7 +47,7 @@
   },
   "latestVersion": "3.20.1",
   "releaseDate": "2020-12-01",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/yed.png",
   "sourceDescriptionZh": "画图工具，支持UML。",
   "sourceUpdatedText": "2020年12月1日",
@@ -54,12 +56,17 @@
     {
       "label": "Official yEd product page",
       "url": "https://www.yworks.com/products/yed"
+    },
+    {
+      "label": "Official yEd Live page",
+      "url": "https://www.yworks.com/yed-live/"
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [
     "yEd is proprietary freeware available for Windows, macOS, and Linux."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

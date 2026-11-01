@@ -21,14 +21,14 @@
     "UML"
   ],
   "toolTypes": [
-    "Model editor"
+    "Diagramming tool"
   ],
   "sourceLicense": "Open Source",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -45,19 +45,21 @@
   },
   "latestVersion": "3.10",
   "releaseDate": "2026-09-08",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/jetuml.png",
   "sourceDescriptionZh": "从基于Java Swing的Violet UML发展而来，用JSON存储模型。",
   "sourceUpdatedText": "2026年9月8日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "https://www.jetuml.org"
+      "label": "Official JetUML site",
+      "url": "https://www.jetuml.org/"
     }
   ],
   "featured": false,
+  "spdxLicenseId": "GPL-3.0-or-later",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

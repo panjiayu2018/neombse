@@ -6,15 +6,32 @@
   "description": "A web-based collaborative platform for graphical SysML v2 modeling with textual import, standard SysML v2 API access, auto-layout, and Teamcenter integration.",
   "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. The OMG directory is used because it contains the vendor-supplied product description and verification details.",
   "operatingSystems": [],
-  "deliveryModes": ["Web Application", "API Service"],
-  "runtimes": ["Browser JavaScript"],
+  "deliveryModes": [
+    "Web Application",
+    "API Service"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
   "hostApplications": [],
-  "standards": ["SysML v2"],
-  "toolTypes": ["Model editor", "Integration platform"],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Integration platform"
+  ],
   "sourceLicense": "Proprietary",
-  "pricingModels": ["Unknown"],
-  "licenseTerms": ["Unknown"],
-  "modelingModes": ["Graphical", "Textual"],
+  "pricingModels": [
+    "Unknown"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
@@ -26,15 +43,34 @@
     "sysmlV2Api": "Yes"
   },
   "featureEvidence": {
-    "collaboration": {"status": "Yes", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/", "checkedAt": "2026-10-23", "availability": "Built-in"},
-    "sysmlV2Api": {"status": "Yes", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "The directory states that REST, OSLC, and API access use standard SysML v2 calls."}
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/",
+      "checkedAt": "2026-10-23",
+      "availability": "Built-in"
+    },
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/",
+      "checkedAt": "2026-10-23",
+      "availability": "Built-in",
+      "note": "The directory states that REST, OSLC, and API access use standard SysML v2 calls."
+    }
   },
-  "classificationNotes": ["Teamcenter is an external integration; it is not treated as the modeler's host application.", "Textual SysML v2 import is not counted as XMI import."],
-  "classificationReviewedAt": "2026-10-23",
+  "classificationNotes": [
+    "Teamcenter is an external integration; it is not treated as the modeler's host application.",
+    "Textual SysML v2 import is not counted as XMI import."
+  ],
+  "classificationReviewedAt": "2026-11-01",
   "latestVersion": null,
   "releaseDate": null,
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "sourceCollection": "NeoMBSE coverage audit",
-  "sources": [{"label": "OMG SysML v2 tools directory", "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"}],
+  "sources": [
+    {
+      "label": "OMG SysML v2 tools directory",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
   "featured": false
 }

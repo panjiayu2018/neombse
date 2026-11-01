@@ -38,38 +38,74 @@
     "xmiImport": "Yes",
     "xmiExport": "Yes",
     "collaboration": "Yes",
-    "codeGeneration": "Unknown",
-    "reverseEngineering": "Unknown",
-    "simulation": "Unknown",
-    "requirementsManagement": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
     "sysmlV2Api": "Unknown"
   },
-  "latestVersion": "2022",
-  "releaseDate": "2022-07-01",
-  "lastChecked": "2026-10-23",
+  "latestVersion": "2026x Refresh1",
+  "releaseDate": "2026-06-26",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/magicdraw.png",
   "sourceDescriptionZh": "UML、SysML、BPMN和UPDM团队协作建模工具，已被Dassault Systèmes收购。",
   "sourceUpdatedText": "2022年7月1日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "https://www.3ds.com/products-services/catia/products/no-magic/magicdraw/"
+      "label": "Official MagicDraw product page",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw"
+    },
+    {
+      "label": "Official 2026x Refresh1 release announcement",
+      "url": "https://3dswym.3dexperience.3ds.com/post/catia-mbse-cyber-systems/now-released-2026x-refresh1_nS0Ya-VaT9OtOoj6dnPSRg"
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "xmiImport": {
       "status": "Yes",
       "url": "https://docs.nomagic.com/spaces/MD2024xR3/pages/227148605/Importing+data+from+other+UML+tools+and+formats",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "xmiExport": {
       "status": "Yes",
       "url": "https://docs.nomagic.com/spaces/MD2024xR1/pages/169673551/Exporting+UML+models",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw",
+      "checkedAt": "2026-11-01",
+      "availability": "Edition-specific"
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw",
+      "checkedAt": "2026-11-01",
+      "availability": "Edition-specific"
+    },
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration"
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw",
+      "checkedAt": "2026-11-01",
+      "note": "Available through the No Magic simulation product family.",
+      "availability": "Plugin"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/magicdraw",
+      "checkedAt": "2026-11-01",
+      "availability": "Edition-specific"
     }
   },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

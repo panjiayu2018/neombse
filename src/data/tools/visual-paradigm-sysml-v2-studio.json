@@ -6,15 +6,31 @@
   "description": "A browser-based SysML v2 environment with textual authoring, synchronized diagrams, validation, AI assistance, and cloud project sharing.",
   "editorialNote": "Added from NeoMBSE's 2026-10-23 coverage audit. This browser product is separate from the independently developed VS Code extension already listed as SysML v2 Studio for VS Code.",
   "operatingSystems": [],
-  "deliveryModes": ["Web Application"],
-  "runtimes": ["Browser JavaScript"],
+  "deliveryModes": [
+    "Web Application"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
   "hostApplications": [],
-  "standards": ["SysML v2"],
-  "toolTypes": ["Model editor"],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
   "sourceLicense": "Proprietary",
-  "pricingModels": ["Paid"],
-  "licenseTerms": ["Perpetual", "Subscription"],
-  "modelingModes": ["Graphical", "Textual"],
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Perpetual",
+    "Subscription"
+  ],
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
@@ -26,17 +42,32 @@
     "sysmlV2Api": "Unknown"
   },
   "featureEvidence": {
-    "collaboration": {"status": "Yes", "url": "https://sysml.visual-paradigm.com/", "checkedAt": "2026-10-23", "availability": "Built-in", "note": "Verified for sharing cloud-stored projects with a team."}
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://sysml.visual-paradigm.com/",
+      "checkedAt": "2026-10-23",
+      "availability": "Built-in",
+      "note": "Verified for sharing cloud-stored projects with a team."
+    }
   },
-  "classificationNotes": ["Do not merge this record with SysML v2 Studio for VS Code; the products have different vendors and delivery modes.", "Built-in requirement constructs do not by themselves establish enterprise requirements-management capability."],
-  "classificationReviewedAt": "2026-10-23",
+  "classificationNotes": [
+    "Do not merge this record with SysML v2 Studio for VS Code; the products have different vendors and delivery modes.",
+    "Built-in requirement constructs do not by themselves establish enterprise requirements-management capability."
+  ],
+  "classificationReviewedAt": "2026-11-01",
   "latestVersion": null,
   "releaseDate": null,
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "sourceCollection": "NeoMBSE coverage audit",
   "sources": [
-    {"label": "Official product page", "url": "https://sysml.visual-paradigm.com/"},
-    {"label": "Official pricing page", "url": "https://sysml.visual-paradigm.com/pricing/"}
+    {
+      "label": "Official product page",
+      "url": "https://sysml.visual-paradigm.com/"
+    },
+    {
+      "label": "Official pricing page",
+      "url": "https://sysml.visual-paradigm.com/pricing/"
+    }
   ],
   "featured": false
 }

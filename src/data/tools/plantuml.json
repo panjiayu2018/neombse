@@ -31,7 +31,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Textual"
@@ -48,7 +48,7 @@
   },
   "latestVersion": "1.2026.8",
   "releaseDate": "2026-09-05",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/plantuml.png",
   "sourceDescriptionZh": "将文本转换为UML图形，可以在许多其他工具中使用。开源。",
   "sourceUpdatedText": "2026年9月5日",
@@ -60,9 +60,11 @@
     }
   ],
   "featured": true,
+  "spdxLicenseId": "GPL-3.0-or-later",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [
     "Graphviz may be required for some diagram types."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

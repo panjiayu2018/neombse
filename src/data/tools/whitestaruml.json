@@ -1,0 +1,78 @@
+{
+  "id": "whitestaruml",
+  "name": "WhiteStarUML",
+  "vendor": "WhiteStarUML project",
+  "website": "https://sourceforge.net/projects/whitestaruml/",
+  "description": "A legacy Windows UML editor forked from StarUML 5, with source-code generation and reverse-engineering features.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [
+    "Native"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "UML"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "sourceLicense": "Open Source",
+  "spdxLicenseId": "GPL-2.0-only",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Perpetual"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": true,
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Yes",
+    "reverseEngineering": "Yes",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://sourceforge.net/projects/whitestaruml/",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official project description lists code generation."
+    },
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://sourceforge.net/projects/whitestaruml/",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official project description lists reverse engineering."
+    }
+  },
+  "classificationNotes": [
+    "SourceForge marks the project Abandoned; the date shown is the last project update, not a current release."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": "2018-03-25",
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official SourceForge project page",
+      "url": "https://sourceforge.net/projects/whitestaruml/"
+    }
+  ],
+  "featured": false
+}

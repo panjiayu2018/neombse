@@ -41,7 +41,7 @@
   },
   "latestVersion": "Online UML edition",
   "releaseDate": "2026-09-22",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/smartdraw.png",
   "sourceDescriptionZh": "1994年推出的老牌通用绘图软件，早期是Microsoft Visio的主要竞争产品之一，支持流程图、组织结构图、网络图、UML、平面图等多种图形。现已转向以浏览器为主的在线协作绘图平台。",
   "sourceUpdatedText": "2026年9月22日",
@@ -53,7 +53,16 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "commercialUseAllowed": "Unknown",
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.smartdraw.com/",
+      "checkedAt": "2026-11-01",
+      "note": "The official product page describes team diagram collaboration.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

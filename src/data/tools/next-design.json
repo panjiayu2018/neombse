@@ -42,7 +42,7 @@
   },
   "latestVersion": "5",
   "releaseDate": "2026-05-29",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/nextdesign.png",
   "sourceDescriptionZh": "日本DENSO CREATE开发的系统与软件建模工具，支持通过元模型定义建模语言和视图，并提供UML/SysML扩展包，可用于类图、状态机图、活动图等模型的建立与管理。",
   "sourceUpdatedText": "2026年5月29日",
@@ -54,7 +54,8 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

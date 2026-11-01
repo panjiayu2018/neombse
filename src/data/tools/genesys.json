@@ -1,0 +1,81 @@
+{
+  "id": "genesys",
+  "name": "GENESYS",
+  "vendor": "Vitech",
+  "website": "https://www.vitechcorp.com/genesys/",
+  "description": "A desktop systems-engineering environment for architecture modeling, requirements traceability, team repositories, analysis, and executable behavior.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [],
+  "hostApplications": [],
+  "standards": [
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Systems engineering platform"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://genesys-help.vitechcorp.com/genesys-help/genesys-product-family",
+      "checkedAt": "2026-11-01",
+      "availability": "Edition-specific",
+      "note": "The product family documentation describes shared repositories and team deployment."
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://genesys-help.vitechcorp.com/genesys-help/genesys-product-family",
+      "checkedAt": "2026-11-01",
+      "availability": "Edition-specific",
+      "note": "The documentation describes behavior execution and analysis."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://genesys-help.vitechcorp.com/genesys-help/genesys-product-family",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "Requirements and traceability are core product capabilities."
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official GENESYS product-family help",
+      "url": "https://genesys-help.vitechcorp.com/genesys-help/genesys-product-family"
+    }
+  ],
+  "featured": false
+}

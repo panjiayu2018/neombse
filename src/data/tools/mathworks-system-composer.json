@@ -1,0 +1,91 @@
+{
+  "id": "mathworks-system-composer",
+  "name": "System Composer",
+  "vendor": "MathWorks",
+  "website": "https://www.mathworks.com/products/sysml.html",
+  "description": "A MATLAB-based system architecture product with SysML v2 import/export, repository connectivity, architecture analysis, and simulation workflows.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [
+    "MATLAB"
+  ],
+  "hostApplications": [
+    "MATLAB"
+  ],
+  "standards": [
+    "SysML v1",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Architecture analysis"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Paid"
+  ],
+  "licenseTerms": [
+    "Perpetual",
+    "Subscription"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.mathworks.com/products/sysml.html",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official product page describes architecture simulation and analysis."
+    },
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://www.mathworks.com/help/systemcomposer/ug/connect-to-sysml-repository.html",
+      "checkedAt": "2026-11-01",
+      "availability": "Component-specific",
+      "note": "System Composer can connect to a SysML v2 repository through the standard repository workflow."
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official MathWorks SysML page",
+      "url": "https://www.mathworks.com/products/sysml.html"
+    },
+    {
+      "label": "Official repository connection documentation",
+      "url": "https://www.mathworks.com/help/systemcomposer/ug/connect-to-sysml-repository.html"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

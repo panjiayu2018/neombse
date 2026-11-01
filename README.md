@@ -44,6 +44,12 @@ Update the two source HTML files and their image folders first, then update the 
 
 The audit override is part of the import pipeline so a future legacy import cannot silently restore ambiguous values such as `Cross-platform`, treat a browser as an operating system, or discard capability evidence.
 
+The independently reviewed additions and one-off patches from the 2026-11-01 external audit can be regenerated idempotently after an import with:
+
+```powershell
+node scripts/apply-2026-11-review.mjs
+```
+
 The original `tools/pics/` and `tools/sysmlpics/` archives remain local and are ignored by Git to avoid storing two copies of every image. Referenced images are copied into the tracked `public/images/tools/` directory by the importer.
 
 Classification fields intentionally separate:

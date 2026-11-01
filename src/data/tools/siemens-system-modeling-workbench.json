@@ -1,0 +1,79 @@
+{
+  "id": "siemens-system-modeling-workbench",
+  "name": "System Modeling Workbench",
+  "vendor": "Siemens",
+  "website": "https://www.siemens.com/en-gb/solutions/systems-engineering/",
+  "description": "A Teamcenter-integrated SysML workbench for system architecture, requirements links, multi-user collaboration, and lifecycle traceability.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [],
+  "hostApplications": [
+    "Teamcenter"
+  ],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Lifecycle integration"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.plm.automation.siemens.com/media/global/cz/Siemens%20SW%20System%20Modeling%20Workbench%20for%20Teamcenter%20%20Fact%20Sheet_tcm84-75918.pdf",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "The official fact sheet describes multi-user Teamcenter collaboration."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.plm.automation.siemens.com/media/global/cz/Siemens%20SW%20System%20Modeling%20Workbench%20for%20Teamcenter%20%20Fact%20Sheet_tcm84-75918.pdf",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "The official fact sheet describes requirement links and traceability."
+    }
+  },
+  "classificationNotes": [],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Siemens systems-engineering page",
+      "url": "https://www.siemens.com/en-gb/solutions/systems-engineering/"
+    },
+    {
+      "label": "Official product fact sheet",
+      "url": "https://www.plm.automation.siemens.com/media/global/cz/Siemens%20SW%20System%20Modeling%20Workbench%20for%20Teamcenter%20%20Fact%20Sheet_tcm84-75918.pdf"
+    }
+  ],
+  "featured": false
+}

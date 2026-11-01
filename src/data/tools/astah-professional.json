@@ -45,7 +45,7 @@
   },
   "latestVersion": "12.0",
   "releaseDate": "2026-07-15",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/astah.png",
   "sourceDescriptionZh": "日本老牌UML建模工具，曾用名：JUDE。支持自行编写的插件。新版本支持AI建模。近年来持续加入 AI 辅助建模功能，12.0版进一步改进了序列图编辑、模型检索和团队协作能力。",
   "sourceUpdatedText": "2026年7月15日",
@@ -57,35 +57,43 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "xmiImport": {
       "status": "Yes",
       "url": "https://astah.net/products/plugins-integrations/",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Requires the XMI extension; supported versions and diagram fidelity are limited.",
       "availability": "Plugin"
     },
     "xmiExport": {
       "status": "Yes",
       "url": "https://astah.net/products/plugins-integrations/",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Requires the XMI extension; supported versions and diagram fidelity are limited.",
       "availability": "Plugin"
     },
     "codeGeneration": {
       "status": "Yes",
       "url": "https://astah.net/products/astah-professional/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "reverseEngineering": {
       "status": "Yes",
       "url": "https://astah.net/products/astah-professional/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
+    },
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://astah.net/products/astah-professional/",
+      "checkedAt": "2026-11-01",
+      "note": "Team workflows rely on supported sharing and merge integrations.",
+      "availability": "External integration"
     },
     "requirementsManagement": {
       "status": "Yes",
       "url": "https://astah.net/products/compare-editions/",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Model-level requirements and traceability; not necessarily enterprise requirements management.",
       "availability": "Edition-specific"
     }
@@ -93,5 +101,5 @@
   "classificationNotes": [
     "The desktop product supports Windows, macOS, and Linux; JVM is a runtime, not an operating system."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

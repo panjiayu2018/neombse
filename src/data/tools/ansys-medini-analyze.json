@@ -1,0 +1,76 @@
+{
+  "id": "ansys-medini-analyze",
+  "name": "Ansys medini analyze",
+  "vendor": "Ansys",
+  "website": "https://ansys.synopsys.com/products/safety-analysis/ansys-medini-analyze",
+  "description": "A model-based safety and reliability analysis environment with hybrid SysML v1/v2 workflows, traceability, and team collaboration.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [],
+  "hostApplications": [],
+  "standards": [
+    "SysML v1",
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Safety and reliability analysis"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://ansys.synopsys.com/products/safety-analysis/ansys-medini-analyze",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official page describes team-oriented safety-analysis workflows."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://ansys.synopsys.com/products/safety-analysis/ansys-medini-analyze",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "The official page describes requirements traceability and lifecycle integration."
+    }
+  },
+  "classificationNotes": [
+    "The reviewed documentation did not establish direct XMI import/export; external SysML exchange is not treated as XMI evidence."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Ansys medini analyze page",
+      "url": "https://ansys.synopsys.com/products/safety-analysis/ansys-medini-analyze"
+    }
+  ],
+  "featured": false
+}

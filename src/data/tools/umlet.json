@@ -12,10 +12,12 @@
   ],
   "deliveryModes": [
     "Desktop Application",
-    "IDE Extension"
+    "IDE Extension",
+    "Web Application"
   ],
   "runtimes": [
-    "JVM"
+    "JVM",
+    "Browser JavaScript"
   ],
   "hostApplications": [
     "Eclipse",
@@ -25,14 +27,14 @@
     "UML"
   ],
   "toolTypes": [
-    "Model editor"
+    "Diagramming tool"
   ],
   "sourceLicense": "Open Source",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -49,21 +51,27 @@
   },
   "latestVersion": "15.1",
   "releaseDate": "2023-03-20",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/umlet.png",
   "sourceDescriptionZh": "轻量建模工具。和Eclipse、VSCode集成。",
   "sourceUpdatedText": "2023年3月20日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
-      "url": "https://www.umlet.com"
+      "label": "Official UMLet site",
+      "url": "https://www.umlet.com/"
+    },
+    {
+      "label": "Official UMLetino web edition",
+      "url": "https://www.umletino.com/"
     }
   ],
   "featured": false,
+  "spdxLicenseId": "GPL-3.0-only",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [
-    "UMLetino is a separate web edition; this record covers UMLet desktop and its IDE extensions."
+    "This record covers the UMLet family, including desktop/IDE editions and the official UMLetino web edition."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

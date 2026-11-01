@@ -21,12 +21,12 @@
   "toolTypes": [
     "Code generator"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Proprietary",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -43,19 +43,33 @@
   },
   "latestVersion": "7.0.3",
   "releaseDate": "2026-02-28",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/qm.png",
   "sourceDescriptionZh": "由Quantum Leaps从2010年开始开发的模型驱动设计工具，主要用于实时嵌入式软件的状态机建模和代码生成。重点支持层次化状态机，并可结合QP实时事件框架自动生成C或C++代码。",
   "sourceUpdatedText": "2026年2月28日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official QM product page",
       "url": "https://www.state-machine.com/products/qm"
+    },
+    {
+      "label": "Official QM license",
+      "url": "https://www.state-machine.com/qm/license.html"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
-  "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "commercialUseAllowed": "Unknown",
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.state-machine.com/products/qm",
+      "checkedAt": "2026-11-01",
+      "note": "QM generates production C and C++ for the QP frameworks."
+    }
+  },
+  "classificationNotes": [
+    "QM is proprietary freeware under its own EULA. Generated C/C++ code follows the selected QP framework license and may require a commercial QP license for closed-source distribution."
+  ],
+  "classificationReviewedAt": "2026-11-01"
 }

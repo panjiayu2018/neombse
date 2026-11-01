@@ -43,7 +43,7 @@
   },
   "latestVersion": "15.55",
   "releaseDate": "2026-08-13",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/softwareideas.png",
   "sourceDescriptionZh": "轻量级建模工具，支持UML、BPMN、SysML。",
   "sourceUpdatedText": "2026年8月13日",
@@ -55,39 +55,40 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "xmiImport": {
       "status": "Yes",
       "url": "https://www.softwareideas.net/en/edition-comparison",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Available in Professional and Ultimate editions.",
       "availability": "Edition-specific"
     },
     "xmiExport": {
       "status": "Yes",
       "url": "https://www.softwareideas.net/en/edition-comparison",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Available in Professional and Ultimate editions.",
       "availability": "Edition-specific"
     },
     "codeGeneration": {
       "status": "Yes",
       "url": "https://www.softwareideas.net/en/edition-comparison",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Availability varies by edition.",
       "availability": "Edition-specific"
     },
     "reverseEngineering": {
       "status": "Yes",
       "url": "https://www.softwareideas.net/en/edition-comparison",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Availability varies by edition.",
       "availability": "Edition-specific"
     },
     "requirementsManagement": {
       "status": "Yes",
       "url": "https://www.softwareideas.net/",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Scope varies by edition.",
       "availability": "Edition-specific"
     }
@@ -95,5 +96,5 @@
   "classificationNotes": [
     "XMI import and export require Professional or Ultimate editions; other capabilities also vary by edition."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

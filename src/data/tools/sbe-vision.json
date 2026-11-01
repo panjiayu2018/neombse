@@ -1,0 +1,65 @@
+{
+  "id": "sbe-vision",
+  "name": "SBE Vision",
+  "vendor": "SBE Vision",
+  "website": "https://www.sbe-vision.com/",
+  "description": "A web-based systems-engineering digital-thread platform listed by OMG among SysML v2 tools and integrations.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application",
+    "API Service"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Integration platform"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": [
+    "The OMG list establishes SysML v2 relevance, but detailed exchange and authoring capabilities remain Unknown."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official SBE Vision site",
+      "url": "https://www.sbe-vision.com/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

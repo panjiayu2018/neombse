@@ -43,7 +43,7 @@
   },
   "latestVersion": "10.3",
   "releaseDate": "2026-06-30",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/ptcmodeler.png",
   "sourceDescriptionZh": "之前的Windchill Modeler，老牌企业级 建模工具，支持UML、SysML、SysML v2。",
   "sourceUpdatedText": "2026年6月30日",
@@ -55,18 +55,19 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "codeGeneration": {
       "status": "Yes",
       "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "simulation": {
       "status": "Yes",
       "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     }
   },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -42,7 +42,7 @@
   },
   "latestVersion": "17.2",
   "releaseDate": "2026-07-28",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/ea.png",
   "sourceDescriptionZh": "性价比很高，目前最流行的UML建模工具。还包含需求管理、项目估算、测试支持。团队建模支持。",
   "sourceUpdatedText": "2026年7月28日",
@@ -58,30 +58,45 @@
     }
   ],
   "featured": true,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "xmiImport": {
       "status": "Yes",
       "url": "https://imap.sparxsystems.com/enterprise_architect_user_guide/17.2/model_exchange/importexport.html",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "xmiExport": {
       "status": "Yes",
       "url": "https://imap.sparxsystems.com/enterprise_architect_user_guide/17.2/model_exchange/importexport.html",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "codeGeneration": {
       "status": "Yes",
       "url": "https://news.sparxsystems.com/enterprise_architect_user_guide/17.2/modeling_domains/software_getting_started.html",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "reverseEngineering": {
       "status": "Yes",
       "url": "https://news.sparxsystems.com/enterprise_architect_user_guide/17.2/modeling_domains/software_getting_started.html",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
+    },
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://sparxsystems.com/products/ea/",
+      "checkedAt": "2026-11-01",
+      "note": "Shared repositories and team collaboration vary by deployment.",
+      "availability": "Edition-specific"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://sparxsystems.com/products/ea/",
+      "checkedAt": "2026-11-01",
+      "note": "The official product page describes requirements and traceability.",
+      "availability": "Built-in"
     }
   },
   "classificationNotes": [
     "Enterprise Architect supports SysML 1.1 through 1.5. SysML availability depends on the edition or an MDG Technology license."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

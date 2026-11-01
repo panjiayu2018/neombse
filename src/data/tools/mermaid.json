@@ -25,7 +25,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Textual"
@@ -42,7 +42,7 @@
   },
   "latestVersion": "12.0.0",
   "releaseDate": "2026-09-10",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/mermaid.png",
   "sourceDescriptionZh": "使用类似Markdown的语法描述图形，并由JavaScript渲染。支持流程图、序列图、类图、状态图、ER图。12.0开始支持用例图。",
   "sourceUpdatedText": "2026年9月10日",
@@ -55,9 +55,10 @@
   ],
   "featured": false,
   "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [
     "This record covers the MIT-licensed Mermaid renderer. Mermaid Chart is a separate commercial service."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

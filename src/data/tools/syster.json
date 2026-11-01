@@ -1,0 +1,82 @@
+{
+  "id": "syster",
+  "name": "Syster",
+  "vendor": "Jade Codes",
+  "website": "https://github.com/jade-codes/syster",
+  "description": "An alpha-stage open-source SysML v2 toolkit with a Rust parser and CLI, Python bindings, language-server support, and a VS Code model viewer.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "deliveryModes": [
+    "CLI",
+    "IDE Extension",
+    "Library / SDK"
+  ],
+  "runtimes": [
+    "Native",
+    "Python"
+  ],
+  "hostApplications": [
+    "VS Code"
+  ],
+  "standards": [
+    "SysML v2",
+    "KerML"
+  ],
+  "toolTypes": [
+    "Parser",
+    "Model editor",
+    "Library / SDK"
+  ],
+  "sourceLicense": "Open Source",
+  "spdxLicenseId": "MIT",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Perpetual"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": true,
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Yes",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://github.com/jade-codes/syster",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The repository documents an export-xmi command; the project is alpha-stage."
+    }
+  },
+  "classificationNotes": [
+    "The project describes itself as alpha and under active development; the XMI export should not be assumed production-stable."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Syster repository",
+      "url": "https://github.com/jade-codes/syster"
+    }
+  ],
+  "featured": false
+}

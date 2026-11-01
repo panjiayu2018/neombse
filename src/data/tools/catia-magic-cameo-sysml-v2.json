@@ -43,7 +43,7 @@
   },
   "latestVersion": "2026x Refresh 1",
   "releaseDate": "2026-06-26",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/catia.png",
   "sourceDescriptionZh": "SysML v1时代的标杆品牌，目前大型MBSE厂商中SysML v2投入较深的产品。",
   "sourceUpdatedText": "2026年6月26日",
@@ -55,9 +55,10 @@
     }
   ],
   "featured": true,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [
     "Capabilities vary across the CATIA Magic, Cameo, and SysML v2 product family; do not assume every edition includes every feature."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -11,7 +11,7 @@
     "macOS"
   ],
   "deliveryModes": [
-    "Desktop Application"
+    "CLI"
   ],
   "runtimes": [],
   "hostApplications": [],
@@ -19,14 +19,14 @@
     "UML"
   ],
   "toolTypes": [
-    "Code generator"
+    "Reverse engineering tool"
   ],
   "sourceLicense": "Open Source",
   "pricingModels": [
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Textual"
@@ -43,21 +43,35 @@
   },
   "latestVersion": "0.6.3",
   "releaseDate": "2026-07-06",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/clang.png",
   "sourceDescriptionZh": "C/C++逆向生成UML类图、序列图、包图等，以PlantUML、Mermaid和JSON格式呈现。",
   "sourceUpdatedText": "2026年7月6日",
   "sourceCollection": "UMLChina UML tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official documentation",
       "url": "https://clang-uml.github.io/"
+    },
+    {
+      "label": "Official source repository",
+      "url": "https://github.com/bkryza/clang-uml"
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "spdxLicenseId": "Apache-2.0",
+  "commercialUseAllowed": true,
+  "featureEvidence": {
+    "reverseEngineering": {
+      "status": "Yes",
+      "url": "https://clang-uml.github.io/",
+      "checkedAt": "2026-11-01",
+      "note": "Generates diagrams from C/C++ source via Clang AST data.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [
     "Reverse engineering means converting C/C++ AST data into PlantUML, Mermaid, or JSON diagrams."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

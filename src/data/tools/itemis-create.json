@@ -51,7 +51,7 @@
   },
   "latestVersion": "5.6.3",
   "releaseDate": "2026-07-29",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/itemis.png",
   "sourceDescriptionZh": "原名YAKINDU Statechart Tools。状态机建模工具，支持各种语言的代码生成，提供EA插件。",
   "sourceUpdatedText": "2026年7月29日",
@@ -63,21 +63,22 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {
     "codeGeneration": {
       "status": "Yes",
       "url": "https://www.itemis.com/en/products/itemis-create/documentation/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "simulation": {
       "status": "Yes",
       "url": "https://www.itemis.com/en/products/itemis-create/documentation/",
-      "checkedAt": "2026-10-23"
+      "checkedAt": "2026-11-01"
     },
     "collaboration": {
       "status": "Yes",
       "url": "https://www.itemis.com/en/products/itemis-create/",
-      "checkedAt": "2026-10-23",
+      "checkedAt": "2026-11-01",
       "note": "Available in the cloud edition, not every edition.",
       "availability": "Edition-specific"
     }
@@ -85,5 +86,5 @@
   "classificationNotes": [
     "The product family includes Eclipse desktop, VS Code, and browser editions; capabilities can vary by edition."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -11,19 +11,22 @@
     "Linux"
   ],
   "deliveryModes": [
-    "Desktop Application"
+    "Desktop Application",
+    "IDE Extension"
   ],
   "runtimes": [
     "JVM"
   ],
-  "hostApplications": [],
+  "hostApplications": [
+    "Eclipse"
+  ],
   "standards": [
     "UML"
   ],
   "toolTypes": [
     "Code generator"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Proprietary",
   "pricingModels": [
     "Free"
   ],
@@ -45,7 +48,7 @@
   },
   "latestVersion": "3.3",
   "releaseDate": "2026-02-13",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/sustate.png",
   "sourceDescriptionZh": "状态机建模工具，可以生成Java、C#、C++代码。有独立编辑和Eclipse插件两种形式。",
   "sourceUpdatedText": "2026年2月13日",
@@ -57,7 +60,16 @@
     }
   ],
   "featured": false,
-  "featureEvidence": {},
+  "commercialUseAllowed": "Unknown",
+  "featureEvidence": {
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://www.christianpauli.de/statemodeler.html",
+      "checkedAt": "2026-11-01",
+      "note": "The official page describes Java, C#, and C++ generation.",
+      "availability": "Built-in"
+    }
+  },
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

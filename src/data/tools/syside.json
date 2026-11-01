@@ -12,9 +12,12 @@
   ],
   "deliveryModes": [
     "IDE Extension",
-    "Desktop Application"
+    "CLI",
+    "Library / SDK"
   ],
-  "runtimes": [],
+  "runtimes": [
+    "Python"
+  ],
   "hostApplications": [
     "VS Code"
   ],
@@ -24,12 +27,13 @@
   "toolTypes": [
     "Model editor"
   ],
-  "sourceLicense": "Unknown",
+  "sourceLicense": "Proprietary",
   "pricingModels": [
-    "Unknown"
+    "Free Tier Available",
+    "Paid"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Subscription"
   ],
   "modelingModes": [
     "Graphical",
@@ -38,28 +42,67 @@
   "features": {
     "xmiImport": "Unknown",
     "xmiExport": "Unknown",
-    "collaboration": "Unknown",
-    "codeGeneration": "Unknown",
+    "collaboration": "Yes",
+    "codeGeneration": "Yes",
     "reverseEngineering": "Unknown",
-    "simulation": "Unknown",
-    "requirementsManagement": "Unknown",
-    "sysmlV2Api": "Unknown"
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Yes"
   },
   "latestVersion": "0.11.0",
   "releaseDate": "2026-09-29",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/syside.png",
   "sourceDescriptionZh": "Sensmetry开发的原生SysML v2工具系列，目前是文本式SysML v2工具中成熟度较高的一套。主要分为Syside Editor、Syside Modeler和Syside Automator。Editor提供VS Code中的SysML v2/KerML文本编辑、语法检查、自动完成、导航等；Modeler在此基础上增加交互式图形视图和Grid View；Automator提供Python API，用于模型查询、计算、测试和自动化。",
   "sourceUpdatedText": "2026年9月29日",
   "sourceCollection": "UMLChina SysML v2 tools",
   "sources": [
     {
-      "label": "Product or project page",
+      "label": "Official Syside product page",
       "url": "https://sensmetry.com/syside/"
     }
   ],
   "featured": true,
-  "featureEvidence": {},
-  "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "commercialUseAllowed": "Unknown",
+  "featureEvidence": {
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://sensmetry.com/syside/",
+      "checkedAt": "2026-11-01",
+      "note": "The product page describes real-time collaborative editing and version-control integration.",
+      "availability": "Edition-specific"
+    },
+    "codeGeneration": {
+      "status": "Yes",
+      "url": "https://sensmetry.com/syside/",
+      "checkedAt": "2026-11-01",
+      "note": "Code generation is provided through Syside Automator templates and Python interfaces.",
+      "availability": "Edition-specific"
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://sensmetry.com/syside/",
+      "checkedAt": "2026-11-01",
+      "note": "The paid product family describes model execution, analysis, and behavior simulation.",
+      "availability": "Edition-specific"
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://sensmetry.com/syside/",
+      "checkedAt": "2026-11-01",
+      "note": "ReqIF exchange and requirement-satisfaction traceability are available in the automation product.",
+      "availability": "Edition-specific"
+    },
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://sensmetry.com/syside/",
+      "checkedAt": "2026-11-01",
+      "note": "The product page describes integration through SysML v2 APIs.",
+      "availability": "Edition-specific"
+    }
+  },
+  "classificationNotes": [
+    "This record covers the current Syside family. The deprecated Syside Editor Legacy codebase is a separate archived LGPL project."
+  ],
+  "classificationReviewedAt": "2026-11-01"
 }

@@ -1,0 +1,64 @@
+{
+  "id": "capella-for-syson",
+  "name": "Capella for SysON",
+  "vendor": "Eclipse Capella community",
+  "website": "https://github.com/eclipse-capella/capella-for-syson",
+  "description": "An open-source web implementation that brings the Capella/Arcadia method onto SysON, Sirius Web, and SysML v2 technologies.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application"
+  ],
+  "runtimes": [
+    "JVM",
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2",
+    "Arcadia"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "sourceLicense": "Open Source",
+  "spdxLicenseId": "EPL-2.0",
+  "pricingModels": [
+    "Free"
+  ],
+  "licenseTerms": [
+    "Perpetual"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": true,
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": [
+    "This record covers the SysON-based implementation; standalone Eclipse Capella remains outside the main UML/SysML directory because Arcadia is a distinct language and method."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Eclipse Capella repository",
+      "url": "https://github.com/eclipse-capella/capella-for-syson"
+    }
+  ],
+  "featured": false
+}

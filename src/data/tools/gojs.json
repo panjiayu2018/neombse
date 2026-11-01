@@ -41,7 +41,7 @@
   },
   "latestVersion": "2.2.12",
   "releaseDate": "2022-06-29",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/gojs.png",
   "sourceDescriptionZh": "绘图JS框架，仅支持UML类图。",
   "sourceUpdatedText": "2022年6月29日",
@@ -53,9 +53,10 @@
     }
   ],
   "featured": false,
+  "commercialUseAllowed": "Unknown",
   "featureEvidence": {},
   "classificationNotes": [
     "GoJS is a JavaScript diagramming library / SDK, not a ready-to-use UML modeling application."
   ],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

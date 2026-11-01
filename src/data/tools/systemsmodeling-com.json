@@ -1,0 +1,75 @@
+{
+  "id": "systemsmodeling-com",
+  "name": "SystemsModeling.com",
+  "vendor": "SystemsModeling.com",
+  "website": "https://systemsmodeling.com/",
+  "description": "A public preview web environment for creating, loading, validating, and visualizing SysML v2 models in a shared repository.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application",
+    "API Service"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Model editor",
+    "Model repository"
+  ],
+  "sourceLicense": "Unknown",
+  "pricingModels": [
+    "Unknown"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Yes"
+  },
+  "featureEvidence": {
+    "sysmlV2Api": {
+      "status": "Yes",
+      "url": "https://systemsmodeling.com/",
+      "checkedAt": "2026-11-01",
+      "availability": "Component-specific",
+      "note": "The preview describes a Flexo repository implementing the standard Systems Modeling API."
+    }
+  },
+  "classificationNotes": [
+    "The vendor labels this service a preview and warns that it is not final or secure; do not upload proprietary models."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official preview site",
+      "url": "https://systemsmodeling.com/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

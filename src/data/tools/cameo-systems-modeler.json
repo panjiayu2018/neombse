@@ -1,0 +1,102 @@
+{
+  "id": "cameo-systems-modeler",
+  "name": "Cameo Systems Modeler",
+  "vendor": "Dassault Systèmes",
+  "website": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+  "description": "A commercial systems-modeling product built on the MagicDraw platform for SysML architectures, requirements traceability, collaboration, and simulation extensions.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "deliveryModes": [
+    "Desktop Application"
+  ],
+  "runtimes": [
+    "JVM"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "UML",
+    "SysML v1"
+  ],
+  "toolTypes": [
+    "Model editor"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Graphical",
+    "Textual"
+  ],
+  "features": {
+    "xmiImport": "Yes",
+    "xmiExport": "Yes",
+    "collaboration": "Yes",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Yes",
+    "requirementsManagement": "Yes",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {
+    "xmiImport": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The product page describes XMI-based interoperability."
+    },
+    "xmiExport": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The product page describes XMI-based interoperability."
+    },
+    "collaboration": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+      "checkedAt": "2026-11-01",
+      "availability": "External integration",
+      "note": "Teamwork capabilities are provided through the No Magic product family."
+    },
+    "simulation": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+      "checkedAt": "2026-11-01",
+      "availability": "Plugin",
+      "note": "Execution and simulation require the relevant No Magic simulation product."
+    },
+    "requirementsManagement": {
+      "status": "Yes",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler",
+      "checkedAt": "2026-11-01",
+      "availability": "Built-in",
+      "note": "The official page describes requirements traceability."
+    }
+  },
+  "classificationNotes": [
+    "Cameo Systems Modeler is a distinct systems-engineering SKU; capabilities and add-ons vary by edition and license."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Cameo Systems Modeler page",
+      "url": "https://www.3ds.com/products/catia/no-magic/cameo-systems-modeler"
+    }
+  ],
+  "featured": false
+}

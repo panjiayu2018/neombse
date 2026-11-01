@@ -1,0 +1,65 @@
+{
+  "id": "violet-labs",
+  "name": "Violet",
+  "vendor": "Violet Labs",
+  "website": "https://www.violetlabs.com/",
+  "description": "A digital-thread integration platform listed by OMG for SysML v2 integration across engineering repositories and lifecycle systems.",
+  "editorialNote": "Added after the 2026-11-01 coverage review. Capabilities are marked Yes only where a current first-party or standards-body source was found.",
+  "operatingSystems": [],
+  "deliveryModes": [
+    "Web Application",
+    "API Service"
+  ],
+  "runtimes": [
+    "Browser JavaScript"
+  ],
+  "hostApplications": [],
+  "standards": [
+    "SysML v2"
+  ],
+  "toolTypes": [
+    "Integration platform"
+  ],
+  "sourceLicense": "Proprietary",
+  "pricingModels": [
+    "Custom Quote"
+  ],
+  "licenseTerms": [
+    "Unknown"
+  ],
+  "trialAvailable": "Unknown",
+  "commercialUseAllowed": "Unknown",
+  "modelingModes": [
+    "Not applicable"
+  ],
+  "features": {
+    "xmiImport": "Unknown",
+    "xmiExport": "Unknown",
+    "collaboration": "Unknown",
+    "codeGeneration": "Unknown",
+    "reverseEngineering": "Unknown",
+    "simulation": "Unknown",
+    "requirementsManagement": "Unknown",
+    "sysmlV2Api": "Unknown"
+  },
+  "featureEvidence": {},
+  "classificationNotes": [
+    "Violet is a connector and digital-thread platform, not a SysML diagram editor; model-authoring capabilities remain Unknown."
+  ],
+  "classificationReviewedAt": "2026-11-01",
+  "latestVersion": null,
+  "releaseDate": null,
+  "lastChecked": "2026-11-01",
+  "sourceCollection": "NeoMBSE coverage audit",
+  "sources": [
+    {
+      "label": "Official Violet Labs site",
+      "url": "https://www.violetlabs.com/"
+    },
+    {
+      "label": "OMG SysML v2 tools list",
+      "url": "https://www.omg.org/sysml/sysmlv2/sysml-tool/"
+    }
+  ],
+  "featured": false
+}

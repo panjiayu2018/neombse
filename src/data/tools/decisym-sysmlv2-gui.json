@@ -24,7 +24,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical"
@@ -41,7 +41,7 @@
   },
   "latestVersion": null,
   "releaseDate": "2026-06-28",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/sysmlv2gui.png",
   "sourceDescriptionZh": "用Rust + egui开发的轻量级SysML v2图形查看和编辑器。",
   "sourceUpdatedText": "2026年6月28日",
@@ -53,7 +53,9 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }

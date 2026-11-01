@@ -28,7 +28,7 @@
     "Free"
   ],
   "licenseTerms": [
-    "Unknown"
+    "Perpetual"
   ],
   "modelingModes": [
     "Graphical",
@@ -46,7 +46,7 @@
   },
   "latestVersion": "0.9.5",
   "releaseDate": "2026-07-10",
-  "lastChecked": "2026-10-23",
+  "lastChecked": "2026-11-01",
   "image": "/images/tools/sysmlv2studio.png",
   "sourceDescriptionZh": "VS Code插件，支持.sysml和.kerml文件的语法高亮、语义检查、自动完成、跨文件导航，同时提供8种可编辑图形视图。图形中的移动、连接、改名、删除等操作可以反向写入SysML v2文本，并支持Claude/MCP接口。",
   "sourceUpdatedText": "2026年7月10日",
@@ -58,7 +58,9 @@
     }
   ],
   "featured": false,
+  "spdxLicenseId": "MIT",
+  "commercialUseAllowed": true,
   "featureEvidence": {},
   "classificationNotes": [],
-  "classificationReviewedAt": "2026-10-23"
+  "classificationReviewedAt": "2026-11-01"
 }
